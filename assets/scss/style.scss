@@ -1,3 +1,75 @@
 @import "_typo.scss";
 @import "_config.scss";
 @import "_normalize.scss";
+
+header{
+    nav{
+        .dropdown{
+            button{
+                background-color:#0004;
+                color:#e1e1e1;
+                border-radius: 0;
+                margin-left:10px;
+            }
+            button:hover{
+                color:white;
+                border-radius: 0px 0px 0px 5px;
+            }
+        }
+        .search{
+            *{
+                border-radius:40px;
+                border:none;
+            }
+            input{
+                background-color: #0007;
+                &::placeholder{
+                    color:white;
+                }
+            }
+            .input-group-text{
+                background-color: #0007;
+                a{
+                    color:#e1e1e1;
+                }
+            }
+        }
+        .logo{
+            h1{
+                font-size:60px;
+                font-weight:bolder;
+                text-transform: uppercase;
+            }
+        }
+        .nav-browse{
+            text-align: center;
+        }
+        width:100%;
+        top:0%;
+        padding:2% 3%;
+        z-index: 2;
+        a{
+            text-decoration: none;
+            color:#e4e4e4;
+        }
+        a:hover{
+            color:white;
+        }
+        color:white;
+        .title-red{
+            color:red;
+        }
+    }
+    .nav-browse{
+        padding:10px 5px;
+        background-color:#85858595;
+        margin-right:10px;
+    }
+    .carousel-item{
+        img {
+            filter: brightness(0.5);
+            height:800px;
+        }
+    }
+
+}

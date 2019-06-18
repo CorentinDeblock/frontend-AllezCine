@@ -342,90 +342,10 @@ template {
 }
 
 header nav {
-  width: 100%;
   top: 0%;
-  padding: 2% 3%;
-  z-index: 2;
-  color: white;
 }
 
-header nav .dropdown button {
-  background-color: #0004;
-  color: #e1e1e1;
-  border-radius: 0;
-  margin-left: 10px;
-}
-
-header nav .dropdown button:hover {
-  color: white;
-  border-radius: 0px 0px 0px 5px;
-}
-
-header nav .search * {
-  border-radius: 40px;
-  border: none;
-}
-
-header nav .search input {
-  background-color: #0007;
-}
-
-header nav .search input::-webkit-input-placeholder {
-  color: white;
-}
-
-header nav .search input:-ms-input-placeholder {
-  color: white;
-}
-
-header nav .search input::-ms-input-placeholder {
-  color: white;
-}
-
-header nav .search input::placeholder {
-  color: white;
-}
-
-header nav .search .input-group-text {
-  background-color: #0007;
-}
-
-header nav .search .input-group-text a {
-  color: #e1e1e1;
-}
-
-header nav .logo h1 {
-  font-size: 60px;
-  font-weight: bolder;
-  text-transform: uppercase;
-}
-
-header nav .nav-browse {
-  text-align: center;
-}
-
-header nav a {
-  text-decoration: none;
-  color: #e4e4e4;
-}
-
-header nav a:hover {
-  color: white;
-}
-
-header nav .title-red {
-  color: red;
-}
-
-header .nav-browse {
-  padding: 10px 5px;
-  background-color: #85858595;
-  margin-right: 10px;
-}
-
-header .carousel-item img {
-  -webkit-filter: brightness(0.5);
-          filter: brightness(0.5);
-  height: 800px;
+header .carousel {
+  z-index: -1;
 }
 /*# sourceMappingURL=style.css.map */
