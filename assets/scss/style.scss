@@ -1,3 +1,30 @@
 @import "_typo.scss";
 @import "_config.scss";
 @import "_normalize.scss";
+
+body {
+    overflow: hidden;
+}
+
+footer {
+    background-color: black;
+    padding-top: 100px;
+    
+    h3 {
+        font-family: "arial";
+        color: white;
+    }
+    span.cine1 {
+        color: white;
+    }
+    span.cine2 {
+        color: red;
+    }
+    h4 {
+        font-family: "arial";
+        color: white;
+    }
+    p {
+        color: grey;
+    }
+}

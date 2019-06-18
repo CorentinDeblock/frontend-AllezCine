@@ -340,3 +340,35 @@ template {
 [hidden] {
   display: none;
 }
+
+body {
+  overflow: hidden;
+}
+
+footer {
+  background-color: black;
+  padding-top: 100px;
+}
+
+footer h3 {
+  font-family: "arial";
+  color: white;
+}
+
+footer span.cine1 {
+  color: white;
+}
+
+footer span.cine2 {
+  color: red;
+}
+
+footer h4 {
+  font-family: "arial";
+  color: white;
+}
+
+footer p {
+  color: grey;
+}
+/*# sourceMappingURL=style.css.map */
