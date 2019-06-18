@@ -385,4 +385,14 @@ footer a:hover {
   color: white;
   text-decoration: none;
 }
+
+footer img {
+  width: 80px;
+  height: 65px;
+  float: left;
+}
+
+footer .flot {
+  float: left;
+}
 /*# sourceMappingURL=style.css.map */
