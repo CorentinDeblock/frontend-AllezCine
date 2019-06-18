@@ -1,8 +1,37 @@
 @import "_typo.scss";
 @import "_config.scss";
 @import "_normalize.scss";
-
+* {
+    font-family: 'Roboto', sans-serif;
+}
 header{
+    .btn{
+        border-radius: 0px;
+    }
+    .btn-red{
+        background-color:red;
+        color:white;
+    }
+    .btn-black{
+        background-color:black;
+    }
+    .connect{
+        bottom:0%;
+        position: absolute;
+        color:white;
+        background-color:red;
+        width: 100%;
+        padding:10px;
+        p{
+            margin:auto 30px;
+        }
+        .btn{
+            margin-right:10px;
+        }
+        .fa-phone-alt{
+            margin-right:10px;
+        }
+    }
     nav{
         .dropdown{
             button{
@@ -15,6 +44,17 @@ header{
                 color:white;
                 border-radius: 0px 0px 0px 5px;
             }
+            .dropdown-menu{
+                border-radius:0;
+                padding:0;
+                margin:0;
+                .dropdown-item{
+                    padding:0px 10px;
+                    a{
+                        color:black;
+                    }
+                }
+            }
         }
         .search{
             *{
@@ -23,8 +63,10 @@ header{
             }
             input{
                 background-color: #0007;
+                padding-left:30px;
                 &::placeholder{
                     color:white;
+                
                 }
             }
             .input-group-text{
@@ -37,7 +79,7 @@ header{
         .logo{
             h1{
                 font-size:60px;
-                font-weight:bolder;
+                font-weight:900;
                 text-transform: uppercase;
             }
         }
@@ -56,19 +98,44 @@ header{
             color:white;
         }
         color:white;
-        .title-red{
-            color:red;
-        }
+    }
+    .title-red{
+        color:red;
     }
     .nav-browse{
         padding:10px 5px;
         background-color:#85858595;
         margin-right:10px;
     }
-    .carousel-item{
-        img {
-            filter: brightness(0.5);
-            height:800px;
+    .carousel{
+        .carousel-caption{
+            .caption-title{
+                h2{
+                    font-size: 65px;
+                    transform:scaleX(1.1);
+                    font-weight: 500;
+                }
+                *{
+                    margin-bottom:30px;
+                }
+                p{
+                    text-transform: uppercase;
+                    letter-spacing: 5px;
+                    font-weight: 100;
+                }
+            }
+            top:50%;
+            left:50%;
+            bottom: initial;
+            padding:0;
+            width:50%;
+            transform: translate(-50%,-50%);
+        }
+        .carousel-item{
+            img {
+                filter: brightness(0.2);
+                height:800px;
+            }
         }
     }
 
