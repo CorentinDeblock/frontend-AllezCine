@@ -371,4 +371,11 @@ footer h4 {
 footer p {
   color: grey;
 }
+
+footer button {
+  background-color: dimgray;
+  color: white;
+  margin-bottom: 3px;
+  border: none;
+}
 /*# sourceMappingURL=style.css.map */
