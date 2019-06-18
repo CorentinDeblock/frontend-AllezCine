@@ -372,10 +372,17 @@ footer p {
   color: grey;
 }
 
-footer button {
+footer a {
   background-color: dimgray;
   color: white;
-  margin-bottom: 3px;
-  border: none;
+  line-height: 30px;
+  padding: 3px;
+  border-radius: 10%;
+}
+
+footer a:hover {
+  background-color: red;
+  color: white;
+  text-decoration: none;
 }
 /*# sourceMappingURL=style.css.map */
