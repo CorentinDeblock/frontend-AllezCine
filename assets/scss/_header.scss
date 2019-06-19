@@ -1,0 +1,97 @@
+header{
+    .carousel-caption{
+        padding-bottom: 100px;
+    }
+    .carousel-indicators{
+        padding-bottom: 40px;
+    }
+    .opa{
+        filter: brightness(0.2);
+    }
+    .i-search{
+        background-color:#474747;
+        color:white;
+    }
+    .navbar {
+        background-color: transparent;
+        border-color: #E7E7E7;
+        position: absolute;
+       }
+        .navbar-toggler{
+            border-color: white !important;
+        }
+        .navbar-light .navbar-toggler-icon{
+            background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+        }
+    .d-block{
+        min-height: 500px;
+        object-fit: cover;
+        background-size: cover;
+    }
+    .bg-light{
+        background-color: none !important;
+    }
+    .btn{
+        border-radius: 0px;
+    }
+    .bout-search{
+        border-radius: 10px;
+        filter: opacity(0.6);
+    }
+    .btn-red{
+        background-color:$rose;
+        color:white;
+    }
+    .navbar-light .navbar-nav .nav-link{
+        color: white;
+    }
+    .btn-black{
+        background-color:black;
+    }
+
+    .connect{
+        bottom:0%;
+        color:white;
+        background-color:$rose;
+        width: 100%;
+        padding:10px;
+        p{
+            margin:auto 30px;
+        }
+        .btn{
+            margin-right:10px;
+        }
+        .fa-phone-alt{
+            margin-right:10px;
+        }
+    }
+    nav{
+        .dropdown{
+            button{
+                background-color:#0004;
+                color:white;
+                border-radius: 0;
+                margin-left:10px;
+            }
+            .dropdown-menu{
+                border-radius:0;
+                padding:0;
+                margin:0;
+                .dropdown-item{
+                    padding:0px 10px;
+                    a{
+                        color:black;
+                    }
+                }
+            }
+        }
+        
+        width:100%;
+        top:0%;
+        padding:2% 3%;
+        z-index: 2;
+        
+        color:white;
+    }
+    
+}
