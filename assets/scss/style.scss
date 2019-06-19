@@ -10,9 +10,12 @@ footer {
     background-color: black;
     padding-top: 100px;
     
-    h3 {
-        font-family: "arial";
-        color: white;
+    .suscribe {
+        color: red;
+        padding-bottom: 1%;
+    }
+    .tableau {
+        padding-bottom: 3%;
     }
     span.cine1 {
         color: white;
@@ -27,7 +30,8 @@ footer {
     p {
         color: grey;
     }
-    a {
+    
+    .btag {
         background-color: dimgray;
         color: white;
         line-height: 30px;
@@ -39,12 +43,44 @@ footer {
             text-decoration: none;
         }
     }
-    img {
+    .releases {
+        color: dimgray;
+        &:hover{
+            color: white;
+            text-decoration: none;
+        }
+    }
+    .movies {
+        color: dimgray;
+        &:hover{
+            color: white;
+            text-decoration: none;
+        }
+    }
+
+    .img1 {
         width: 80px;
         height: 65px;
-        float:left;
+        object-fit: cover;
     }
-    .flot {
-        float:left;
+
+    .img2 {
+        width: 80px;
+        height: 100px;
     }
+
+    .colorlinetable {
+        border: 5px solid red;
+        color: blue;
+    }
+
+    hr{
+        border: 1px solid grey;
+        border-right: none;
+        border-left: none;
+    }
+    .hrespace {
+        padding: 2%;
+    }
+    
 }

@@ -350,9 +350,13 @@ footer {
   padding-top: 100px;
 }
 
-footer h3 {
-  font-family: "arial";
-  color: white;
+footer .suscribe {
+  color: red;
+  padding-bottom: 1%;
+}
+
+footer .tableau {
+  padding-bottom: 3%;
 }
 
 footer span.cine1 {
@@ -372,7 +376,7 @@ footer p {
   color: grey;
 }
 
-footer a {
+footer .btag {
   background-color: dimgray;
   color: white;
   line-height: 30px;
@@ -380,19 +384,54 @@ footer a {
   border-radius: 10%;
 }
 
-footer a:hover {
+footer .btag:hover {
   background-color: red;
   color: white;
   text-decoration: none;
 }
 
-footer img {
-  width: 80px;
-  height: 65px;
-  float: left;
+footer .releases {
+  color: dimgray;
 }
 
-footer .flot {
-  float: left;
+footer .releases:hover {
+  color: white;
+  text-decoration: none;
+}
+
+footer .movies {
+  color: dimgray;
+}
+
+footer .movies:hover {
+  color: white;
+  text-decoration: none;
+}
+
+footer .img1 {
+  width: 80px;
+  height: 65px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+footer .img2 {
+  width: 80px;
+  height: 100px;
+}
+
+footer .colorlinetable {
+  border: 5px solid red;
+  color: blue;
+}
+
+footer hr {
+  border: 1px solid grey;
+  border-right: none;
+  border-left: none;
+}
+
+footer .hrespace {
+  padding: 2%;
 }
 /*# sourceMappingURL=style.css.map */
