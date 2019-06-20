@@ -2,33 +2,30 @@
 @import "_config.scss";
 @import "_normalize.scss";
 
-body {
-    overflow: hidden;
-}
 
 footer {
     background-color: black;
     padding-top: 100px;
     
     .suscribe {
-        color: red;
+        color: #FE4240;
+        padding-bottom: 1%;
+    }
+    .inputsuscribe {
         padding-bottom: 1%;
     }
     .tableau {
         padding-bottom: 3%;
     }
-    span.cine1 {
+    .cine1 {
         color: white;
     }
-    span.cine2 {
-        color: red;
+    .cine2 {
+        color: #FE4240;
     }
     h4 {
         font-family: "arial";
         color: white;
-    }
-    p {
-        color: grey;
     }
     
     .btag {
@@ -38,7 +35,7 @@ footer {
         padding: 3px;
         border-radius: 10%;
         &:hover{
-            background-color: red;
+            background-color: #FE4240;
             color: white;
             text-decoration: none;
         }
@@ -64,23 +61,31 @@ footer {
         object-fit: cover;
     }
 
-    .img2 {
-        width: 80px;
-        height: 100px;
+    .titlemov {
+        color: grey;
+        text-align: left;
     }
 
-    .colorlinetable {
-        border: 5px solid red;
-        color: blue;
+    .img2 {
+        width: 75px;
+        height: 110px;
     }
 
     hr{
-        border: 1px solid grey;
+        border: 1px solid #4C5155;
         border-right: none;
         border-left: none;
     }
     .hrespace {
         padding: 2%;
+    }
+    .connectus {
+        color: white;
+    }
+
+    i {
+        color: white;
+        margin: 50%;
     }
     
 }
