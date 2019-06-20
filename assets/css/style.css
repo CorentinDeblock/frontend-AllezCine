@@ -435,8 +435,11 @@ footer .connectus {
   color: white;
 }
 
+footer .spanm {
+  margin: 5%;
+}
+
 footer i {
   color: white;
-  margin: 50%;
 }
 /*# sourceMappingURL=style.css.map */
