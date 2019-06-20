@@ -9,11 +9,58 @@ section{
     margin: 40px 0;
 }
 // CARD FILM
+
+.card-img-top{
+    height: 190px;
+}
+@media screen and (min-width: 400px) {
+    .card-img-top{
+        height: 240px;
+    }
+    
+  }
+  @media screen and (min-width: 470px) {
+    .card-img-top{
+        height: 250px;
+    }
+    
+  }
+@media screen and (min-width: 576px) {
+    .card-img-top{
+        height: 270px;
+    }
+    
+  }
+@media screen and (min-width: 768px) {
+    .card-img-top{
+        height: 270px;
+    }
+    
+  }
+
+  @media screen and (min-width: 992px) {
+    .card-img-top{
+        height: 270px;
+    }
+    
+  }
+  @media screen and (min-width: 992px) {
+    .card-img-top{
+        height: 200px;
+    }
+    
+  }
+
+
 .card{
     border: none;
     color: $grisf;
+    padding: 10px 5px;
     .title{
         font-weight: bold;
+    }
+    .btn-primary{
+        padding: 0px;
     }
     .btn-hover{
         background-color: white;

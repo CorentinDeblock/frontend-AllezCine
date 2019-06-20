@@ -70,13 +70,58 @@ section {
   margin: 40px 0;
 }
 
+.card-img-top {
+  height: 190px;
+}
+
+@media screen and (min-width: 400px) {
+  .card-img-top {
+    height: 240px;
+  }
+}
+
+@media screen and (min-width: 470px) {
+  .card-img-top {
+    height: 250px;
+  }
+}
+
+@media screen and (min-width: 576px) {
+  .card-img-top {
+    height: 270px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .card-img-top {
+    height: 270px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .card-img-top {
+    height: 270px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .card-img-top {
+    height: 200px;
+  }
+}
+
 .card {
   border: none;
   color: #4C5155;
+  padding: 10px 5px;
 }
 
 .card .title {
   font-weight: bold;
+}
+
+.card .btn-primary {
+  padding: 0px;
 }
 
 .card .btn-hover {
@@ -253,6 +298,108 @@ header nav .dropdown .dropdown-menu .dropdown-item {
 
 header nav .dropdown .dropdown-menu .dropdown-item a {
   color: black;
+}
+
+footer {
+  background-color: black;
+  padding-top: 100px;
+}
+
+footer .suscribe {
+  color: #FE4240;
+  padding-bottom: 1%;
+}
+
+footer .inputsuscribe {
+  padding-bottom: 1%;
+}
+
+footer .tableau {
+  padding-bottom: 3%;
+}
+
+footer .cine1 {
+  color: white;
+}
+
+footer .cine2 {
+  color: #FE4240;
+}
+
+footer h4 {
+  font-family: "arial";
+  color: white;
+}
+
+footer .btag {
+  background-color: dimgray;
+  color: white;
+  line-height: 30px;
+  padding: 3px;
+  border-radius: 10%;
+}
+
+footer .btag:hover {
+  background-color: #FE4240;
+  color: white;
+  text-decoration: none;
+}
+
+footer .releases {
+  color: dimgray;
+}
+
+footer .releases:hover {
+  color: white;
+  text-decoration: none;
+}
+
+footer .movies {
+  color: dimgray;
+}
+
+footer .movies:hover {
+  color: white;
+  text-decoration: none;
+}
+
+footer .img1 {
+  width: 80px;
+  height: 65px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+footer .titlemov {
+  color: grey;
+  text-align: left;
+}
+
+footer .img2 {
+  width: 75px;
+  height: 110px;
+}
+
+footer hr {
+  border: 1px solid #4C5155;
+  border-right: none;
+  border-left: none;
+}
+
+footer .hrespace {
+  padding: 2%;
+}
+
+footer .connectus {
+  color: white;
+}
+
+footer .spanm {
+  margin: 5%;
+}
+
+footer i {
+  color: white;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
