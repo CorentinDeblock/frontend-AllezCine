@@ -599,6 +599,16 @@ template {
   display: none;
 }
 
+.formulary {
+  background-color: #c8c8c8;
+}
+
+.formulary form {
+  padding: 50px;
+  margin: 50px auto;
+  background-color: #e8e8e8;
+}
+
 * {
   font-family: 'Roboto', sans-serif;
 }
