@@ -1,11 +1,111 @@
-.container{
-    background: black;
-    width:100%;
-    h2.subscribe{
-        color:white;
-        margin-left:auto;
-        margin-right:auto;
-        font-size:50px;
-        color:#ff4140;
+footer {
+    background-color: black;
+    padding-top: 100px;
+
+    .suscribe {
+        color: #FE4240;
+        padding-bottom: 1%;
     }
-}
+
+    .inputsuscribe {
+        padding-bottom: 1%;
+    }
+
+    .tableau {
+        padding-bottom: 3%;
+    }
+
+    .cine1 {
+        color: white;
+    }
+
+    .cine2 {
+        color: #FE4240;
+    }
+
+    h4 {
+        font-family: "arial";
+        color: white;
+    }
+
+    .btag {
+        background-color: dimgray;
+        color: white;
+        line-height: 30px;
+        padding: 3px;
+        border-radius: 10%;
+
+        &:hover {
+            background-color: #FE4240;
+            color: white;
+            text-decoration: none;
+        }
+    }
+
+    .releases {
+        color: dimgray;
+
+        &:hover {
+            color: white;
+            text-decoration: none;
+        }
+    }
+
+    .movies {
+        color: dimgray;
+
+        &:hover {
+            color: white;
+            text-decoration: none;
+        }
+    }
+
+    .img1 {
+        width: 80px;
+        height: 65px;
+        object-fit: cover;
+    }
+
+    .titlemov {
+        color: grey;
+        text-align: left;
+    }
+
+    .img2 {
+        width: 75px;
+        height: 110px;
+    }
+
+    hr {
+        border: 1px solid #4C5155;
+        border-right: none;
+        border-left: none;
+    }
+
+    .hrespace {
+        padding: 2%;
+    }
+
+    .connectus {
+        color: white;
+        margin-left: 140px;
+    }
+
+    .spanm {
+        margin: 5%;
+    }
+
+    img{
+        height: 30px;
+        width: 30px;
+        margin:auto;
+        margin-left: 5px;
+        margin-right: 5px;
+        border: 2px solid white;
+    }
+
+    a.cInvisible{
+        border-radius:50%;
+        border: 5px solid white;
+        }
+    }
