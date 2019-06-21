@@ -8,6 +8,23 @@
 section{
     margin: 40px 0;
 }
+.card-header{
+    background-color: white;
+    border-bottom: 0px;
+    text-align: center;
+}
+.collapsed{
+    &:after{
+        content: "Moins de films";
+    }
+    span{
+        display: none;
+    }
+}
+
+.row{
+    width: 100%;
+}
 // CARD FILM
 
 .card-img-top{

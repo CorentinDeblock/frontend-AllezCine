@@ -1,232 +1,148 @@
 [
-    {
-      "name": "Batman movie",
-      "img": "assets/img/batmanmovie-2017-comedie.jpg",
-      "annee": 2017,
-      "genre": "comedie",
-      "trailerYtb": "https://www.youtube.com/embed/hd6dqh9BjHo",
-      "descrip": "Il en rêvait depuis La Grande Aventure Lego : Batman est enfin le héros de son propre film ! Mais la situation a bien changé à Gotham – et s'il veut sauver la ville des griffes du Joker, il lui faudra arrêter de jouer au justicier masqué et découvrir le travail d'équipe ! Peut-être pourra-t-il alors se décoincer un peu…",
-      "realisateur": "Chris McKay",
-      "acteurs": "Philippe Valmont, Rayane Bensetti, Stéphane Bern, Nathalie Odzierejko"
-    },
-    {
-      "name": "Hostel 2",
-      "img": "assets/img/hostel-2005-thriller.jpg",
-      "annee": 2005,
-      "genre": "thriller",
-      "trailerYtb": "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/U7GY_1XLNag\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>",
-      "descrip": "Deux étudiants américains, Paxton et Josh, ont décidé de découvrir l'Europe avec un maximum d'aventures et de sensations fortes. Avec Oli, un Islandais qu'ils ont rencontré en chemin, ils se retrouvent dans une petite ville de Slovaquie dans ce qu'on leur a décrit comme le nirvana des vacances de débauche : une propriété très spéciale, pleine de filles aussi belles que faciles... <br/> Natalya et Svetlana sont effectivement très cools... un peu trop, même. Paxton et Josh vont vite se rendre compte qu'ils sont tombés dans un piège. Ce voyage-là va les conduire au bout de l'horreur...",
-      "realisateur": "Eli Roth",
-      "acteurs": "Jay Hernandez, Derek Richardson, Eythor Gudjonsson"
-    },
-    {
-      "name": "Inception",
-      "img": "assets/img/inception-2010-scifi.jpg",
-      "annee": 2010,
-      "genre": "sciencefiction",
-      "trailerYtb": "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/hd6dqh9BjHo\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>",
-      "descrip": "Il en rêvait depuis La Grande Aventure Lego : Batman est enfin le héros de son propre film ! Mais la situation a bien changé à Gotham – et s'il veut sauver la ville des griffes du Joker, il lui faudra arrêter de jouer au justicier masqué et découvrir le travail d'équipe ! Peut-être pourra-t-il alors se décoincer un peu…",
-      "realisateur": "Chris McKay",
-      "acteurs": "Philippe Valmont, Rayane Bensetti, Stéphane Bern, Nathalie Odzierejko"
-    },
-    {
-      "name": "Intouchables",
-      "img": "assets/img/intouchables-2011-comedie.jpg",
-      "annee": 2011,
-      "genre": "comedie",
-      "trailerYtb": "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/U7GY_1XLNag\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>",
-      "descrip": "Deux étudiants américains, Paxton et Josh, ont décidé de découvrir l'Europe avec un maximum d'aventures et de sensations fortes. Avec Oli, un Islandais qu'ils ont rencontré en chemin, ils se retrouvent dans une petite ville de Slovaquie dans ce qu'on leur a décrit comme le nirvana des vacances de débauche : une propriété très spéciale, pleine de filles aussi belles que faciles... <br/> Natalya et Svetlana sont effectivement très cools... un peu trop, même. Paxton et Josh vont vite se rendre compte qu'ils sont tombés dans un piège. Ce voyage-là va les conduire au bout de l'horreur...",
-      "realisateur": "Eli Roth",
-      "acteurs": "Jay Hernandez, Derek Richardson, Eythor Gudjonsson"
-    },
-    {
-      "name": "Le patient Anglais",
-      "img": "assets/img/lepatientanglais-1996-dramatique.jpg",
-      "annee": 1996,
-      "genre": "dramatique",
-      "trailerYtb": "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/hd6dqh9BjHo\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>",
-      "descrip": "Il en rêvait depuis La Grande Aventure Lego : Batman est enfin le héros de son propre film ! Mais la situation a bien changé à Gotham – et s'il veut sauver la ville des griffes du Joker, il lui faudra arrêter de jouer au justicier masqué et découvrir le travail d'équipe ! Peut-être pourra-t-il alors se décoincer un peu…",
-      "realisateur": "Chris McKay",
-      "acteurs": "Philippe Valmont, Rayane Bensetti, Stéphane Bern, Nathalie Odzierejko"
-    },
-    {
-      "name": "Les deux tours",
-      "img": "assets/img/lesdeuxtours-2002-aventure.jpg",
-      "annee": 2002,
-      "genre": "aventure",
-      "trailerYtb": "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/U7GY_1XLNag\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>",
-      "descrip": "Deux étudiants américains, Paxton et Josh, ont décidé de découvrir l'Europe avec un maximum d'aventures et de sensations fortes. Avec Oli, un Islandais qu'ils ont rencontré en chemin, ils se retrouvent dans une petite ville de Slovaquie dans ce qu'on leur a décrit comme le nirvana des vacances de débauche : une propriété très spéciale, pleine de filles aussi belles que faciles... <br/> Natalya et Svetlana sont effectivement très cools... un peu trop, même. Paxton et Josh vont vite se rendre compte qu'ils sont tombés dans un piège. Ce voyage-là va les conduire au bout de l'horreur...",
-      "realisateur": "Eli Roth",
-      "acteurs": "Jay Hernandez, Derek Richardson, Eythor Gudjonsson"
-    },
-    {
-      "name": "Seven",
-      "img": "assets/img/seven-1995-thriller.jpg",
-      "annee": 1995,
-      "genre": "thriller",
-      "trailerYtb": "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/hd6dqh9BjHo\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>",
-      "descrip": "Il en rêvait depuis La Grande Aventure Lego : Batman est enfin le héros de son propre film ! Mais la situation a bien changé à Gotham – et s'il veut sauver la ville des griffes du Joker, il lui faudra arrêter de jouer au justicier masqué et découvrir le travail d'équipe ! Peut-être pourra-t-il alors se décoincer un peu…",
-      "realisateur": "Chris McKay",
-      "acteurs": "Philippe Valmont, Rayane Bensetti, Stéphane Bern, Nathalie Odzierejko"
-    },
-    {
-      "name": "Shutterisland",
-      "img": "assets/img/shutterisland-2010-thriller.jpg",
-      "annee": 2010,
-      "genre": "thriller",
-      "trailerYtb": "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/U7GY_1XLNag\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>",
-      "descrip": "Deux étudiants américains, Paxton et Josh, ont décidé de découvrir l'Europe avec un maximum d'aventures et de sensations fortes. Avec Oli, un Islandais qu'ils ont rencontré en chemin, ils se retrouvent dans une petite ville de Slovaquie dans ce qu'on leur a décrit comme le nirvana des vacances de débauche : une propriété très spéciale, pleine de filles aussi belles que faciles... <br/> Natalya et Svetlana sont effectivement très cools... un peu trop, même. Paxton et Josh vont vite se rendre compte qu'ils sont tombés dans un piège. Ce voyage-là va les conduire au bout de l'horreur...",
-      "realisateur": "Eli Roth",
-      "acteurs": "Jay Hernandez, Derek Richardson, Eythor Gudjonsson"
-    },
-    {
-      "name": "Star Wars empire",
-      "img": "assets/img/starwarsempire-1980-scifi.jpg",
-      "annee": 1980,
-      "genre": "sciencefiction",
-      "trailerYtb": "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/hd6dqh9BjHo\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>",
-      "descrip": "Il en rêvait depuis La Grande Aventure Lego : Batman est enfin le héros de son propre film ! Mais la situation a bien changé à Gotham – et s'il veut sauver la ville des griffes du Joker, il lui faudra arrêter de jouer au justicier masqué et découvrir le travail d'équipe ! Peut-être pourra-t-il alors se décoincer un peu…",
-      "realisateur": "Chris McKay",
-      "acteurs": "Philippe Valmont, Rayane Bensetti, Stéphane Bern, Nathalie Odzierejko"
-    },
-    {
-      "name": "Survive style 5",
-      "img": "assets/img/Survivestyle5-2004-comedie.jpg",
-      "annee": 2004,
-      "genre": "comedie",
-      "trailerYtb": "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/U7GY_1XLNag\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>",
-      "descrip": "Deux étudiants américains, Paxton et Josh, ont décidé de découvrir l'Europe avec un maximum d'aventures et de sensations fortes. Avec Oli, un Islandais qu'ils ont rencontré en chemin, ils se retrouvent dans une petite ville de Slovaquie dans ce qu'on leur a décrit comme le nirvana des vacances de débauche : une propriété très spéciale, pleine de filles aussi belles que faciles... <br/> Natalya et Svetlana sont effectivement très cools... un peu trop, même. Paxton et Josh vont vite se rendre compte qu'ils sont tombés dans un piège. Ce voyage-là va les conduire au bout de l'horreur...",
-      "realisateur": "Eli Roth",
-      "acteurs": "Jay Hernandez, Derek Richardson, Eythor Gudjonsson"
-    },
-    {
-      "name": "Swissar My Man",
-      "img": "assets/img/swissarmyman-2016-comedie.jpg",
-      "annee": 2016,
-      "genre": "comedie",
-      "trailerYtb": "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/hd6dqh9BjHo\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>",
-      "descrip": "Il en rêvait depuis La Grande Aventure Lego : Batman est enfin le héros de son propre film ! Mais la situation a bien changé à Gotham – et s'il veut sauver la ville des griffes du Joker, il lui faudra arrêter de jouer au justicier masqué et découvrir le travail d'équipe ! Peut-être pourra-t-il alors se décoincer un peu…",
-      "realisateur": "Chris McKay",
-      "acteurs": "Philippe Valmont, Rayane Bensetti, Stéphane Bern, Nathalie Odzierejko"
-    },
-    {
-      "name": "The Fall",
-      "img": "assets/img/thefall-2006-dramatique.jpg",
-      "annee": 2006,
-      "genre": "dramatique",
-      "trailerYtb": "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/U7GY_1XLNag\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>",
-      "descrip": "Deux étudiants américains, Paxton et Josh, ont décidé de découvrir l'Europe avec un maximum d'aventures et de sensations fortes. Avec Oli, un Islandais qu'ils ont rencontré en chemin, ils se retrouvent dans une petite ville de Slovaquie dans ce qu'on leur a décrit comme le nirvana des vacances de débauche : une propriété très spéciale, pleine de filles aussi belles que faciles... <br/> Natalya et Svetlana sont effectivement très cools... un peu trop, même. Paxton et Josh vont vite se rendre compte qu'ils sont tombés dans un piège. Ce voyage-là va les conduire au bout de l'horreur...",
-      "realisateur": "Eli Roth",
-      "acteurs": "Jay Hernandez, Derek Richardson, Eythor Gudjonsson"
-    },
-    {
-      "name": "What We Do In The Shadows",
-      "img": "assets/img/WhatWeDoInTheShadows-2014-comedie.jpg",
-      "annee": 2014,
-      "genre": "comedie",
-      "trailerYtb": "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/hd6dqh9BjHo\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>",
-      "descrip": "Il en rêvait depuis La Grande Aventure Lego : Batman est enfin le héros de son propre film ! Mais la situation a bien changé à Gotham – et s'il veut sauver la ville des griffes du Joker, il lui faudra arrêter de jouer au justicier masqué et découvrir le travail d'équipe ! Peut-être pourra-t-il alors se décoincer un peu…",
-      "realisateur": "Chris McKay",
-      "acteurs": "Philippe Valmont, Rayane Bensetti, Stéphane Bern, Nathalie Odzierejko"
-    },
-    {
-      "name": "Zoolander",
-      "img": "assets/img/zoolander-2001-comedie.jpg",
-      "annee": 2001,
-      "genre": "comedie",
-      "trailerYtb": "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/U7GY_1XLNag\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>",
-      "descrip": "Deux étudiants américains, Paxton et Josh, ont décidé de découvrir l'Europe avec un maximum d'aventures et de sensations fortes. Avec Oli, un Islandais qu'ils ont rencontré en chemin, ils se retrouvent dans une petite ville de Slovaquie dans ce qu'on leur a décrit comme le nirvana des vacances de débauche : une propriété très spéciale, pleine de filles aussi belles que faciles... <br/> Natalya et Svetlana sont effectivement très cools... un peu trop, même. Paxton et Josh vont vite se rendre compte qu'ils sont tombés dans un piège. Ce voyage-là va les conduire au bout de l'horreur...",
-      "realisateur": "Eli Roth",
-      "acteurs": "Jay Hernandez, Derek Richardson, Eythor Gudjonsson"
-    },
-    {
-      "name": "Aladdin",
-      "img": "assets/img/aladdin.jpg",
-      "annee": 2019,
-      "genre": "aventure",
-      "trailerYtb": "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/hd6dqh9BjHo\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>",
-      "descrip": "Il en rêvait depuis La Grande Aventure Lego : Batman est enfin le héros de son propre film ! Mais la situation a bien changé à Gotham – et s'il veut sauver la ville des griffes du Joker, il lui faudra arrêter de jouer au justicier masqué et découvrir le travail d'équipe ! Peut-être pourra-t-il alors se décoincer un peu…",
-      "realisateur": "Chris McKay",
-      "acteurs": "Philippe Valmont, Rayane Bensetti, Stéphane Bern, Nathalie Odzierejko"
-    },
-    {
-      "name": "Labyrinthe",
-      "img": "assets/img/labyrinthe.jpg",
-      "annee": 2018,
-      "genre": "aventure",
-      "trailerYtb": "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/U7GY_1XLNag\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>",
-      "descrip": "Deux étudiants américains, Paxton et Josh, ont décidé de découvrir l'Europe avec un maximum d'aventures et de sensations fortes. Avec Oli, un Islandais qu'ils ont rencontré en chemin, ils se retrouvent dans une petite ville de Slovaquie dans ce qu'on leur a décrit comme le nirvana des vacances de débauche : une propriété très spéciale, pleine de filles aussi belles que faciles... <br/> Natalya et Svetlana sont effectivement très cools... un peu trop, même. Paxton et Josh vont vite se rendre compte qu'ils sont tombés dans un piège. Ce voyage-là va les conduire au bout de l'horreur...",
-      "realisateur": "Eli Roth",
-      "acteurs": "Jay Hernandez, Derek Richardson, Eythor Gudjonsson"
-    },
-    {
-      "name": "Nicky Larson",
-      "img": "assets/img/nicky.jpg",
-      "annee": 2019,
-      "genre": "comedie",
-      "trailerYtb": "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/hd6dqh9BjHo\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>",
-      "descrip": "Il en rêvait depuis La Grande Aventure Lego : Batman est enfin le héros de son propre film ! Mais la situation a bien changé à Gotham – et s'il veut sauver la ville des griffes du Joker, il lui faudra arrêter de jouer au justicier masqué et découvrir le travail d'équipe ! Peut-être pourra-t-il alors se décoincer un peu…",
-      "realisateur": "Chris McKay",
-      "acteurs": "Philippe Valmont, Rayane Bensetti, Stéphane Bern, Nathalie Odzierejko"
-    },
-    {
-      "name": "Titanic",
-      "img": "assets/img/titanic.jpg",
-      "annee": 1997,
-      "genre": "dramatique",
-      "trailerYtb": "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/U7GY_1XLNag\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>",
-      "descrip": "Deux étudiants américains, Paxton et Josh, ont décidé de découvrir l'Europe avec un maximum d'aventures et de sensations fortes. Avec Oli, un Islandais qu'ils ont rencontré en chemin, ils se retrouvent dans une petite ville de Slovaquie dans ce qu'on leur a décrit comme le nirvana des vacances de débauche : une propriété très spéciale, pleine de filles aussi belles que faciles... <br/> Natalya et Svetlana sont effectivement très cools... un peu trop, même. Paxton et Josh vont vite se rendre compte qu'ils sont tombés dans un piège. Ce voyage-là va les conduire au bout de l'horreur...",
-      "realisateur": "Eli Roth",
-      "acteurs": "Jay Hernandez, Derek Richardson, Eythor Gudjonsson"
-    },
-    {
-      "name": "Tueurs",
-      "img": "assets/img/tueurs.jpg",
-      "annee": 2017,
-      "genre": "thriller",
-      "trailerYtb": "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/hd6dqh9BjHo\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>",
-      "descrip": "Il en rêvait depuis La Grande Aventure Lego : Batman est enfin le héros de son propre film ! Mais la situation a bien changé à Gotham – et s'il veut sauver la ville des griffes du Joker, il lui faudra arrêter de jouer au justicier masqué et découvrir le travail d'équipe ! Peut-être pourra-t-il alors se décoincer un peu…",
-      "realisateur": "Chris McKay",
-      "acteurs": "Philippe Valmont, Rayane Bensetti, Stéphane Bern, Nathalie Odzierejko"
-    },
-    {
-      "name": "X-Men",
-      "img": "assets/img/x-men.jpg",
-      "annee": 2003,
-      "genre": "sciencefiction",
-      "trailerYtb": "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/U7GY_1XLNag\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>",
-      "descrip": "Deux étudiants américains, Paxton et Josh, ont décidé de découvrir l'Europe avec un maximum d'aventures et de sensations fortes. Avec Oli, un Islandais qu'ils ont rencontré en chemin, ils se retrouvent dans une petite ville de Slovaquie dans ce qu'on leur a décrit comme le nirvana des vacances de débauche : une propriété très spéciale, pleine de filles aussi belles que faciles... <br/> Natalya et Svetlana sont effectivement très cools... un peu trop, même. Paxton et Josh vont vite se rendre compte qu'ils sont tombés dans un piège. Ce voyage-là va les conduire au bout de l'horreur...",
-      "realisateur": "Eli Roth",
-      "acteurs": "Jay Hernandez, Derek Richardson, Eythor Gudjonsson"
-    },
-    {
-      "name": "Tomb Raider",
-      "img": "assets/img/tombraider.jpg",
-      "annee": 2018,
-      "genre": "aventure",
-      "trailerYtb": "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/hd6dqh9BjHo\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>",
-      "descrip": "Il en rêvait depuis La Grande Aventure Lego : Batman est enfin le héros de son propre film ! Mais la situation a bien changé à Gotham – et s'il veut sauver la ville des griffes du Joker, il lui faudra arrêter de jouer au justicier masqué et découvrir le travail d'équipe ! Peut-être pourra-t-il alors se décoincer un peu…",
-      "realisateur": "Chris McKay",
-      "acteurs": "Philippe Valmont, Rayane Bensetti, Stéphane Bern, Nathalie Odzierejko"
-    },
-    {
-      "name": "La montagne entre nous",
-      "img": "assets/img/LaMontagneEntreNous.jpg",
-      "annee": 2017,
-      "genre": "dramatique",
-      "trailerYtb": "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/U7GY_1XLNag\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>",
-      "descrip": "Deux étudiants américains, Paxton et Josh, ont décidé de découvrir l'Europe avec un maximum d'aventures et de sensations fortes. Avec Oli, un Islandais qu'ils ont rencontré en chemin, ils se retrouvent dans une petite ville de Slovaquie dans ce qu'on leur a décrit comme le nirvana des vacances de débauche : une propriété très spéciale, pleine de filles aussi belles que faciles... <br/> Natalya et Svetlana sont effectivement très cools... un peu trop, même. Paxton et Josh vont vite se rendre compte qu'ils sont tombés dans un piège. Ce voyage-là va les conduire au bout de l'horreur...",
-      "realisateur": "Eli Roth",
-      "acteurs": "Jay Hernandez, Derek Richardson, Eythor Gudjonsson"
-    },
-    {
-      "name": "Trio",
-      "img": "assets/img/trio.jpg",
-      "annee": 2017,
-      "genre": "aventure",
-      "trailerYtb": "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/hd6dqh9BjHo\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>",
-      "descrip": "Il en rêvait depuis La Grande Aventure Lego : Batman est enfin le héros de son propre film ! Mais la situation a bien changé à Gotham – et s'il veut sauver la ville des griffes du Joker, il lui faudra arrêter de jouer au justicier masqué et découvrir le travail d'équipe ! Peut-être pourra-t-il alors se décoincer un peu…",
-      "realisateur": "Chris McKay",
-      "acteurs": "Philippe Valmont, Rayane Bensetti, Stéphane Bern, Nathalie Odzierejko"
-    }
-  ]
+  {
+    "name": "Aladdin",
+    "img": "https://raw.githubusercontent.com/CorentinDeblock/frontend-AllezCine/img-data/aladdin.jpg",
+    "annee": 2019,
+    "trailerYtb": "https://www.youtube.com/embed/IrzzGm3AmLg",
+    "descrip": "Quand un charmant garçon des rues du nom d’Aladdin cherche à conquérir le cœur de la belle, énigmatique et fougueuse princesse Jasmine, il fait appel au tout puissant Génie, le seul qui puisse lui permettre de réaliser trois vœux, dont celui de devenir le prince Ali pour mieux accéder au palais…",
+    "realisateur": "Guy Ritchie",
+    "prix": 8,
+    "genre": [
+      "aventure", 
+      "fantastique"
+    ],
+    "acteurs": "Anthony Kavanagh, Hiba Tawaji, Will Smith, Mena Massoud, Naomi Scott, Marwan Kenzari"
+  },
+  {
+    "name": "Hostel 2",
+    "img": "https://raw.githubusercontent.com/CorentinDeblock/frontend-AllezCine/img-data/hostel-2005-thriller.jpg",
+    "annee": 2005,
+    "trailerYtb": "https://www.youtube.com/embed/U7GY_1XLNag",
+    "descrip": "Deux étudiants américains, Paxton et Josh, ont décidé de découvrir l'Europe avec un maximum d'aventures et de sensations fortes. Avec Oli, un Islandais qu'ils ont rencontré en chemin, ils se retrouvent dans une petite ville de Slovaquie dans ce qu'on leur a décrit comme le nirvana des vacances de débauche : une propriété très spéciale, pleine de filles aussi belles que faciles... <br/> Natalya et Svetlana sont effectivement très cools... un peu trop, même. Paxton et Josh vont vite se rendre compte qu'ils sont tombés dans un piège. Ce voyage-là va les conduire au bout de l'horreur...",
+    "realisateur": "Eli Roth",
+    "prix": 15,
+    "genre": ["thriller"],
+    "acteurs": "Jay Hernandez, Derek Richardson, Eythor Gudjonsson"
+  },
+  {
+    "name": "Inception",
+    "img": "https://raw.githubusercontent.com/CorentinDeblock/frontend-AllezCine/img-data/inception-2010-scifi.jpg",
+    "annee": 2010,
+    "trailerYtb": "https://www.youtube.com/embed/CPTIgILtna8",
+    "descrip": "Dom Cobb est un voleur expérimenté – le meilleur qui soit dans l’art périlleux de l’extraction : sa spécialité consiste à s’approprier les secrets les plus précieux d’un individu, enfouis au plus profond de son subconscient, pendant qu’il rêve et que son esprit est particulièrement vulnérable. Très recherché pour ses talents dans l’univers trouble de l’espionnage industriel, Cobb est aussi devenu un fugitif traqué dans le monde entier qui a perdu tout ce qui lui est cher. Mais une ultime mission pourrait lui permettre de retrouver sa vie d’avant – à condition qu’il puisse accomplir l’impossible : l’inception. Au lieu de subtiliser un rêve, Cobb et son équipe doivent faire l’inverse : implanter une idée dans l’esprit d’un individu. S’ils y parviennent, il pourrait s’agir du crime parfait. Et pourtant, aussi méthodiques et doués soient-ils, rien n’aurait pu préparer Cobb et ses partenaires à un ennemi redoutable qui semble avoir systématiquement un coup d’avance sur eux. Un ennemi dont seul Cobb aurait pu soupçonner l’existence.",
+    "realisateur": "Christopher Nolan",
+    "prix": 16,
+    "genre": ["science fiction", "thriller"],
+    "acteurs": "Philippe Valmont, Rayane Bensetti, Stéphane Bern, Nathalie Odzierejko"
+  },
+  {
+    "name": "Intouchables",
+    "img": "https://raw.githubusercontent.com/CorentinDeblock/frontend-AllezCine/img-data/intouchables-2011-comedie.jpg",
+    "annee": 2011,
+    "trailerYtb": "https://www.youtube.com/embed/EsaX5kltRcA",
+    "descrip": "A la suite d’un accident de parapente, Philippe, riche aristocrate, engage comme aide à domicile Driss, un jeune de banlieue tout juste sorti de prison. Bref la personne la moins adaptée pour le job. Ensemble ils vont faire cohabiter Vivaldi et Earth Wind and Fire, le verbe et la vanne, les costumes et les bas de survêtement... Deux univers vont se télescoper, s’apprivoiser, pour donner naissance à une amitié aussi dingue, drôle et forte qu’inattendue, une relation unique qui fera des étincelles et qui les rendra... Intouchables.",
+    "realisateur": "Eric Toledano, Olivier Nakache",
+    "prix": 10,
+    "genre": ["comédie"],
+    "acteurs": "François Cluzet, Omar Sy"
+  },
+  {
+    "name": "La montagne entre nous",
+    "img": "https://raw.githubusercontent.com/CorentinDeblock/frontend-AllezCine/img-data/LaMontagneEntreNous.jpg",
+    "annee": 2017,
+    "trailerYtb": "https://www.youtube.com/embed/5KTGF2O-25U",
+    "descrip": "Livrés à eux-mêmes après le crash de leur avion en pleine montagne, deux étrangers doivent compter l’un sur l’autre pour faire face aux conditions extrêmes. Réalisant qu’ils n’ont aucun espoir d’être secourus, ils tentent leur chance à travers des centaines de kilomètres de nature hostile, acceptant que ce n’est qu’ensemble qu’ils pourront trouver le courage de tenter de survivre.",
+    "realisateur": "Hany Abu-Assad",
+    "prix": 5,
+    "genre": ["drame", "action"],
+    "acteurs": "Kate Winslet, Idris Elba, Beau Bridges"
+  },
+  {
+    "name": "Le Labyrinthe",
+    "img": "https://raw.githubusercontent.com/CorentinDeblock/frontend-AllezCine/img-data/labyrinthe.jpg",
+    "annee": 2018,
+    "trailerYtb": "https://www.youtube.com/embed/LyPiCH_4Al4",
+    "descrip": "Quand Thomas reprend connaissance, il est pris au piège avec un groupe d’autres garçons dans un labyrinthe géant dont le plan est modifié chaque nuit. Il n’a plus aucun souvenir du monde extérieur, à part d’étranges rêves à propos d’une mystérieuse organisation appelée W.C.K.D. En reliant certains fragments de son passé, avec des indices qu’il découvre au sein du labyrinthe, Thomas espère trouver un moyen de s’en échapper.",
+    "realisateur": "Wes Ball",
+    "prix": 7,
+    "genre": ["action", "science fiction"],
+    "acteurs": "Dylan O'Brien, Aml Ameen, Will Poulter"
+  },
+  {
+    "name": "Le patient Anglais",
+    "img": "https://raw.githubusercontent.com/CorentinDeblock/frontend-AllezCine/img-data/lepatientanglais-1996-dramatique.jpg",
+    "annee": 1996,
+    "trailerYtb": "https://www.youtube.com/embed/6cpyL326YkU",
+    "descrip": "En 1945, quatre personnes dechirées par la guerre se réfugient dans un monastère abandonné de Toscane pour se guérir de leurs maux. Peu à peu le passé va resurgir et la présence d'un homme mystérieux et méconnaissable, le patient anglais, va bouleverser le destin de ceux qui croisent son chemin.",
+    "realisateur": "Anthony Minghella",
+    "prix": 7,
+    "genre": ["comédie"],
+    "acteurs": "Ralph Fiennes, Kristin Scott Thomas, Willem Dafoe, Juliette Binoche, Colin Firth, Naveen Andrews"
+  },
+  {
+    "name": "Le seigneur des Anneaux: Les deux tours",
+    "img": "https://raw.githubusercontent.com/CorentinDeblock/frontend-AllezCine/img-data/lesdeuxtours-2002-aventure.jpg",
+    "annee": 2002,
+    "trailerYtb": "https://www.youtube.com/embed/c9blKqmyeV4",
+    "descrip": "Après la mort de Boromir et la disparition de Gandalf, la Communauté s'est scindée en trois. Perdus dans les collines d'Emyn Muil, Frodon et Sam découvrent qu'ils sont suivis par Gollum, une créature versatile corrompue par l'Anneau. Celui-ci promet de conduire les Hobbits jusqu'à la Porte Noire du Mordor. A travers la Terre du Milieu, Aragorn, Legolas et Gimli font route vers le Rohan, le royaume assiégé de Theoden. Cet ancien grand roi, manipulé par l'espion de Saroumane, le sinistre Langue de Serpent, est désormais tombé sous la coupe du malfaisant Magicien. Eowyn, la nièce du Roi, reconnaît en Aragorn un meneur d'hommes. Entretemps, les Hobbits Merry et Pippin, prisonniers des Uruk-hai, se sont échappés et ont découvert dans la mystérieuse Forêt de Fangorn un allié inattendu : Sylvebarbe, gardien des arbres, représentant d'un ancien peuple végétal dont Saroumane a décimé la forêt...",
+    "realisateur": "Peter Jackson",
+    "prix": 5,
+    "genre": ["fantastique", "aventure"],
+    "acteurs": "Elijah Wood, Sean Astin, Viggo Mortensen"
+  },
+  {
+    "name": "Nicky Larson",
+    "img": "https://raw.githubusercontent.com/CorentinDeblock/frontend-AllezCine/img-data/nicky.jpg",
+    "annee": 2019,
+    "trailerYtb": "https://www.youtube.com/embed/Pt6tLqRYqJY",
+    "descrip": "Nicky Larson est le meilleur des gardes du corps, un détective privé hors-pair. Il est appelé pour une mission à hauts risques : récupérer le parfum de Cupidon, un parfum qui rendrait irrésistible celui qui l’utilise…",
+    "realisateur": "Philippe Lacheau",
+    "prix": 11,
+    "genre": ["comédie", "policier"],
+    "acteurs": "Philippe Lacheau, Élodie Fontan, Tarek Boudali"
+  },
+  {
+    "name": "Seven",
+    "img": "https://raw.githubusercontent.com/CorentinDeblock/frontend-AllezCine/img-data/seven-1995-thriller.jpg",
+    "annee": 1995,
+    "trailerYtb": "https://www.youtube.com/embed/BLY4treE0XU",
+    "descrip": "Pour conclure sa carrière, l'inspecteur Somerset, vieux flic blasé, tombe à sept jours de la retraite sur un criminel peu ordinaire. John Doe, c'est ainsi que se fait appeler l'assassin, a decidé de nettoyer la societé des maux qui la rongent en commettant sept meurtres basés sur les sept pechés capitaux: la gourmandise, l'avarice, la paresse, l'orgueil, la luxure, l'envie et la colère.",
+    "realisateur": "David Fincher",
+    "prix": 11,
+    "genre": ["policier", "thriller"],
+    "acteurs": "Brad Pitt, Morgan Freeman, Gwyneth Paltrow"
+  },
+  {
+    "name": "Shutterisland",
+    "img": "https://raw.githubusercontent.com/CorentinDeblock/frontend-AllezCine/img-data/shutterisland-2010-thriller.jpg",
+    "annee": 2010,
+    "trailerYtb": "https://www.youtube.com/embed/5iaYLCiq5RM",
+    "descrip": "En 1954, le marshal Teddy Daniels et son coéquipier Chuck Aule sont envoyés enquêter sur l'île de Shutter Island, dans un hôpital psychiatrique où sont internés de dangereux criminels. L'une des patientes, Rachel Solando, a inexplicablement disparu. Comment la meurtrière a-t-elle pu sortir d'une cellule fermée de l'extérieur ? Le seul indice retrouvé dans la pièce est une feuille de papier sur laquelle on peut lire une suite de chiffres et de lettres sans signification apparente. Oeuvre cohérente d'une malade, ou cryptogramme ?",
+    "realisateur": "Martin Scorsese",
+    "prix": 19,
+    "genre": ["thriller"],
+    "acteurs": "Leonardo DiCaprio, Mark Ruffalo, Ben Kingsley"
+  },
+  {
+    "name": "Star Wars empire",
+    "img": "https://raw.githubusercontent.com/CorentinDeblock/frontend-AllezCine/img-data/starwarsempire-1980-scifi.jpg",
+    "annee": 1980,
+    "trailerYtb": "https://www.youtube.com/embed/Z7B0vfamFTE",
+    "descrip": "Malgré la destruction de l'Etoile Noire, l'Empire maintient son emprise sur la galaxie, et poursuit sans relâche sa lutte contre l'Alliance rebelle. Basés sur la planète glacée de Hoth, les rebelles essuient un assaut des troupes impériales. Parvenus à s'échapper, la princesse Leia, Han Solo, Chewbacca et C-3P0 se dirigent vers Bespin, la cité des nuages gouvernée par Lando Calrissian, ancien compagnon de Han. Suivant les instructions d'Obi-Wan Kenobi, Luke Skywalker se rend quant à lui vers le système de Dagobah, planète marécageuse où il doit recevoir l'enseignement du dernier maître Jedi, Yoda. Apprenant l'arrestation de ses compagnons par les stormtroopers de Dark Vador après la trahison de Lando, Luke décide d'interrompre son entraînement pour porter secours à ses amis et affronter le sombre seigneur Sith...",
+    "realisateur": "Irvin Kershner",
+    "prix": 13,
+    "genre": ["science fiction", "aventure"],
+    "acteurs": "Mark Hamill, Harrison Ford, Carrie Fisher"
+  },
+  {
+    "name": "Survive style 5+",
+    "img": "https://raw.githubusercontent.com/CorentinDeblock/frontend-AllezCine/img-data/Survivestyle5-2004-comedie.jpg",
+    "annee": 2004,
+    "trailerYtb": "https://www.youtube.com/embed/LEH7nDkiPEk",
+    "descrip": "Un mari et sa femme mourante, un hypnotiseur à succès, une publicitaire, un homme convaincu d'être un oiseau, un gang de trois voleurs et un tueur à gages. Les vies de ces différents personnages, qui a priori n'ont pas grand chose en commun, vont se retrouver étroitement liées, s'entremêler et s'acheminer inexorablement vers une fin des plus surprenantes.",
+    "realisateur": "Gen Sekiguchi",
+    "prix": 13,
+    "genre": ["comédie"],
+    "acteurs": "Tadanobu Asano, Reika Hashimoto, Vinnie Jones"
+  }
+]
