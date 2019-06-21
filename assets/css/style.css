@@ -315,7 +315,7 @@ footer .inputsuscribe {
 }
 
 footer .tableau {
-  padding-bottom: 3%;
+  padding-bottom: 1%;
 }
 
 footer .cine1 {
@@ -332,11 +332,10 @@ footer h4 {
 }
 
 footer .btag {
-  background-color: dimgray;
+  background-color: #242424;
   color: white;
   line-height: 30px;
   padding: 3px;
-  border-radius: 10%;
 }
 
 footer .btag:hover {
@@ -364,8 +363,8 @@ footer .movies:hover {
 }
 
 footer .img1 {
-  width: 80px;
-  height: 65px;
+  width: 90px;
+  height: 100px;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -376,8 +375,8 @@ footer .titlemov {
 }
 
 footer .img2 {
-  width: 75px;
-  height: 110px;
+  width: 130px;
+  height: 180px;
 }
 
 footer hr {
@@ -387,12 +386,13 @@ footer hr {
 }
 
 footer .hrespace {
-  padding: 2%;
+  padding: 30px;
 }
 
 footer .connectus {
   color: white;
   margin-left: 140px;
+  margin-top: 15px;
 }
 
 footer .spanm {
@@ -403,9 +403,6 @@ footer img {
   height: 30px;
   width: 30px;
   margin: auto;
-  margin-left: 5px;
-  margin-right: 5px;
-  border: 2px solid white;
 }
 
 footer a.cInvisible {
