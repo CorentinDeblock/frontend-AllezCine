@@ -328,6 +328,7 @@ footer .cine2 {
 
 footer h4 {
   font-family: "arial";
+  font-weight: bold;
   color: white;
 }
 
@@ -363,8 +364,8 @@ footer .movies:hover {
 }
 
 footer .img1 {
-  width: 90px;
-  height: 100px;
+  width: 100px;
+  height: 80px;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -391,7 +392,7 @@ footer .hrespace {
 
 footer .connectus {
   color: white;
-  margin: auto;
+  margin-left: 30px;
   margin-bottom: 15px;
 }
 
@@ -404,9 +405,9 @@ footer img {
   width: 30px;
 }
 
-footer a.cInvisible {
-  border-radius: 50%;
-  border: 5px solid white;
+footer .icon {
+  margin-left: 8px;
+  margin-right: 8px;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */

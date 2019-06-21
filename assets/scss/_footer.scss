@@ -25,6 +25,7 @@ footer {
 
     h4 {
         font-family: "arial";
+        font-weight: bold;
         color: white;
     }
 
@@ -60,8 +61,8 @@ footer {
     }
 
     .img1 {
-        width: 90px;
-        height: 100px;
+        width: 100px;
+        height: 80px;
         object-fit: cover;
     }
 
@@ -87,7 +88,7 @@ footer {
 
     .connectus {
         color: white;
-        margin:auto;
+        margin-left: 30px;
         margin-bottom:15px;
     }
 
@@ -100,9 +101,21 @@ footer {
         width: 30px;
         
     }
-
-    a.cInvisible{
-        border-radius:50%;
-        border: 5px solid white;
-        }
+    .icon{
+        margin-left:8px;
+        margin-right:8px;
+    }
+    a#cRetour{
+        border-radius:3px;
+        padding:10px;
+        font-size:15px;
+        text-align:center;
+        color:#fff;
+        position:fixed;
+        right:20px;
+        opacity:1;
+        z-index:99999;
+        transition:all ease-in 0.2s;
+        visibility: hidden;
+        text-decoration: none;
 }
