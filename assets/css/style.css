@@ -392,14 +392,25 @@ footer .hrespace {
 
 footer .connectus {
   color: white;
+  margin-left: 140px;
 }
 
 footer .spanm {
   margin: 5%;
 }
 
-footer i {
-  color: white;
+footer img {
+  height: 30px;
+  width: 30px;
+  margin: auto;
+  margin-left: 5px;
+  margin-right: 5px;
+  border: 2px solid white;
+}
+
+footer a.cInvisible {
+  border-radius: 50%;
+  border: 5px solid white;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
