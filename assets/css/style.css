@@ -1,3 +1,9 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+
 .ligne {
   border-left: 4px solid #FE4240;
   padding-left: 12px;
@@ -751,4 +757,38 @@ template {
    */
 [hidden] {
   display: none;
+}
+
+/* Bouton retour */
+
+a#cRetour{
+  /*border-radius:3px;*/
+  padding:10px;
+  font-size:15px;
+  text-align:center;
+  /*color:#fff;
+  background:rgba(0, 0, 0, 0.25);*/
+  position:fixed;
+  right:20px;
+  opacity:1;
+  z-index:99999;
+  transition:all ease-in 0.2s;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  text-decoration: none;
+}
+
+a#cRetour:hover{
+  background:rgba(0, 0, 0, 1);
+  transition:all ease-in 0.2s;
+}
+a#cRetour.cInvisible{
+  bottom:-35px;
+  opacity:0;
+  transition:all ease-in 0.5s;
+}
+
+a#cRetour.cVisible{
+  bottom:20px;
+  opacity:1;
 }

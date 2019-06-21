@@ -38,3 +38,9 @@ fetch('assets/js/movies.json').then(blob => {
 }).catch(error => {
     console.log(error)
 })
+
+document.addEventListener('DOMContentLoaded', function() {
+    window.onscroll = function(ev) {
+      document.getElementById("cRetour").className = (window.pageYOffset > 100) ? "cVisible" : "cInvisible";
+    };
+  });
