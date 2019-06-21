@@ -335,7 +335,7 @@ footer .btag {
   background-color: #242424;
   color: white;
   line-height: 30px;
-  padding: 3px;
+  padding: 3px 8px;
 }
 
 footer .btag:hover {
@@ -391,8 +391,8 @@ footer .hrespace {
 
 footer .connectus {
   color: white;
-  margin-left: 140px;
-  margin-top: 15px;
+  margin: auto;
+  margin-bottom: 15px;
 }
 
 footer .spanm {
@@ -402,7 +402,6 @@ footer .spanm {
 footer img {
   height: 30px;
   width: 30px;
-  margin: auto;
 }
 
 footer a.cInvisible {
