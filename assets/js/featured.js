@@ -68,6 +68,7 @@ fetch('assets/js/movies.json').then(blob => {
 
         if(verif_ave == 0 || verif_ave == 1){
             target2.appendChild(a);
+            target.appendChild(a);
         }
 
         // Si il y a "thriller"

@@ -1,6 +1,6 @@
 // Selectionner le template
-let shop = document.querySelector("#shop");
-let movshop = shop.content.querySelector("#mov_shop");
+let shop = document.querySelector("#shop__gauche");
+let movshop = shop.content.querySelector("#shop-gauche");
 
 // All
 let targetshop = document.getElementById("target_shop");
@@ -45,3 +45,9 @@ fetch('assets/js/movies.json').then(blob => {
 }).catch(error => {
     console.log(error)
 })
+
+
+// SHOP CARD
+
+
+
