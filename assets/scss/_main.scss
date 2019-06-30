@@ -1,4 +1,7 @@
 // CENTRER LE CONTAINER
+html{
+    overflow-x: none;
+}
 .container__center{
     width: 85%;
     display: block;
@@ -72,9 +75,4 @@ section{
     margin-right: auto;
     color: white;
     text-transform: uppercase;
-}
-.modal{
-    .actor-profile{
-
-    }
 }

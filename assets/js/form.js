@@ -42,20 +42,7 @@ class formCapsule{
                 price: this.price
             }
             this.action();
-            fetch("assets/js/movieTemplate.json",{
-                method:'POST',
-                headers: {
-                    'Accept': 'application/json',
-                    'Content-Type': 'application/json'
-                },
-                body: {
-                    name:"njdouqndqu"
-                }
-            }).then(result => {
-                console.log(data)
-                console.log('oqudqbuds')
-                return result.json()
-            })
+           
             e.preventDefault();
         });
     }

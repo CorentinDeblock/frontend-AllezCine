@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .ligne {
   border-left: 4px solid #FE4240;
   padding-left: 12px;
@@ -56,6 +57,10 @@ a:hover {
 
 .title-red {
   color: #FE4240;
+}
+
+html {
+  overflow-x: none;
 }
 
 .container__center {
@@ -142,11 +147,26 @@ section {
 }
 
 header .carousel-caption {
-  padding-bottom: 100px;
+  top: 50%;
 }
 
 header .carousel-indicators {
-  padding-bottom: 40px;
+  top: 75%;
+}
+
+header .carousel-indicators li {
+  -webkit-transform: scale(1.1, 1.4);
+          transform: scale(1.1, 1.4);
+  margin-right: 20px;
+  opacity: 0.8;
+}
+
+header .carousel-indicators .active {
+  background-color: red;
+}
+
+header .carousel-item img {
+  height: 640px;
 }
 
 header .opa {
@@ -165,11 +185,11 @@ header .navbar {
   position: absolute;
 }
 
-header .navbar-toggler {
+header .navbar .navbar-toggler {
   border-color: white !important;
 }
 
-header .navbar-light .navbar-toggler-icon {
+header .navbar .navbar-light .navbar-toggler-icon {
   background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 }
 
@@ -220,6 +240,7 @@ header .connect p {
 }
 
 header .connect .btn {
+  z-index: 15;
   margin-right: 10px;
 }
 
@@ -607,6 +628,100 @@ template {
   padding: 50px;
   margin: 50px auto;
   background-color: #e8e8e8;
+}
+
+.cookie-request {
+  position: fixed;
+  bottom: -100%;
+  right: 0%;
+  background-color: #f4f4f4;
+  /*
+    Fait en sorte a ce que le cookie sois tout au dessus 
+    de tout les autre élément visuellement et PHYSIQUEMENT
+    Le z-index va de : -infini a infini
+
+    Mais techniquement pour la limite d'un pc actuelle :
+    -9 223 372 036 854 775 807 a 9 223 372 036 854 775 807
+
+    Sois -(pow(2,63)-1) a (pow(2,63)-1)
+
+    Sois la capacité maximale d'un nombre négatif et positif
+    Sois un nombre appelé réel
+    Ce qui fait la capacité maximale d'un ordinateur de 64 bits
+
+    Pour plus d'information : 
+    Rubrique : Représentation des entiers signés
+    https://fr.wikibooks.org/wiki/Programmation_C/Types_de_base
+    */
+  z-index: 40;
+  padding: 20px;
+  width: 35%;
+  border-radius: 10px 0px 0px 0px;
+  border-top: 5px solid #c1c1c1;
+  border-left: 5px solid #c1c1c1;
+}
+
+.cookie-anim {
+  /*
+    J'ai essayé avec des transition mais quand on rafraichissait 
+    beaucoups ça fesait bugué la page
+    */
+  -webkit-animation: anim-up 1.2s ease-out;
+          animation: anim-up 1.2s ease-out;
+  bottom: 0%;
+}
+
+.cookie-anim-down {
+  /*
+    Appelle l'animation anim-down qui consiste a caché le cookie. 
+    On retire l'anim anim-up a l'appelle
+    */
+  -webkit-animation: anim-down 1.2s ease-out;
+          animation: anim-down 1.2s ease-out;
+}
+
+@-webkit-keyframes anim-up {
+  0% {
+    bottom: -100%;
+  }
+  100% {
+    bottom: 0%;
+  }
+}
+
+@keyframes anim-up {
+  0% {
+    bottom: -100%;
+  }
+  100% {
+    bottom: 0%;
+  }
+}
+
+@-webkit-keyframes anim-down {
+  0% {
+    bottom: 0%;
+  }
+  100% {
+    bottom: -100%;
+  }
+}
+
+@keyframes anim-down {
+  0% {
+    bottom: 0%;
+  }
+  100% {
+    bottom: -100%;
+  }
+}
+
+.no-underline {
+  text-decoration: none;
+}
+
+.no-underline:hover {
+  text-decoration: none;
 }
 
 * {

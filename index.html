@@ -14,8 +14,47 @@
     <title>AllezCine</title>
 </head>
 <body>
-    <div class="ageRequest">
-
+    <div id="cookie-popup" class="cookie-request">
+        <div class="d-flex justify-content-between">
+            <h5>Contrat d'utilisation des cookies</h5>
+            <button class="btn btn-default text-danger p-0 mt-0" id="close-popup">&times;</button>
+        </div>
+        <p>En poursuivant votre navigation sur ce site, vous acceptez le stockage et l’utilisation de vos données par AllezCine, pour notamment a des fins publicitaire ou pour vous proposez du contenu pertinent basé sur vos recherches.</p>
+        <a href="#cookies-modal" data-toggle="modal">Pour en savoir plus et paramétrer les traceurs</a>
+        <div class="mt-4">
+            <button id="cookie-refuse" class="btn btn-dark">Non</button>
+            <button id="cookie-accept"class="btn btn-light">Oui</button>
+        </div>
+    </div>
+    <div id="cookies-modal" tabindex="-1" class="modal fade" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Paramètres des cookies</h5>
+                    <button class="btn btn-default" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <p>Paramètrer les cookies pour que AllezCine bénéficie des informations que vous avez décidé.</p>
+                    <form action="">
+                        <div class="d-flex">
+                            <input type="checkbox" class="mr-2 my-auto">
+                            <label for="cookie-one">AllezCine receuillera des informations sur vos recherche a bien
+                                de spécifié des recherches et du contenu plus appoprié pour vous</label>
+                        </div>
+                        <div class="d-flex mt-4">
+                            <input type="checkbox" class="mr-2 my-auto">
+                            <label for="cookie-two">AllezCine receuillera des informations sur vos recherche a bien
+                                de partagé avec des régies plubicitaire</label>
+                        </div>
+                        <div class="d-flex mt-4">
+                            <input type="checkbox" class="mr-2 my-auto">
+                            <label for="cookie-three">AllezCine receuillera des informations sur vos recherche a bien
+                                de vous proposé le contenu le plus pertinent a vos demandes</label>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
     </div>
     <header>
         <nav class="navbar navbar-expand-lg navbar-light">
@@ -70,7 +109,7 @@
                 </div>
             </div>
         </nav>
-
+        
 
         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicators">
@@ -85,7 +124,7 @@
                     <div class="carousel-caption d-md-block">
                         <h2>LASTEST <span class="title-red">ON</span>LINE <span class="title-red">MO</span>VIE</h2>
                         <p>In space no one can hear you scream</p>
-                        <button type="button" class="btn btn-plus">Watch trailer</button>
+                        <button type="button" class="btn btn-danger">Watch trailer</button>
             
                     </div>
                 </div>
@@ -95,7 +134,7 @@
                     <div class="carousel-caption d-md-block">
                         <h2>BEST <span class="title-red">MO</span>VIE <span class="title-red">OF</span> THE <span class="title-red">MO</span>MENT</h2>
                         <p>The end is part of the journey</p>
-                        <button type="button" class="btn btn-plus">Watch trailer</button>
+                        <button type="button" class="btn btn-danger">Watch trailer</button>
                     </div>
                 </div>
 
@@ -104,7 +143,7 @@
                     <div class="carousel-caption d-md-block">
                         <h2>LASTEST <span class="title-red">ON</span>LINE <span class="title-red">SE</span>RIE</h2>
                         <p>May the era of "matriarchy" begin</p>
-                        <button type="button" class="btn btn-plus">Watch trailer</button>
+                        <button type="button" class="btn btn-danger">Watch trailer</button>
                     </div>
                 </div>
             </div>
@@ -119,166 +158,79 @@
             </a>
             <div class="connect d-flex">
                 <p><i class="fas fa-phone-alt"></i>(+000) 009 455 4088</p>
-                <a class="btn btn-black">LOGIN</a>
-                <a class="btn btn-black">REGISTER</a>
+                <button type="button" data-target="#register" data-toggle="modal" class="btn btn-black text-white">LOGIN</button>
+                <div class="modal fade" id="register" role="dialog" tabindex="2" aria-labelledby="registerLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title text-dark">Connection</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <h4 class="text-center mt-3 mb-1 text-dark">Connectez vous sur votre compte</h4>
+                                <form class="form-group row mt-5 mx-5" action="">
+                                    <input class="col-12 form-control mt-2" type="text" placeholder="Identifiant">
+                                    <input class="col-12 form-control mt-2" type="password" id="password" placeholder="Password">
+                                    <input type="submit" class="mx-auto mt-4 btn btn-success" data-dismiss="modal" value="Ok">
+                                </form>
+                                <div class="text-center">
+                                    <div>
+                                        <input type="checkbox" name="stay-connected">
+                                        <label for="stay-connected" class="text-dark"> Rester connecter</label>
+                                    </div>
+                                    <div class="mt-2">
+                                        <a href="">Créer un compte</a>
+                                    </div>
+                                    <div class="mt-2">
+                                        <a href="">Mot de passe oublié</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button type="button" data-target="#login" data-toggle="modal" class="btn btn-black text-white">REGISTER</button>
+                <div class="modal fade" id="login" role="dialog" tabindex="3" aria-labelledby="loginLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title text-dark">Register</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <h4 class="text-center mt-3 mb-1 text-dark">Register to AllezCine</h4>
+                                <form class="form-group row m-5" action="">
+                                    <input class="col-12 form-control mt-2" type="text" placeholder="usnerame">
+                                    <input class="col-12 form-control mt-2" type="password" id="password" placeholder="Password">
+                                    <input class="col-12 form-control mt-2" type="password" id="confirm-password" placeholder="Confirm password">
+                                    <div class="ml-auto mt-4">
+                                        <button type="button" class="btn btn-primary" data-dismiss="modal">Select</button>
+                                        <button type="button" class="btn btn-success" data-dismiss="modal">Register</button>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>  
     </header>
 
-    <main>
-        <section class="container first">
-            <div class="container__center">
-                
-            <div class="row">
-                
-                    <div class="card col-6 col-md-4 col-lg-2 offset-lg-1">
-                        <img class="card-img-top" src="assets/img/x-men.jpg" alt="Card image cap">
-                            <div class="card-body">
-                              <p class="title title-center">Citizen Soldier</p>
-                              <div class="grid">
-                                <p class="card__years">2016</p>
-                                <p class="card__genre">Genre</p>    
-                              </div>
-                            </div>
-                    </div>
-                    <div class="card col-6 col-md-4 col-lg-2">
-                        <img class="card-img-top" src="assets/img/x-men.jpg" alt="Card image cap">
-                            <div class="card-body">
-                                <p class="title title-center">X-Men</p>
-                                <div class="grid">
-                                    <p class="card__years">2016</p>
-                                    <p class="card__genre">Genre</p>    
-                                </div>
-                            </div>
-                    </div>
-                    <div class="card col-6 col-md-4 col-lg-2" >
-                        <img class="card-img-top" src="assets/img/x-men.jpg" alt="Card image cap">
-                            <div class="card-body">
-                                <p class="title title-center">Greater</p>
-                                <div class="grid">
-                                    <p class="card__years">2016</p>
-                                    <p class="card__genre">Genre</p>    
-                                </div>
-                            </div>
-                    </div>
-                    <div class="card col-6 col-md-4 col-lg-2" >
-                        <img class="card-img-top" src="assets/img/x-men.jpg" alt="Card image cap">
-                            <div class="card-body">
-                                <p class="title title-center">Light B/t Oceans</p>
-                                <div class="grid">
-                                    <p class="card__years">2016</p>
-                                    <p class="card__genre">Genre</p>     
-                                </div>
-                            </div>
-                    </div>
-                    <div class="card col-6 col-md-4 col-lg-2">
-                        <img class="card-img-top" src="assets/img/x-men.jpg" alt="Card image cap">
-                            <div class="card-body">
-                                <p class="title title-center">The BFG</p>
-                                <div class="grid">
-                                    <p class="card__years">2016</p>
-                                    <p class="card__genre">Genre</p>  
-                                </div>
-                            </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-
-        <section class="second" id="data">
-            <template id="card">
-                <li class="card col-6 col-md-4 col-lg-2" id="mov">
-                    <a type="button" class="btn btn-primary btn-hover" data-toggle="modal" data-target="#exampleModal">
-                        <img class="card-img-top" >
-                    </a>
-                        <a type="button" class="btn btn-primary btn-hover" data-toggle="modal" data-target="#exampleModal">
-                            <p class="card__name title"></p>
-                        </a>
-                            
-                            <div class="grid">
-                                <p class="card__years"></p>
-                                <p class="card__genre"></p>
-                            </div>
-                            
-                        </div>
-                        <div class="modal fade fademovie" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                            <div class="modal-dialog" role="document">
-                                <div class="modal-content">
-                                <div class="modal-header">
-                                    <h3 class="modal-title title" id="exampleModalLabel"></h3>
-                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                    <span aria-hidden="true">&times;</span>
-                                    </button>
-                                </div>
-                                <div class="modal-body">
-                                        <iframe class="video" width="100%" height="315" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                                    <p class="descri"></p>
-                                    <p><span class="gras">Director : </span><span class="reali"></span></p>
-                                    <p><span class="gras">Actors : </span><span class="acteurs"></span></p>
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                    <button type="button" class="btn btn-primary">Save changes</button>
-                                </div>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                    
-                    
-            </template>
-
-            <h3 class="ligne title">Featured Movies</h3>
-                <div class="container__center">
-                    <ul class="nav nav-tabs" id="myTab" role="tablist">
-                        <li class="nav-item">
-                        <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">All</a>
-                        </li>
-                        <li class="nav-item">
-                        <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Drama</a>
-                        </li>
-                        <li class="nav-item">
-                        <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Adventure</a>
-                        </li>
-                    </ul>
-
-                    <div class="tab-content" id="myTabContent">
-                        <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
-                            <div class="fea row">
-                                <ol id="target" class="row"></ol>
-                            </div>    
-                        </div>
-                        <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">...</div>
-                        <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">...</div>
-                    </div>
-
-                    
-
-                    <button type="button" class="btn btn-plus">Plus de films</button>
-            </div>
-            
-            
-                  
-        </section>
-        <section class="container" >
-            <h3 class="ligne title">Shop Movies</h3>
-            <div class="row">
-                <div class="col-6">
-                    <div class="row">
-                        
-                    </div>
-                </div>
-                <div class="col-6">
-                    
-                </div>
-            </div>
-        </section>
-    </main>
+    
 
     <footer>
 
     </footer>
-    <script src="assets/js/featured.js"></script>
+    <script src="assets/js/cookie.js"></script>
 </body>
 </html>

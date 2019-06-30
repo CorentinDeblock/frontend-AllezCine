@@ -43,4 +43,3 @@ class MovieGUI {
     }
 }
 let movieGui = new MovieGUI("assets/js/movies.json");
-movieGui.searchMovie();
