@@ -14,9 +14,9 @@ fetch('assets/js/movies.json').then(blob => {
         let imag = b.querySelector(".card-img-top");
         let h = b.querySelector(".card__name");
         let desc = b.querySelector(".descri");
-        let year = b.querySelector(".card__years");
+        let year = b.querySelector(".card__prix");
         let realis = b.querySelector(".reali");
-        let genr = b.querySelector(".card__genre");
+        let annee = b.querySelector(".card__years");
         let act = b.querySelector(".acteurs");
         let motit = b.querySelector(".modal-title");
         let bu = b.querySelector(".btn-hover");
@@ -27,7 +27,7 @@ fetch('assets/js/movies.json').then(blob => {
         imag.src = myda[i].img;
         h.innerHTML = myda[i].name;
         year.innerHTML = myda[i].prix + " euros";
-        genr.innerHTML = myda[i].genre;
+        annee.innerHTML = myda[i].annee;
         motit.innerHTML = myda[i].name;
 
         bu.setAttribute("data-target", "#film"+i);

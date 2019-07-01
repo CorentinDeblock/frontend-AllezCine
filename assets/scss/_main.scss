@@ -8,7 +8,26 @@
 section{
     margin: 40px 0;
 }
+.display_none{
+    display: none;
+}
+
 #section_shop{
+    .card__prix{
+        color: red;
+    }
+    p{
+        font-size: 0.8em;
+    }
+    .carousel__boutons{
+        display: block;
+        float: right;
+        position: relative;
+        right: 3px;
+    }
+    .carousel-control-prev{
+        float: left;
+    }
     .carousel-control-prev-icon{
         background-image: url("https://image.noelshack.com/fichiers/2019/25/6/1561216354-prev.png");
     }   
@@ -17,6 +36,7 @@ section{
     }     
     .carousel-control-next, .carousel-control-prev{
         position: relative;
+        width: 22px;
     }
     .carousel p{
         text-transform: none;
@@ -41,11 +61,13 @@ section{
     .tar_test{
         width: 100%;
     }
-    h5{
+    h4{
         color: red;
+        text-transform: uppercase;
     }
     .title-shop{
         color: red;
+        font-size: 1em;
         grid-column: 1;
     }
     .grid-2{
@@ -55,9 +77,26 @@ section{
         display: grid;
         grid-template-columns: 30% 70%;
     }
+    .cardshop__contenu{
+        background-color: $grisc;
+        padding: 6px;
+        .btn-hover{
+            background-color: $grisc;
+            text-align: center;
+            width: 100%;
+        }
+    }
     
 }
 
+.movies__contenu{
+    padding: 6px;
+    font-size: 0.8em;
+    .btn-hover{
+        text-align: center;
+        width: 100%;
+    }
+}
 .card-header{
     background-color: white;
     border-bottom: 0px;
@@ -118,7 +157,9 @@ section{
     
   }
 
-
+.card__genre{
+    text-align: right;
+}
 .card{
     border: none;
     color: $grisf;
@@ -137,6 +178,16 @@ section{
             background-color: white;
         }
     }
+    .btn-close{
+        background-color: $rose;
+        &:hover{
+            opacity: 0.7;
+        }
+    }
+    .modal-header{
+        background-color: $rose;
+        color: white;
+    }
     .card__name{
         text-align: center;
     }
@@ -146,7 +197,7 @@ section{
         grid-template-columns: 50% 50%;
     }
 
-    .card__genre{
+    .card__prix{
         grid-column: 2;
         text-align: right;
     }
