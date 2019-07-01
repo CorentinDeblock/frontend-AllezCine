@@ -1,0 +1,52 @@
+.mySidenav a {
+  position: absolute;
+  left: -80px;
+  /* Position them outside of the screen */
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  /* Add transition on hover */
+  padding: 15px;
+  /* 15px padding */
+  width: 100px;
+  /* Set a specific width */
+  text-decoration: none;
+  /* Remove underline */
+  font-size: 20px;
+  /* Increase font size */
+  color: white;
+  /* White text color */
+  border-radius: 0 5px 5px 0;
+  /* Rounded corners on the top right and bottom right side */
+  padding-right: 6%;
+}
+
+.mySidenav a:hover {
+  left: 0;
+  /* On mouse-over, make the elements appear as they should */
+}
+
+/* The about link: 20px from the top with a green background */
+.tw {
+  top: 20px;
+  background-color: #4CAF50;
+  text-align: left;
+}
+
+.fb {
+  top: 80px;
+  background-color: #2196F3;
+  /* Blue */
+  text-align: justify;
+}
+
+.dbbb {
+  top: 140px;
+  background-color: #f44336;
+  /* Red */
+}
+
+.insta {
+  top: 200px;
+  background-color: #555;
+}
+/*# sourceMappingURL=style2.css.map */
