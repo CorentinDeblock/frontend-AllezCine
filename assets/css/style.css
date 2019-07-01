@@ -146,6 +146,11 @@ section {
   text-transform: uppercase;
 }
 
+header .title {
+  font-size: 55px;
+  font-weight: bolder;
+}
+
 header .nav-block a {
   display: block;
 }
@@ -179,7 +184,8 @@ header .opa {
 }
 
 header .i-search {
-  background-color: #474747;
+  background-color: #0007;
+  border: none;
   color: white;
 }
 
@@ -187,6 +193,22 @@ header .navbar {
   background-color: transparent;
   border-color: #E7E7E7;
   position: absolute;
+}
+
+header .navbar .navbar-decal {
+  margin-bottom: 30px;
+}
+
+header .navbar .round-left {
+  border-radius: 25px 0px 0px 25px;
+}
+
+header .navbar .round-right {
+  border-radius: 0px 25px 25px 0px;
+}
+
+header .navbar .space-left {
+  padding-left: 35px;
 }
 
 header .navbar .navbar-toggler {
@@ -255,7 +277,7 @@ header .connect .fa-phone-alt {
 header nav {
   width: 100%;
   top: 0%;
-  padding: 2% 3%;
+  padding: 35px !important;
   z-index: 2;
   color: white;
 }
