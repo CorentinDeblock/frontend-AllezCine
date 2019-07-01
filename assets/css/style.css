@@ -189,6 +189,10 @@ header .i-search {
   color: white;
 }
 
+header .nav-contact {
+  margin-left: 200px;
+}
+
 header .navbar {
   background-color: transparent;
   border-color: #E7E7E7;
