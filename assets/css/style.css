@@ -407,6 +407,7 @@ footer .connectus {
   margin-bottom: 15px;
 }
 
+<<<<<<< HEAD
 footer .connectus a#cRetour {
   border-radius: 3px;
   padding: 10px;
@@ -443,6 +444,8 @@ footer .connectus a#cRetour.cVisible {
   opacity: 1;
 }
 
+=======
+>>>>>>> ec37c78d708583a53171f6294c858e9d6f87490f
 footer .spanm {
   margin: 5%;
 }
