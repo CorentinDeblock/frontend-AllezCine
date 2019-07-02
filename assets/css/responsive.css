@@ -1,0 +1,10 @@
+@media screen and (max-width: 540px) {
+  header .navbar-nav {
+    margin: 0px !important;
+    padding: 0px !important;
+  }
+  header .dropdown button {
+    width: 100% !important;
+  }
+}
+/*# sourceMappingURL=responsive.css.map */

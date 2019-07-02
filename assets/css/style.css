@@ -334,7 +334,7 @@ header nav .adjust-padding {
 }
 
 header nav .dropdown button {
-  background-color: #76767665;
+  background-color: #c6c6c665;
   padding: 13px 9px 13px 6px;
   text-transform: uppercase;
   color: white;
@@ -462,5 +462,35 @@ header nav .dropdown .dropdown-menu .dropdown-item a {
 
 .no-underline:hover {
   text-decoration: none;
+}
+
+@media screen and (max-width: 991px) {
+  header .navbar {
+    z-index: 200;
+    background-color: #272324;
+    margin: 0px !important;
+    padding: 10px !important;
+  }
+  header .navbar-nav {
+    padding: 0px;
+  }
+  header .nav-item a {
+    margin-right: 0px !important;
+  }
+  header .nav-item button {
+    width: 100%;
+    margin-left: 0px !important;
+  }
+  header .navbar-collapse {
+    margin: 0px !important;
+  }
+  header .search-bar {
+    padding-top: 10px;
+    margin-right: 0px;
+  }
+  header .contact-li {
+    background-color: black;
+    text-align: center;
+  }
 }
 /*# sourceMappingURL=style.css.map */
