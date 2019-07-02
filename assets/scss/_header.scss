@@ -69,16 +69,15 @@ header{
     }
     nav{
         .dropdown{
-            &:hover{
-                background-color: #ff4140;
-                color:white;
-                display:block;
-        }
             button{
                 background-color:#0004;
                 color:white;
                 border-radius: 0;
                 margin-left:10px;
+                &:hover{
+                    background-color: #ff4140;
+                    color:white;
+                }
             }
             .dropdown-menu{
                 border-radius:0;
