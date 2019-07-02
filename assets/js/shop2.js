@@ -5,8 +5,12 @@ let movshopcard = shopcard.content.querySelector("#carousel_shop");
 
 // All
 let targetshopcard = document.getElementById("target_shop_card");
+let header2 = new Headers();
+header2.set("Content-type","application/json")
 
-fetch('assets/js/movies.json').then(blob => {
+fetch('assets/js/movies.json',{
+    headers:header2
+}).then(blob => {
     return blob.json();
 }).then(value => {
     let dataval = value;

@@ -1,6 +1,7 @@
+// FEATURED MOVIES
 // Selectionner le template
-let card = document.querySelector("#card");
-let mov = card.content.querySelector("#mov");
+let card = document.querySelector(".card");
+let mov = document.getElementById("templateMov");
 
 // All
 let target = document.getElementById("target");
@@ -22,38 +23,83 @@ let colla4 = document.getElementById("target4_ol");
 let target5 = document.getElementById("target5");
 let colla5 = document.getElementById("target5_ol");
 
+// All
+let targetshop = document.getElementById("target_shop");
+
+
 // Verif
 let verif = "";
 let verif_ave = "";
 let y = 0;
 
-fetch('assets/js/movies.json').then(blob => {
+
+function templateCopy(tmp,data){
+    let a = tmp.content.cloneNode(true);
+    let imag = a.getElementById("imgMov");
+    let h = a.querySelector(".card__name");
+    let desc = a.querySelector(".descri");
+    let year = a.querySelector(".card__years");
+    let realis = a.querySelector(".reali");
+    let act = a.querySelector(".acteurs");
+    let motit = a.querySelector(".modal-title");
+
+    let moann = a.querySelector(".annee");
+    let mogen = a.querySelector(".genre");
+    //let prix = a.querySelector("shop__price");
+
+    imag.src = data.img;
+    h.innerHTML = data.name;
+    year.innerHTML = data.annee;
+    //prix.innerHTML = mya.prix + " euros";
+    desc.innerHTML = data.descrip;
+    realis.innerHTML = data.realisateur;
+    act.innerHTML = data.acteurs;
+    moann.innerHTML = data.annee;
+    mogen.innerHTML = data.genre;
+    motit.innerHTML = data.name;
+
+    // Vérifier le tableau genre
+    verif = data.genre;
+
+    // ToggleData 1
+    /*
+    let element = a.querySelector("#toggleData");   
+
+    element.onclick = function() {
+        let test = a.querySelector(".modal-body");
+        let ifra = "<iframe class='card__video' width='460' height='270' frameborder='0' allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>";
+        test.innerHTML += ifra;
+        let vid = a.querySelector(".card__video");
+        vid.src = data.trailerYtb;
+    };*/
+    // ToggleData2
+    return a;
+}
+
+let header = new Headers();
+header.set("Content-type","application/json")
+
+fetch('assets/js/movies.json',{
+    headers:header
+}).then(blob => {
     return blob.json();
 }).then(value => {
     let mydata = value;
     for(let i = 0;i < mydata.length; i++){
-        let a = document.importNode(mov, true);
-        let imag = a.querySelector(".card-img-top");
-        let h = a.querySelector(".card__name");
-        let desc = a.querySelector(".descri");
-        let year = a.querySelector(".card__years");
-        let realis = a.querySelector(".reali");
-        let genr = a.querySelector(".card__genre");
-        let act = a.querySelector(".acteurs");
-        let moann = a.querySelector(".annee");
-        let mogen = a.querySelector(".genre");
-        let motit = a.querySelector(".modal-title");
+        let a = templateCopy(mov,mydata[i])
+
         let bu = a.querySelector(".btn-hover");
+        let element2 = a.getElementById("toggleData");
+        let genr = a.querySelector(".card__genre");
         let idd = a.querySelector(".fademovie");
-        let vid = a.querySelector(".card__video");
 
-        
-        imag.src = mydata[i].img;
-        h.innerHTML = mydata[i].name;
-        year.innerHTML = mydata[i].annee;
-
-        // Vérifier le tableau genre
-        verif = mydata[i].genre;
+        element2.onclick = function() {
+            let test = a.querySelector(".modal-body");
+            let ifra = "<iframe class='card__video' width='460' height='270' frameborder='0' allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>";
+            test.innerHTML += ifra;
+            let vid = a.querySelector(".card__video");
+            vid.src = mydata[i].trailerYtb;
+        };
 
         do{
             let len = verif.length;
@@ -69,59 +115,56 @@ fetch('assets/js/movies.json').then(blob => {
         
         y = 0;
         
-        motit.innerHTML = mydata[i].name;
-
+        // Ajouter le data-target et un id
         bu.setAttribute("data-target", "#film"+i);
         idd.id = "film"+i;
 
-        desc.innerHTML = mydata[i].descrip;
-        realis.innerHTML = mydata[i].realisateur;
-        act.innerHTML = mydata[i].acteurs;
-        moann.innerHTML = mydata[i].annee;
-        mogen.innerHTML = mydata[i].genre;
-        vid.src = mydata[i].trailerYtb;
-        
-
-
+        // Ajouter sur featured movies les films
         if( i < 6){
             target.appendChild(a);
         } else{
             colla.appendChild(a);
         }
 
+        
+        // Ajouter sur shop movies
+        if (i < 8){
+            let cloneshop = a.cloneNode(true);
+            targetshop.appendChild(templateCopy(mov,mydata[i])); 
+        }
+        
+
         // Vérifier le tableau genre
         verif = mydata[i].genre;
         
         // Si il y a "aventure"
-        verif_ave = verif.indexOf("aventure");
+        verif_ave = verif.includes("aventure");
         
-        if(verif_ave == 0 || verif_ave == 1){
-            let cln2 = a.cloneNode(true);
-            target2.appendChild(cln2);
+        if(verif_ave){
+            target2.appendChild(templateCopy(mov,mydata[i]));
         }
 
         // Si il y a "thriller"
-        verif_thr = verif.indexOf("thriller");
+        verif_thr = verif.includes("thriller");
 
-        if(verif_thr == 0 || verif_thr == 1){
-            let cln3 = a.cloneNode(true);
-            target3.appendChild(cln3);
+        if(verif_thr){
+            target3.appendChild(templateCopy(mov,mydata[i]));
         }
 
         // Si il y a "action"
-        verif_act = verif.indexOf("action");
+        verif_act = verif.includes("action");
 
-        if(verif_act == 0 || verif_act == 1){
-            let cln4 = a.cloneNode(true);
-            target4.appendChild(cln4);
+        if(verif_act){
+            target4.appendChild(templateCopy(mov,mydata[i]));
         }
 
         // Si il y a "comedie"
-        verif_com = verif.indexOf("comédie");
+        verif_com = verif.includes("comédie");
 
-        if(verif_com == 0 || verif_com == 1){
-            let cln5 = a.cloneNode(true);
-            target5.appendChild(cln5);
+        if(verif_com){
+            let copy = a;
+            console.log(a);
+            target5.appendChild(templateCopy(mov,mydata[i]));
         }
     }
 
@@ -129,7 +172,6 @@ fetch('assets/js/movies.json').then(blob => {
     console.log(error)
 })
 
-let aa = "";
 
 /*
     var x = document.getElementsByClassName("collapsed"); 
