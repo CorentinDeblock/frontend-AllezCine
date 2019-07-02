@@ -1,8 +1,13 @@
 $search-radius:25px;
+$header-nav-padding-top: 13px;
+$header-nav-padding-left: 6px;
+$carousel-position:38%;
+
 header{
     .title{
         font-size:55px;
-        font-weight: bolder;
+        font-weight: 900;
+        transform: scaleY(1.1)
     }
     .nav-block{
         a{
@@ -10,10 +15,20 @@ header{
         }
     }
     .carousel-caption{
-        top:50%
+        top:$carousel-position;
+        line-height: 40px;
+        p{
+            font-weight: 300;
+        }
+        h2{
+            letter-spacing: 2px;
+            font-size:58px;
+            font-weight: 700;
+            transform:scaleX(1.1)
+        }
     }
     .carousel-indicators{
-        top:75%;
+        top:$carousel-position + 29%;
         li{
             transform: scale(1.1,1.4);
             margin-right:20px;
@@ -25,7 +40,7 @@ header{
     }
     .carousel-item{
         img{
-            height: 640px;
+            height: 700px;
         }
     }
     .opa{
@@ -35,13 +50,16 @@ header{
         background-color:#0007;
         border:none;
         color:white;
+        &::placeholder{
+            color:white;
+        }
     }
     .nav-contact{
         margin-left:200px;
     }
     .navbar {
         .navbar-decal{
-            margin-bottom:30px;
+            margin-bottom:40px;
         }
         .round-left{
             border-radius: $search-radius 0px 0px $search-radius;
@@ -84,6 +102,9 @@ header{
     .navbar-light .navbar-nav .nav-link{
         color: white;
     }
+    .navbar-nav{
+        padding-left:15px;
+    }
     .btn-black{
         background-color:black;
     }
@@ -105,13 +126,24 @@ header{
             margin-right:10px;
         }
     }
+    .stick-letter{
+        letter-spacing: 1px;
+    }
     nav{
+        .adjust-padding{
+            padding-top:$header-nav-padding-top;
+        }
         .dropdown{
             button{
-                background-color:#0004;
+                background-color:#76767665;
+                text-transform: uppercase;
+                padding:$header-nav-padding-top $header-nav-padding-left * 1.5 $header-nav-padding-top $header-nav-padding-left;
                 color:white;
                 border-radius: 0;
-                margin-left:10px;
+                margin-left:5px;
+                i{
+                    margin-left:4px;
+                }
             }
             .dropdown-menu{
                 border-radius:0;
@@ -128,7 +160,7 @@ header{
         
         width:100%;
         top:0%;
-        padding:35px !important;
+        padding:50px !important;
         z-index: 2;
         
         color:white;

@@ -9,7 +9,7 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:100,500,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,500,900&display=swap" rel="stylesheet">
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <title>AllezCine</title>
 </head>
@@ -67,11 +67,11 @@
             <div class="collapse navbar-collapse navbar-decal" id="navbarTogglerDemo03">
                 <ul class="navbar-nav ml-5 mr-auto mt-2 mt-lg-0">
                     <li class="nav-item nav-block active">
-                        <a class="btn text-danger">HOME</a>
+                        <a class="adjust-padding btn text-danger mr-3">HOME</a>
                     </li>
                     <li class="nav-item nav-block">
                         <div class="dropdown">
-                            <button class="btn" id="genre" data-toggle="dropdown">Genre</button>
+                            <button class="btn" id="genre" data-toggle="dropdown">Genre<i class="fas fa-caret-down"></i></button>
                             <div class="dropdown-menu">
                                 <div class="dropdown-item">
                                     <a href="#">Action</a>
@@ -84,7 +84,7 @@
                     </li>
                     <li class="nav-item nav-block">
                         <div class="dropdown">
-                            <button class="btn" id="movies" data-toggle="dropdown">Films</button>
+                            <button class="btn" id="movies" data-toggle="dropdown">Films<i class="fas fa-caret-down"></i></button>
                             <div class="dropdown-menu">
                                 <div class="dropdown-item">
                                     <a href="#">Récents</a>
@@ -97,7 +97,7 @@
                     </li>
                     <li class="nav-item nav-block">
                         <div class="dropdown">
-                            <button class="btn" id="genre" data-toggle="dropdown">Série</button>
+                            <button class="btn" id="genre" data-toggle="dropdown">Série<i class="fas fa-caret-down"></i></button>
                             <div class="dropdown-menu">
                                 <div class="dropdown-item">
                                     <a href="#">Les plus récentes</a>
@@ -109,7 +109,7 @@
                         </div>
                     </li>
                     <li>
-                        <a class="nav-link nav-contact" href="#">CONTACT</a>
+                        <a class="nav-link nav-contact adjust-padding" href="#">CONTACT</a>
                     </li>
                 </ul>
 
@@ -169,7 +169,7 @@
                 <span class="sr-only">Next</span>
             </a>
             <div class="connect d-flex">
-                <p><i class="fas fa-phone-alt"></i>(+000) 009 455 40 88</p>
+                <p class="stick-letter"><i class="fas fa-phone-alt"></i>(+000) 009 455 40 88</p>
                 <button type="button" data-target="#register" data-toggle="modal" class="btn btn-black text-white">LOGIN</button>
                 <div class="modal fade" id="register" role="dialog" tabindex="2" aria-labelledby="registerLabel" aria-hidden="true">
                     <div class="modal-dialog modal-dialog-centered" role="document">

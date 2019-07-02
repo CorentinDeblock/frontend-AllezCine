@@ -1,4 +1,8 @@
 @charset "UTF-8";
+* {
+  font-family: 'Roboto', sans-serif;
+}
+
 .ligne {
   border-left: 4px solid #FE4240;
   padding-left: 12px;
@@ -148,7 +152,9 @@ section {
 
 header .title {
   font-size: 55px;
-  font-weight: bolder;
+  font-weight: 900;
+  -webkit-transform: scaleY(1.1);
+          transform: scaleY(1.1);
 }
 
 header .nav-block a {
@@ -156,11 +162,24 @@ header .nav-block a {
 }
 
 header .carousel-caption {
-  top: 50%;
+  top: 38%;
+  line-height: 40px;
+}
+
+header .carousel-caption p {
+  font-weight: 300;
+}
+
+header .carousel-caption h2 {
+  letter-spacing: 2px;
+  font-size: 58px;
+  font-weight: 700;
+  -webkit-transform: scaleX(1.1);
+          transform: scaleX(1.1);
 }
 
 header .carousel-indicators {
-  top: 75%;
+  top: 67%;
 }
 
 header .carousel-indicators li {
@@ -175,7 +194,7 @@ header .carousel-indicators .active {
 }
 
 header .carousel-item img {
-  height: 640px;
+  height: 700px;
 }
 
 header .opa {
@@ -186,6 +205,22 @@ header .opa {
 header .i-search {
   background-color: #0007;
   border: none;
+  color: white;
+}
+
+header .i-search::-webkit-input-placeholder {
+  color: white;
+}
+
+header .i-search:-ms-input-placeholder {
+  color: white;
+}
+
+header .i-search::-ms-input-placeholder {
+  color: white;
+}
+
+header .i-search::placeholder {
   color: white;
 }
 
@@ -200,7 +235,7 @@ header .navbar {
 }
 
 header .navbar .navbar-decal {
-  margin-bottom: 30px;
+  margin-bottom: 40px;
 }
 
 header .navbar .round-left {
@@ -253,6 +288,10 @@ header .navbar-light .navbar-nav .nav-link {
   color: white;
 }
 
+header .navbar-nav {
+  padding-left: 15px;
+}
+
 header .btn-black {
   background-color: black;
 }
@@ -278,19 +317,33 @@ header .connect .fa-phone-alt {
   margin-right: 10px;
 }
 
+header .stick-letter {
+  letter-spacing: 1px;
+}
+
 header nav {
   width: 100%;
   top: 0%;
-  padding: 35px !important;
+  padding: 50px !important;
   z-index: 2;
   color: white;
 }
 
+header nav .adjust-padding {
+  padding-top: 13px;
+}
+
 header nav .dropdown button {
-  background-color: #0004;
+  background-color: #76767665;
+  text-transform: uppercase;
+  padding: 13px 9px 13px 6px;
   color: white;
   border-radius: 0;
-  margin-left: 10px;
+  margin-left: 5px;
+}
+
+header nav .dropdown button i {
+  margin-left: 4px;
 }
 
 header nav .dropdown .dropdown-menu {
@@ -409,9 +462,5 @@ header nav .dropdown .dropdown-menu .dropdown-item a {
 
 .no-underline:hover {
   text-decoration: none;
-}
-
-* {
-  font-family: 'Roboto', sans-serif;
 }
 /*# sourceMappingURL=style.css.map */
