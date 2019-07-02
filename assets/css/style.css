@@ -762,12 +762,9 @@ template {
 /* Bouton retour */
 
 a#cRetour{
-  /*border-radius:3px;*/
   padding:10px;
   font-size:15px;
   text-align:center;
-  /*color:#fff;
-  background:rgba(0, 0, 0, 0.25);*/
   position:fixed;
   right:20px;
   opacity:1;
@@ -779,7 +776,7 @@ a#cRetour{
 }
 
 a#cRetour:hover{
-  background:rgba(0, 0, 0, 1);
+  
   transition:all ease-in 0.2s;
 }
 a#cRetour.cInvisible{
