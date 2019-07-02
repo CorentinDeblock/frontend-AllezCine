@@ -105,6 +105,9 @@ footer {
         margin-left:8px;
         margin-right:8px;
     }
+    // bouton retour
+    
+
     a#cRetour{
         border-radius:3px;
         padding:10px;
@@ -119,4 +122,18 @@ footer {
         visibility: hidden;
         text-decoration: none;
 }
+  a#cRetour:hover{
+  
+    transition:all ease-in 0.2s;
+  }
+  a#cRetour.cInvisible{
+    bottom:-35px;
+    opacity:0;
+    transition:all ease-in 0.5s;
+  }
+  
+  a#cRetour.cVisible{
+    bottom:20px;
+    opacity:1;
+  }
 }

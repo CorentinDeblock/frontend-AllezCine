@@ -432,6 +432,25 @@ footer a#cRetour {
   text-decoration: none;
 }
 
+footer a#cRetour:hover {
+  -webkit-transition: all ease-in 0.2s;
+  -o-transition: all ease-in 0.2s;
+  transition: all ease-in 0.2s;
+}
+
+footer a#cRetour.cInvisible {
+  bottom: -35px;
+  opacity: 0;
+  -webkit-transition: all ease-in 0.5s;
+  -o-transition: all ease-in 0.5s;
+  transition: all ease-in 0.5s;
+}
+
+footer a#cRetour.cVisible {
+  bottom: 20px;
+  opacity: 1;
+}
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -773,35 +792,4 @@ template {
    */
 [hidden] {
   display: none;
-}
-
-/* Bouton retour */
-
-a#cRetour{
-  padding:10px;
-  font-size:15px;
-  text-align:center;
-  position:fixed;
-  right:20px;
-  opacity:1;
-  z-index:99999;
-  transition:all ease-in 0.2s;
-  backface-visibility: hidden;
-  -webkit-backface-visibility: hidden;
-  text-decoration: none;
-}
-
-a#cRetour:hover{
-  
-  transition:all ease-in 0.2s;
-}
-a#cRetour.cInvisible{
-  bottom:-35px;
-  opacity:0;
-  transition:all ease-in 0.5s;
-}
-
-a#cRetour.cVisible{
-  bottom:20px;
-  opacity:1;
 }
