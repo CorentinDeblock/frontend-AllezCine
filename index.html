@@ -13,9 +13,51 @@
 </head>
 
 <body>
-
-    <header>
+    <div id="cookie-popup" class="cookie-request">
+        <div class="d-flex justify-content-between">
+            <h5>Contrat d'utilisation des cookies</h5>
+            <button class="btn btn-default text-danger p-0 mt-0" id="close-popup">&times;</button>
+        </div>
+        <p>En poursuivant votre navigation sur ce site, vous acceptez le stockage et l’utilisation de vos données par AllezCine, pour notamment a des fins publicitaire ou pour vous proposez du contenu pertinent basé sur vos recherches.</p>
+        <a href="#cookies-modal" data-toggle="modal">Pour en savoir plus et paramétrer les traceurs</a>
+        <div class="mt-4">
+            <button id="cookie-refuse" class="btn btn-dark">Non</button>
+            <button id="cookie-accept"class="btn btn-light">Oui</button>
+        </div>
+    </div>
+    <div id="cookies-modal" tabindex="-1" class="modal fade" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Paramètres des cookies</h5>
+                    <button class="btn btn-default" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <p>Paramètrer les cookies pour que AllezCine bénéficie des informations que vous avez décidé.</p>
+                    <form action="">
+                        <div class="d-flex">
+                            <input type="checkbox" class="mr-2 my-auto">
+                            <label for="cookie-one">AllezCine receuillera des informations sur vos recherche a bien
+                                de spécifié des recherches et du contenu plus appoprié pour vous</label>
+                        </div>
+                        <div class="d-flex mt-4">
+                            <input type="checkbox" class="mr-2 my-auto">
+                            <label for="cookie-two">AllezCine receuillera des informations sur vos recherche a bien
+                                de partagé avec des régies plubicitaire</label>
+                        </div>
+                        <div class="d-flex mt-4">
+                            <input type="checkbox" class="mr-2 my-auto">
+                            <label for="cookie-three">AllezCine receuillera des informations sur vos recherche a bien
+                                de vous proposé le contenu le plus pertinent a vos demandes</label>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+</div>
+    <header id="haut">
         <nav class="navbar navbar-expand-lg navbar-light">
+<<<<<<< HEAD
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03"
                 aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -26,49 +68,80 @@
             <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
                 <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
                     <li class="nav-item active">
+=======
+            
+            <h1 class="title"><span class="title-red">Allez</span>Cine!</h1>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse navbar-decal" id="navbarTogglerDemo03">
+                <ul class="navbar-nav ml-5 mr-auto mt-2 mt-lg-0">
+                    <li class="nav-item nav-block active">
+                        <a class="adjust-padding btn text-danger mr-3">HOME</a>
+                    </li>
+                    <li class="nav-item nav-block">
+>>>>>>> 40232db443de44ccc4ad1bedac66de0da0b5242b
                         <div class="dropdown">
-                            <button class="btn" id="genre" data-toggle="dropdown">Genre</button>
+                            <button class="btn" id="genre" data-toggle="dropdown">Genre<i class="fas fa-caret-down"></i></button>
                             <div class="dropdown-menu">
                                 <div class="dropdown-item">
-                                    <a href="#">Fuck this shit</a>
+                                    <a href="#">Action</a>
+                                    <a href="#">Aventure</a>
+                                    <a href="#">Horreur</a>
+                                    <a href="#">Comédie</a>
                                 </div>
                             </div>
                         </div>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item nav-block">
                         <div class="dropdown">
-                            <button class="btn" id="genre" data-toggle="dropdown">Genre</button>
+                            <button class="btn" id="movies" data-toggle="dropdown">Films<i class="fas fa-caret-down"></i></button>
                             <div class="dropdown-menu">
                                 <div class="dropdown-item">
-                                    <a href="#">Fuck this shit</a>
+                                    <a href="#">Récents</a>
+                                    <a href="#">Ancient</a>
+                                    <a href="#">En tête d'affiche</a>
+                                    <a href="#">Box office</a>
                                 </div>
                             </div>
                         </div>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item nav-block">
                         <div class="dropdown">
-                            <button class="btn" id="genre" data-toggle="dropdown">Genre</button>
+                            <button class="btn" id="genre" data-toggle="dropdown">Série<i class="fas fa-caret-down"></i></button>
                             <div class="dropdown-menu">
                                 <div class="dropdown-item">
-                                    <a href="#">Fuck this shit</a>
+                                    <a href="#">Les plus récentes</a>
+                                    <a href="#">Les plus regardée</a>
+                                    <a href="#">Les plus aimé</a>
+                                    <a href="#">Les plus populaire</a>
                                 </div>
                             </div>
                         </div>
                     </li>
                     <li>
-                        <a class="nav-link col-8" href="#">CONTACT</a>
+                        <a class="nav-link nav-contact adjust-padding" href="#">CONTACT</a>
                     </li>
                 </ul>
 
+<<<<<<< HEAD
                 <form class="form-inline my-2 my-lg-0">
                     <input class="form-control mr-sm-2 bout-search" type="search" placeholder="Search"
                         aria-label="Search">
                     <button class="btn i-search my-2 my-sm-0" type="submit"><i class="fas fa-search"></i></button>
 
+=======
+                <form class="form-inline input-group col-3">
+                    <input class="form-control i-search round-left space-left" type="search" placeholder="Search" aria-label="Search">
+                    <div class="input-group-append">
+                        <button class="btn i-search round-right" type="submit"><i class="fas fa-search"></i></button>
+                    </div>
+>>>>>>> 40232db443de44ccc4ad1bedac66de0da0b5242b
                 </form>
             </div>
         </nav>
-
+        
 
         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicators">
@@ -83,8 +156,13 @@
                     <div class="carousel-caption d-md-block">
                         <h2>LASTEST <span class="title-red">ON</span>LINE <span class="title-red">MO</span>VIE</h2>
                         <p>In space no one can hear you scream</p>
+<<<<<<< HEAD
                         <button type="button" class="btn btn-plus">Watch trailer</button>
 
+=======
+                        <button type="button" class="btn btn-danger">Watch trailer</button>
+            
+>>>>>>> 40232db443de44ccc4ad1bedac66de0da0b5242b
                     </div>
                 </div>
 
@@ -94,7 +172,7 @@
                         <h2>BEST <span class="title-red">MO</span>VIE <span class="title-red">OF</span> THE <span
                                 class="title-red">MO</span>MENT</h2>
                         <p>The end is part of the journey</p>
-                        <button type="button" class="btn btn-plus">Watch trailer</button>
+                        <button type="button" class="btn btn-danger">Watch trailer</button>
                     </div>
                 </div>
 
@@ -103,7 +181,7 @@
                     <div class="carousel-caption d-md-block">
                         <h2>LASTEST <span class="title-red">ON</span>LINE <span class="title-red">SE</span>RIE</h2>
                         <p>May the era of "matriarchy" begin</p>
-                        <button type="button" class="btn btn-plus">Watch trailer</button>
+                        <button type="button" class="btn btn-danger">Watch trailer</button>
                     </div>
                 </div>
             </div>
@@ -116,6 +194,7 @@
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="sr-only">Next</span>
             </a>
+<<<<<<< HEAD
         </div>
         <div class="connect d-flex">
             <p><i class="fas fa-phone-alt"></i>(+000) 009 455 4088</p>
@@ -123,11 +202,84 @@
             <a class="btn btn-black">REGISTER</a>
         </div>
 
+=======
+            <div class="connect d-flex">
+                <p class="stick-letter"><i class="fas fa-phone-alt"></i>(+000) 009 455 40 88</p>
+                <button type="button" data-target="#register" data-toggle="modal" class="btn btn-black text-white">LOGIN</button>
+                <div class="modal fade" id="register" role="dialog" tabindex="2" aria-labelledby="registerLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title text-dark">Connection</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <h4 class="text-center mt-3 mb-1 text-dark">Connectez vous sur votre compte</h4>
+                                <form class="form-group row mt-1 mx-1" action="">
+                                    <input class="col-12 form-control mt-2" type="text" placeholder="Identifiant">
+                                    <input class="col-12 form-control mt-2" type="password" id="password" placeholder="Password">
+                                    <input type="submit" class="mx-auto mt-4 btn btn-success" data-dismiss="modal" value="Ok">
+                                </form>
+                                <div class="text-center">
+                                    <div>
+                                        <input type="checkbox" name="stay-connected">
+                                        <label for="stay-connected" class="text-dark"> Rester connecter</label>
+                                    </div>
+                                    <div class="mt-2">
+                                        <a href="">Créer un compte</a>
+                                    </div>
+                                    <div class="mt-2">
+                                        <a href="">Mot de passe oublié</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button type="button" data-target="#login" data-toggle="modal" class="btn btn-black text-white">REGISTER</button>
+                <div class="modal fade" id="login" role="dialog" tabindex="3" aria-labelledby="loginLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title text-dark">Register</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <h4 class="text-center mt-3 mb-1 text-dark">Register to AllezCine</h4>
+                                <form class="form-group row m-1" action="">
+                                    <input class="col-12 form-control mt-2" type="text" placeholder="usnerame">
+                                    <input class="col-12 form-control mt-2" type="password" id="password" placeholder="Password">
+                                    <input class="col-12 form-control mt-2" type="password" id="confirm-password" placeholder="Confirm password">
+                                    <div class="ml-auto mt-4">
+                                        <button type="button" class="btn btn-primary" data-dismiss="modal">Select</button>
+                                        <button type="button" class="btn btn-success" data-dismiss="modal">Register</button>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+</div> 
+    
+>>>>>>> 40232db443de44ccc4ad1bedac66de0da0b5242b
     </header>
 
     <main>
         <section class="container first">
+        <h2 class="display_none">Derniers films</h2>
             <div class="container__center">
+<<<<<<< HEAD
 
                 <div class="row">
 
@@ -138,10 +290,55 @@
                             <div class="grid">
                                 <p class="card__years">2016</p>
                                 <p class="card__genre">Genre</p>
+=======
+                
+            <div class="row">
+            <!-- FILM 1 --> 
+                    <div class="card col-6 col-md-4 col-lg-2 offset-lg-1">
+                        <a class="btn btn-primary btn-hover" data-toggle="modal" data-target="#recent1">
+                            <img alt="le patient anglais" class="card-img-top" src="https://raw.githubusercontent.com/CorentinDeblock/frontend-AllezCine/img-data/lepatientanglais-1996-dramatique.jpg">
+                        </a>
+                        <div class="movies__contenu">
+                            <a class="btn btn-primary btn-hover" data-toggle="modal" data-target="#recent1">
+                                <p class="card__name title">Le patient anglais</p>
+                            </a>
+                                
+                                <div class="grid">
+                                    <p class="card__years">1996</p>
+                                    <p class="card__genre">comédie</p>
+                                </div>    
+                        </div>
+                        
+                        <div id="recent1" class="modal fade fademovie" tabindex="-1" role="dialog" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                <div class="modal-header">
+                                    <h3 class="modal-title title" >Le patient Anglais</h3>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                        <iframe src="https://www.youtube.com/embed/6cpyL326YkU" class="card__video" width="460" height="270" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                    <p class="descri">En 1945, quatre personnes dechirées par la guerre se réfugient dans un monastère abandonné de Toscane pour se guérir de leurs maux. Peu à peu le passé va resurgir et la présence d'un homme mystérieux et méconnaissable, le patient anglais, va bouleverser le destin de ceux qui croisent son chemin.</p>
+                                    <p><span class="gras">Réalisateur: </span>Anthony Minghella</p>
+                                    <p><span class="gras">Acteurs: </span>Ralph Fiennes, Kristin Scott Thomas, Willem Dafoe, Juliette Binoche, Colin Firth, Naveen Andrews</p>
+                                    <p><span class="gras">Année: </span>1996</p>
+                                    <p><span class="gras">Genres: </span>comédie</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary btn-close" data-dismiss="modal">Close</button>
+                                </div>
+                                </div>
+>>>>>>> 40232db443de44ccc4ad1bedac66de0da0b5242b
                             </div>
                         </div>
                     </div>
+
+
+                    <!-- FILM 2 --> 
                     <div class="card col-6 col-md-4 col-lg-2">
+<<<<<<< HEAD
                         <img class="card-img-top" src="assets/img/x-men.jpg" alt="Card image cap">
                         <div class="card-body">
                             <p class="title title-center">X-Men</p>
@@ -168,16 +365,178 @@
                             <div class="grid">
                                 <p class="card__years">2016</p>
                                 <p class="card__genre">Genre</p>
+=======
+                        <a class="btn btn-primary btn-hover" data-target="#recent2" data-toggle="modal" >
+                            <img alt="le laby" class="card-img-top" src="https://raw.githubusercontent.com/CorentinDeblock/frontend-AllezCine/img-data/labyrinthe.jpg">
+                        </a>
+                        <div class="movies__contenu">
+                            <a class="btn btn-primary btn-hover" data-toggle="modal" data-target="#recent2">
+                                <p class="card__name title">Le Labyrinthe</p>
+                            </a>
+                                
+                                <div class="grid">
+                                    <p class="card__years">2018</p>
+                                    <p class="card__genre">comédie</p>
+                                </div>    
+                        </div>
+                        
+                        <div id="recent2" class="modal fade fademovie" tabindex="-1" role="dialog"  aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                <div class="modal-header">
+                                    <h3 class="modal-title title">Le Labyrinthe</h3>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                        <iframe src="https://www.youtube.com/embed/LyPiCH_4Al4" class="card__video" width="460" height="270" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                    <p class="descri">Quand Thomas reprend connaissance, il est pris au piège avec un groupe d’autres garçons dans un labyrinthe géant dont le plan est modifié chaque nuit. Il n’a plus aucun souvenir du monde extérieur, à part d’étranges rêves à propos d’une mystérieuse organisation appelée W.C.K.D. En reliant certains fragments de son passé, avec des indices qu’il découvre au sein du labyrinthe, Thomas espère trouver un moyen de s’en échapper.</p>
+                                    <p><span class="gras">Réalisateur: </span>Wes Ball</p>
+                                    <p><span class="gras">Acteurs: </span>Dylan O'Brien, Aml Ameen, Will Poulter</p>
+                                    <p><span class="gras">Année: </span>2018</p>
+                                    <p><span class="gras">Genres: </span>action, science fiction</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary btn-close" data-dismiss="modal">Close</button>
+                                </div>
+                                </div>
                             </div>
                         </div>
                     </div>
+
+
+                    <!-- FILM 3 --> 
                     <div class="card col-6 col-md-4 col-lg-2">
+                        <a class="btn btn-primary btn-hover" data-target="#recent3" data-toggle="modal">
+                            <img alt="seven" class="card-img-top" src="https://raw.githubusercontent.com/CorentinDeblock/frontend-AllezCine/img-data/seven-1995-thriller.jpg">
+                        </a>
+                        <div class="movies__contenu">
+                            <a class="btn btn-primary btn-hover" data-toggle="modal" data-target="#recent3">
+                                <p class="card__name title">Seven</p>
+                            </a>
+                                
+                                <div class="grid">
+                                    <p class="card__years">1995</p>
+                                    <p class="card__genre">policier, thriller</p>
+                                </div>    
+                        </div>
+                        
+                        <div id="recent3" class="modal fade fademovie" tabindex="-1" role="dialog" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                <div class="modal-header">
+                                    <h3 class="modal-title title">Seven</h3>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                        <iframe src="https://www.youtube.com/embed/BLY4treE0XU" class="card__video" width="460" height="270" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                    <p class="descri">Pour conclure sa carrière, l'inspecteur Somerset, vieux flic blasé, tombe à sept jours de la retraite sur un criminel peu ordinaire. John Doe, c'est ainsi que se fait appeler l'assassin, a decidé de nettoyer la societé des maux qui la rongent en commettant sept meurtres basés sur les sept pechés capitaux: la gourmandise, l'avarice, la paresse, l'orgueil, la luxure, l'envie et la colère.</p>
+                                    <p><span class="gras">Réalisateur: </span>David Fincher</p>
+                                    <p><span class="gras">Acteurs: </span>Brad Pitt, Morgan Freeman, Gwyneth Paltrow</p>
+                                    <p><span class="gras">Année: </span>1995</p>
+                                    <p><span class="gras">Genres: </span>policier, thriller</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary btn-close" data-dismiss="modal">Close</button>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- FILM 4 --> 
+                    <div class="card col-6 col-md-4 col-lg-2">
+                        <a class="btn btn-primary btn-hover" data-target="#recent4" data-toggle="modal">
+                            <img alt="star wars" class="card-img-top" src="https://raw.githubusercontent.com/CorentinDeblock/frontend-AllezCine/img-data/starwarsempire-1980-scifi.jpg">
+                        </a>
+                        <div class="movies__contenu">
+                            <a class="btn btn-primary btn-hover" data-toggle="modal" data-target="#recent4">
+                                <p class="card__name title">Star Wars empire</p>
+                            </a>
+                                
+                                <div class="grid">
+                                    <p class="card__years">1980</p>
+                                    <p class="card__genre">science fiction, aventure</p>
+                                </div>    
+                        </div>
+                        
+                        <div id="recent4" class="modal fade fademovie" tabindex="-1" role="dialog" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                <div class="modal-header">
+                                    <h3 class="modal-title title">Star Wars empire</h3>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                        <iframe src="https://www.youtube.com/embed/Z7B0vfamFTE" class="card__video" width="460" height="270"  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                    <p class="descri">Malgré la destruction de l'Etoile Noire, l'Empire maintient son emprise sur la galaxie, et poursuit sans relâche sa lutte contre l'Alliance rebelle. Basés sur la planète glacée de Hoth, les rebelles essuient un assaut des troupes impériales. Parvenus à s'échapper, la princesse Leia, Han Solo, Chewbacca et C-3P0 se dirigent vers Bespin, la cité des nuages gouvernée par Lando Calrissian, ancien compagnon de Han. Suivant les instructions d'Obi-Wan Kenobi, Luke Skywalker se rend quant à lui vers le système de Dagobah, planète marécageuse où il doit recevoir l'enseignement du dernier maître Jedi, Yoda. Apprenant l'arrestation de ses compagnons par les stormtroopers de Dark Vador après la trahison de Lando, Luke décide d'interrompre son entraînement pour porter secours à ses amis et affronter le sombre seigneur Sith...</p>
+                                    <p><span class="gras">Réalisateur: </span>Irvin Kershner</p>
+                                    <p><span class="gras">Acteurs: </span>Mark Hamill, Harrison Ford, Carrie Fisher</p>
+                                    <p><span class="gras">Année: </span>1980</p>
+                                    <p><span class="gras">Genres: </span>science fiction, aventure</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary btn-close" data-dismiss="modal">Close</button>
+                                </div>
+                                </div>
+>>>>>>> 40232db443de44ccc4ad1bedac66de0da0b5242b
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- FILM 5 --> 
+                    <div class="card col-6 col-md-4 col-lg-2">
+<<<<<<< HEAD
                         <img class="card-img-top" src="assets/img/x-men.jpg" alt="Card image cap">
                         <div class="card-body">
                             <p class="title title-center">The BFG</p>
                             <div class="grid">
                                 <p class="card__years">2016</p>
                                 <p class="card__genre">Genre</p>
+=======
+                        <a class="btn btn-primary btn-hover" data-target="#recent5" data-toggle="modal">
+                            <img alt="survive style" class="card-img-top" src="https://raw.githubusercontent.com/CorentinDeblock/frontend-AllezCine/img-data/Survivestyle5-2004-comedie.jpg">
+                        </a>
+                        <div class="movies__contenu">
+                            <a class="btn btn-primary btn-hover" data-toggle="modal" data-target="#recent5">
+                                <p class="card__name title">Survive style 5+</p>
+                            </a>
+                                
+                                <div class="grid">
+                                    <p class="card__years">2004</p>
+                                    <p class="card__genre">comédie</p>
+                                </div>    
+                        </div>
+                        
+                        <div id="recent5" class="modal fade fademovie" tabindex="-1" role="dialog"  aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                <div class="modal-header">
+                                    <h3 class="modal-title title">Survive style 5+</h3>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                        <iframe src="https://www.youtube.com/embed/LEH7nDkiPEk" class="card__video" width="460" height="270" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                    <p class="descri">Un mari et sa femme mourante, un hypnotiseur à succès, une publicitaire, un homme convaincu d'être un oiseau, un gang de trois voleurs et un tueur à gages. Les vies de ces différents personnages, qui a priori n'ont pas grand chose en commun, vont se retrouver étroitement liées, s'entremêler et s'acheminer inexorablement vers une fin des plus surprenantes.</p>
+                                    <p><span class="gras">Réalisateur: </span>Gen Sekiguchi</p>
+                                    <p><span class="gras">Acteurs: </span>Tadanobu Asano, Reika Hashimoto, Vinnie Jones</p>
+                                    <p><span class="gras">Année: </span>2004</p>
+                                    <p><span class="gras">Genres: </span>comédie</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary btn-close" data-dismiss="modal">Close</button>
+                                </div>
+                                </div>
+>>>>>>> 40232db443de44ccc4ad1bedac66de0da0b5242b
                             </div>
                         </div>
                     </div>
@@ -187,6 +546,7 @@
 
 
         <section class="container second" id="data">
+<<<<<<< HEAD
             <template id="card">
                 <li class="card col-6 col-sm-6 col-md-4 col-lg-2 col-xl-2" id="mov">
                     <a type="button" class="btn btn-primary btn-hover" data-toggle="modal" data-target="#exampleModal">
@@ -206,23 +566,51 @@
                         aria-hidden="true">
                         <div class="modal-dialog" role="document">
                             <div class="modal-content">
+=======
+            <template id="templateMov" class="card">
+                <li class="card col-6 col-sm-6 col-md-4 col-lg-2 col-xl-2 mov">
+                    <a id="toggleData" type="button" class="btn btn-primary btn-hover" data-toggle="modal" data-target="#exampleModal">
+                        <img id="imgMov" class="card-img-top" src="oidhqsi">
+                    </a>
+                    <div class="movies__contenu">
+                        <a type="button" class="btn btn-primary btn-hover" data-toggle="modal" data-target="#exampleModal">
+                            <p class="card__name title"></p>
+                        </a>
+                            
+                            <div class="grid">
+                                <p class="card__years"></p>
+                                <p class="card__genre"></p>
+                            </div>    
+                    </div>
+                        
+                            
+                        
+                        <div class="modal fade fademovie" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel1" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+>>>>>>> 40232db443de44ccc4ad1bedac66de0da0b5242b
                                 <div class="modal-header">
-                                    <h3 class="modal-title title" id="exampleModalLabel"></h3>
+                                    <h3 class="modal-title title" id="exampleModalLabel1"></h3>
                                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                         <span aria-hidden="true">&times;</span>
                                     </button>
                                 </div>
                                 <div class="modal-body">
+<<<<<<< HEAD
                                     <iframe class="video" width="560" height="315" frameborder="0"
                                         allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                                         allowfullscreen></iframe>
+=======
+                                    
+>>>>>>> 40232db443de44ccc4ad1bedac66de0da0b5242b
                                     <p class="descri"></p>
                                     <p><span class="gras">Réalisateur: </span><span class="reali"></span></p>
                                     <p><span class="gras">Acteurs: </span><span class="acteurs"></span></p>
+                                    <p><span class="gras">Année: </span><span class="annee"></span></p>
+                                    <p><span class="gras">Genres: </span><span class="genre"></span></p>
                                 </div>
                                 <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                    <button type="button" class="btn btn-primary">Save changes</button>
+                                    <button type="button" class="btn btn-secondary btn-close" data-dismiss="modal">Close</button>
                                 </div>
                             </div>
                         </div>
@@ -233,6 +621,7 @@
             </template>
 
             <h3 class="ligne title">Featured Movies</h3>
+<<<<<<< HEAD
             <div class="container__center">
                 <ul class="nav nav-tabs" id="myTab" role="tablist">
                     <li class="nav-item">
@@ -254,12 +643,125 @@
                         <div class="fea row">
                             <ol id="target" class="row"></ol>
                         </div>
+=======
+                <div class="container__center">
+                    <ul class="nav nav-tabs" id="myTab" role="tablist">
+                        <li class="nav-item">
+                        <a class="nav-link active" id="all-tab" data-toggle="tab" href="#all" role="tab" aria-controls="all" aria-selected="true">All</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" id="avent-tab" data-toggle="tab" href="#aventure" role="tab" aria-controls="aventure" aria-selected="false">Aventure</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" id="thri-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Thriller</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" id="acti-tab" data-toggle="tab" href="#action" role="tab" aria-controls="action" aria-selected="false">Action</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" id="come-tab" data-toggle="tab" href="#comedie" role="tab" aria-controls="comedie" aria-selected="false">Comédie</a>
+                        </li>
+                    </ul>
+
+                    <div class="tab-content" id="myTabContent2">
+                        <!-- 1e : ALL -->
+                        <div class="tab-pane fade show active" id="all" role="tabpanel" aria-labelledby="all-tab">
+                            <div class="fea row">
+
+                                <ol id="target" class="row"></ol>
+
+                                <div id="collapseOne" class="collapse row" aria-labelledby="headingOne" data-parent="#accordionExample1">
+                                    <div class="card-body">
+                                        <ol id="target_ol" class="row tar_test"></ol>
+                                    </div>
+                                </div>
+                                <div class="accordion" id="accordionExample1">
+                                    <div class="card">
+                                        <div class="card-header" id="headingOne">
+                                              <button id="btn-collap" type="button" class="btn btn-plus" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne"><span>Plus de films</span></button>
+                                        
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>    
+                        </div>
+
+                        <!-- 2e : AVENTURE -->
+                        <div class="tab-pane fade" id="aventure" role="tabpanel" aria-labelledby="avent-tab">
+                            <div class="fea row">
+
+                                <ol id="target2" class="row"></ol>
+    
+                                <div class="accordion" id="accordionExample2">
+                                    <div class="card">
+                                        <div class="card-header" id="headingTwo">
+                                            <button id="btn-collap2" type="button" class="btn btn-plus" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo"><span>Plus de films</span></button>
+                                        
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample2">
+                                    <div class="card-body">
+                                        <ol id="target2_ol" class="row"></ol>
+                                    </div>
+                                </div>
+    
+                            </div>  
+                        </div>
+                        
+                        <!-- 3e : THRILLER -->
+                        <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="thri-tab">
+                                <div class="fea row">
+
+                                        <ol id="target3" class="row"></ol>
+        
+                                        <div class="accordion" id="accordionExample3">
+                                            <div class="card">
+                                                <div class="card-header" id="headingThree">
+                                                    <button id="btn-collap3" type="button" class="btn btn-plus" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree"><span>Plus de films</span></button>
+                                                
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample3">
+                                            <div class="card-body">
+                                                <ol id="target3_ol" class="row"></ol>
+                                            </div>
+                                        </div>
+        
+                                    </div>  
+                        </div>
+
+                    <!-- 4e : ACTION -->
+                    <div class="tab-pane fade" id="action" role="tabpanel" aria-labelledby="acti-tab">
+                        <div class="fea row">
+
+                                <ol id="target4" class="row"></ol>
+
+                                <div class="accordion" id="accordionExample4">
+                                    <div class="card">
+                                        <div class="card-header" id="headingFour">
+                                            <button id="btn-collap4" type="button" class="btn btn-plus" data-toggle="collapse" data-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour"><span>Plus de films</span></button>
+                                        
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample4">
+                                    <div class="card-body">
+                                        <ol id="target4_ol" class="row"></ol>
+                                    </div>
+                                </div>
+
+                            </div>  
+>>>>>>> 40232db443de44ccc4ad1bedac66de0da0b5242b
                     </div>
                     <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">...</div>
                     <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">...</div>
                 </div>
 
 
+<<<<<<< HEAD
 
                 <button type="button" class="btn btn-plus">Plus de films</button>
             </div>
@@ -277,12 +779,176 @@
                 </div>
                 <div class="col-6">
 
+=======
+                    <!-- 5e : COMEDIE -->
+                    <div class="tab-pane fade" id="comedie" role="tabpanel" aria-labelledby="come-tab">
+                        <div class="fea row">
+
+                                <ol id="target5" class="row"></ol>
+
+                                <div class="accordion" id="accordionExample5">
+                                    <div class="card">
+                                        <div class="card-header" id="headingFive">
+                                            <button id="btn-collap5" type="button" class="btn btn-plus" data-toggle="collapse" data-target="#collapseFive" aria-expanded="true" aria-controls="collapseFive"><span>Plus de films</span></button>
+                                        
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample5">
+                                    <div class="card-body">
+                                        <ol id="target5_ol" class="row"></ol>
+                                    </div>
+                                </div>
+
+                            </div>  
+                    </div>
+
+            </div>
+            </div>          
+        </section>
+
+
+       
+
+        <section id="section_shop" class="container" >
+            <!-- TEMPLATE SHOP MOVIE-->
+            <template id="shop-gauche" class="card">
+                <li class="mov card col-6 col-sm-6 col-md-3 col-lg-3 col-xl-3" >
+                    <a id="toggleData2" type="button" class="btn btn-primary btn-hover" data-toggle="modal" data-target="#exampleModal">
+                        <img class="card-img-top">
+                    </a>
+                    <div class="cardshop__contenu">
+                        <a type="button" class="btn btn-primary btn-hover" data-toggle="modal" data-target="#exampleModal">
+                            <p class="card__name title"></p>
+                        </a>
+                            
+                            <div class="grid">
+                                <p class="card__years"></p>
+                                <p class="card__prix"></p>
+                            </div>    
+                    </div>
+                        
+                            
+                        
+                        <div class="modal fade fademovie" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel3" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h3 class="modal-title title" id="exampleModalLabel3"></h3>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                            <iframe class="card__video" width="460" height="270" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                        <p class="descri"></p>
+                                        <p><span class="gras">Réalisateur: </span><span class="reali"></span></p>
+                                        <p><span class="gras">Acteurs: </span><span class="acteurs"></span></p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                        <button type="button" class="btn btn-primary">Save changes</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                </li>
+                        
+                        
+            </template>
+                <template id="shop__droite">
+                    <li id="carousel_shop" class="card card__shopcard carousel-item">
+                        <div class="card">
+                
+                        <iframe class="video-card-shop" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <div class="card-body">
+                                <h4 class="card-title shop__name"></h4>
+                                <div class="card-grid">
+                                    <p><span class="title-shop">Story Line</span></p>
+                                    <p class="grid-2 shop__descri"></p>
+                                    <p><span class="title-shop">Release On</span></p>
+                                    <p class="grid-2 shop__years"></p>
+                                    <p><span class="title-shop">Genres</span></p>
+                                    <p class="grid-2 shop__genre"></p>
+                                    <p><span class="title-shop">Price</span></p>
+                                    <p class="grid-2 shop__price"></p>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </li>   
+                </template>
+            <h3 class="ligne title">Shop Movies</h3>
+            <div class="row">
+                <div class="col-12 col-lg-7">
+                    <ol id="target_shop" class="row"></ol>
+                </div>
+                <div class="col-12 col-lg-5">
+                    <div id="carouselExampleIndicators2" class="carousel slide" data-ride="carousel">
+                        <div class="carousel__boutons">
+                          <a class="carousel-control-prev" href="#carouselExampleIndicators2" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                          </a>
+                          <a class="carousel-control-next" href="#carouselExampleIndicators2" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                          </a>    
+                        </div>
+                        
+                        <div class="carousel-inner">
+                            <ol id="target_shop_card">
+                                
+                            
+                            </ol>
+                        </div>
+                        
+                      </div>
+>>>>>>> 40232db443de44ccc4ad1bedac66de0da0b5242b
                 </div>
             </div>
         </section>
+<section class="container contactus">
+
+            <!--Formulaire de contact-->
+            <h3 class="ligne title">Contact US</h3>
+
+    <form class="formulaire">
+        <div>
+        <div class="form-row container-fluid">
+            <div class="form-group col-md-6 ">
+                <label for="firstname"></label>
+                <input type="text" class="form-control" id="firstname" placeholder="FIRST NAME">
+            </div>
+            <div class="form-group col-md-6 ">
+                <label for="lastname"></label>
+                <input type="text" class="form-control" id="lastname" placeholder="LAST NAME">
+            </div>
+        </div>
+        <div class="form-row container-fluid">
+            <div class="form-group col-md-6 mt-n4">
+                <label for="email"></label>
+                <input type="email" class="form-control" id="email" placeholder="EMAIL">
+            </div>
+            <div class="form-group col-md-6 mt-n4">
+                <label for="subject"></label>
+                <input type="text" class="form-control" id="subject" placeholder="SUBJECT">
+            </div>
+        </div>
+        <div class="form-group col-md-12 mt-n4">
+                <label for="message"></label>
+                <textarea class="form-control" id="message" rows="3"  placeholder="YOUR MESSAGE" ></textarea>
+              </div>
+    
+        
+        <button type="submit" id="envoyer" class="btn btn-plus boutonSend">SEND MESSAGE</button>
+    </form>
+</section>
+
     </main>
 
     <footer>
+<<<<<<< HEAD
         <!-- Content Section -->
         <div class="container-fluid">
             <div class="row">
@@ -472,20 +1138,140 @@
                         </tr>
                     </table>
 
+=======
+    <!-- Content Section -->
+    <div class="container-fluid">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col text-center">
+                    <h2 class="suscribe">SUBSCRIBE TO US</h2>
+                </div>
+            </div>
+            <div class="row d-flex justify-content-center inputsuscribe">
+                <div class="col-4">
+                    <div>
+                        <input type="email" class="form-control" id="formail" placeholder="Enter your email...">
+                    </div>
+                </div>
+                <div>
+                    <button type="button" class="btn btn-danger" data-toggle="confirmation">Subscribe</button>
+                </div>
+            </div>
+            <!-- Lisibilité  html-->
+            <div class=" tableau row">
+
+                <div class="col-12 col-sm-6 col-md-4 col-lg">
+                    <h4>RELEASES</h4>
+                    
+                    <p><a class="releases" href="#">2019</a></p>
+                    <p><a class="releases" href="#">2018</a></p>
+                    <p><a class="releases" href="#">2017</a></p>
+                    <p><a class="releases" href="#">2016</a></p>
+                    <p><a class="releases" href="#">2015</a></p>
+                    <p><a class="releases" href="#">2014</a></p>
+                        
+                </div>
+                <!-- Lisibilité  html-->
+                <div class="col-12 col-sm-6 col-md-4 col-lg">
+                    <h4 class="titlef">MOVIES</h4>
+                        <p><a class="movies" href="#">ADVENTURE</a></p>
+                        <p><a class="movies" href="#">COMEDY</a></p>
+                        <p><a class="movies" href="#">FANTASY</a></p>
+                        <p><a class="movies" href="#">ACTION</a></p>
+                        <p><a class="movies" href="#">ANIMATION</a></p>
+                        <p><a class="movies" href="#">HORROR</a></p>
+                </div>
+                <!-- Lisibilité  html-->
+                <div class="col-12 col-sm-6 col-md-4 col-lg">
+                    <h4 class="titlef">REVIEW MOVIES</h4>
+                    <a class="btag" href="#">Comedy</a> <a class="btag" href="#">Horror</a> <a class="btag"
+                        href="#">Historical</a> <a class="btag" href="#">Romantic</a> <a class="btag" href="#">Love</a>
+                    <a class="btag" href="#">Action</a> <a class="btag" href="#">Reviews</a> <a class="btag"
+                        href="#">Fantasy</a> <a class="btag" href="#">Thriller</a> <a class="btag"
+                        href="#">Animation</a> <a class="btag" href="#">Scifi</a> <a class="btag" href="#">Mecha</a> <a
+                        class="btag" href="#">Family</a> <a class="btag" href="#">War</a> <a class="btag"
+                        href="#">Drama</a>
+                </div>
+                <!-- Lisibilité  html-->
+                <div class="col-12 col-sm-6 col-md-4 col-lg">
+                    <h4 class="titlef">LATEST MOVIE</h4>
+                    
+                    <table>
+                        <tr>
+                            <td>
+                                <img class="img1" src="https://i.goopics.net/pYVYd.jpg" alt="film footer" />
+                            </td>
+                            <td>
+                                <p class="titlemov">Batman The Dark Knight</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <img class="img1" src="https://puu.sh/DHzxq/7a71f5ca54.jpg" alt="film footer" />
+                            </td>
+                            <td>
+                                <p class="titlemov">Up</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <img class="img1" src="https://puu.sh/DHAz6/bd8e40c361.jpg" alt="film footer" />
+                            </td>
+                            <td>
+                                <p class="titlemov">L.O.T.H.R. - The King Return</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <img class="img1" src="https://i.goopics.net/pYVYd.jpg" alt="film footer" />
+                            </td>
+                            <td>
+                                <p class="titlemov">Batman The Dark Knight</p>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <!-- Lisibilité  html-->
+                <div class="col-12 col-sm-6 col-md-4 col-lg">
+                    <h4><span class="cine2">ALLEZ</span><span class="cine1">CINE!</span></h4>
+                    
+                    <table>
+                        <tr>
+                            <td><img class="img2" src="https://puu.sh/DHWg0/fdd48a35f3.jpg" alt="film 1 du footer" /></td>
+                            <td><img class="img2" src="https://puu.sh/DHWek/c2735e1623.jpg" alt="film 2 du footer" /></td>
+                            <td><img class="img2" src="https://puu.sh/DHVoB/260bd4b887.jpg" alt="film 3 du footer" /></td>
+                        </tr>
+                        <tr>
+                            <td><img class="img2" src="https://puu.sh/DHWnl/6c90382cd6.jpg" alt="film 4 du footer" /></td>
+                            <td><img class="img2" src="https://puu.sh/DHWin/412d3a6aa7.jpg" alt="film 5 du footer" /></td>
+                            <td><img class="img2" src="https://puu.sh/DHWkk/245c1b33e2.jpg" alt="film 6 du footer" /></td>
+                        </tr>
+                    </table>
+
+>>>>>>> 40232db443de44ccc4ad1bedac66de0da0b5242b
                 </div>
             </div>
             <!-- Lisibilité  html-->
             <hr class="hrespace">
             <!-- Lisibilité  html-->
+<<<<<<< HEAD
             <div class="row">
                 <div class="col text-center">
                     <h2 class="connectus">CONNECT US</h2>
                 </div>
                 <div><a id="cRetour" class="cInvisible" href="#">haut</a></div>
+=======
+            <div class="row bou">
+                <div class="col text-center">
+                    <h2 class="connectus">CONNECT US</h2>
+                </div>
+                <a href="#haut" id="cRetour" class="cInvisible"><img src="https://i.goopics.net/1W12A.png"></a>
+>>>>>>> 40232db443de44ccc4ad1bedac66de0da0b5242b
             </div>
             <!-- Lisibilité  html-->
             <div class="row">
                 <div class="col d-flex justify-content-center">
+<<<<<<< HEAD
                     <td> <img src="https://i.goopics.net/WDaQr.jpg" class="facebook"/> </td>
                     <td> <img src="https://i.goopics.net/QljmV.jpg" class="twitter"/> </td>
                     <td> <img src="https://i.goopics.net/1oPXo.jpg" class="youtube"/> </td>
@@ -495,6 +1281,18 @@
             </div>
         </div>
     </footer>
+=======
+                    <span class="border"><i class="fab fa-facebook-f"></i></span>
+                    <span class="border"><i class="fab fa-twitter"></i></span>
+                    <span class="border"><i class="fab fa-linkedin-in"></i></span>
+                    <span class="border"><i class="fab fa-youtube"></i></span>
+                    <span class="border"><i class="fab fa-google-plus-g"></i></span>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+>>>>>>> 40232db443de44ccc4ad1bedac66de0da0b5242b
 
     <script src="https://kit.fontawesome.com/08a7931cbe.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
@@ -507,7 +1305,8 @@
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
     </script>
     <script src="assets/js/featured.js"></script>
-    <script src="assets/js/movies.json"></script>
+    <script src="assets/js/contact.js"></script>
+    <script src="assets/js/cookie.js"></script>
 </body>
 
 </html>
