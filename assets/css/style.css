@@ -225,7 +225,7 @@ header .i-search::placeholder {
 }
 
 header .nav-contact {
-  margin-left: 200px;
+  margin-left: 8vw;
 }
 
 header .navbar {
@@ -324,7 +324,7 @@ header .stick-letter {
 header nav {
   width: 100%;
   top: 0%;
-  padding: 50px !important;
+  padding: 25px !important;
   z-index: 2;
   color: white;
 }
@@ -335,15 +335,15 @@ header nav .adjust-padding {
 
 header nav .dropdown button {
   background-color: #76767665;
-  text-transform: uppercase;
   padding: 13px 9px 13px 6px;
+  text-transform: uppercase;
   color: white;
-  border-radius: 0;
   margin-left: 5px;
 }
 
 header nav .dropdown button i {
-  margin-left: 4px;
+  margin-left: 8px;
+  display: inline;
 }
 
 header nav .dropdown .dropdown-menu {

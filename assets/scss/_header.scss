@@ -55,7 +55,7 @@ header{
         }
     }
     .nav-contact{
-        margin-left:200px;
+        margin-left:8vw
     }
     .navbar {
         .navbar-decal{
@@ -136,13 +136,13 @@ header{
         .dropdown{
             button{
                 background-color:#76767665;
-                text-transform: uppercase;
                 padding:$header-nav-padding-top $header-nav-padding-left * 1.5 $header-nav-padding-top $header-nav-padding-left;
+                text-transform: uppercase;
                 color:white;
-                border-radius: 0;
                 margin-left:5px;
                 i{
-                    margin-left:4px;
+                    margin-left:8px;
+                    display: inline;
                 }
             }
             .dropdown-menu{
@@ -160,7 +160,7 @@ header{
         
         width:100%;
         top:0%;
-        padding:50px !important;
+        padding:25px !important;
         z-index: 2;
         
         color:white;
