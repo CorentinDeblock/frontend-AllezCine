@@ -28,7 +28,7 @@ header{
         }
     }
     .carousel-indicators{
-        top:$carousel-position + 29%;
+        top:$carousel-position + 42%;
         li{
             transform: scale(1.1,1.4);
             margin-right:20px;
@@ -55,7 +55,7 @@ header{
         }
     }
     .nav-contact{
-        margin-left:200px;
+        margin-left:10px;
     }
     .navbar {
         .navbar-decal{
@@ -166,4 +166,90 @@ header{
         color:white;
     }
     
+}
+
+.cookie-request{
+    //Fait en sorte que l'élément sois fixe par rapport a la largeur du viewport
+    position: fixed;
+    //Fait en sorte que a l'antrée de la page, les cookies sois caché
+    bottom:-100%;
+    //Fait en sorte a ce que l'élément sois tout a gauche
+    right:0%;
+
+    //Change le fond en blanc rgb(+-234,+-234,+-234)
+    background-color: #f4f4f4;
+
+    /*
+    Fait en sorte a ce que le cookie sois tout au dessus 
+    de tout les autre élément visuellement et PHYSIQUEMENT
+    Le z-index va de : -infini a infini
+    Mais techniquement pour la limite d'un pc actuelle :
+    -9 223 372 036 854 775 807 a 9 223 372 036 854 775 807
+    Sois -(pow(2,63)-1) a (pow(2,63)-1)
+    Sois la capacité maximale d'un nombre négatif et positif
+    Sois un nombre appelé réel
+    Ce qui fait la capacité maximale d'un ordinateur de 64 bits
+    Pour plus d'information : 
+    Rubrique : Représentation des entiers signés
+    https://fr.wikibooks.org/wiki/Programmation_C/Types_de_base
+    */
+    z-index: 40;
+
+    //Fait en sorte de laisser de l'espacement entre le contenu et les bords
+    padding:20px;
+
+    //Règle le contenu pour qu'il fasse 35% de la taile de la fenêtre
+    width:35%;
+
+    //Fait un border-radius sur le bord haut gauche de la fenêtre de cookie
+    border-radius: 10px 0px 0px 0px;
+    
+    //Fait une bordure en haut de la fenêtre de cookie
+    border-top:5px solid #c1c1c1;
+    //Fait une bordure au bord gauche de la fenêtre
+    border-left:5px solid #c1c1c1;
+}
+.cookie-anim{
+    /*
+    J'ai essayé avec des transition mais quand on rafraichissait 
+    beaucoups ça fesait bugué la page
+    */
+
+    //Appelle l'animation anim-up qui consiste a affiché le cookie
+    animation: anim-up 1.2s ease-out;
+    //On lui applique un bottom 0% pour qu'il reste bloqué
+    bottom:0%;
+}
+.cookie-anim-down{
+    /*
+    Appelle l'animation anim-down qui consiste a caché le cookie. 
+    On retire l'anim anim-up a l'appelle
+    */
+    animation: anim-down 1.2s ease-out;
+}
+@keyframes anim-up{
+    0%{
+        //On fait commencé a -100% de sa taille
+        bottom:-100%;
+    }
+    100%{
+        //Et on l'affiche a l'écran
+        bottom:0%;
+    }
+}
+@keyframes anim-down{
+    //Le contraire de anim-up
+    0%{
+        bottom:0%;
+    }
+    100%{
+        bottom:-100%;
+    }
+}
+//On retire le surlignement de la croix du cookie
+.no-underline{
+    text-decoration: none;
+    &:hover{
+        text-decoration: none;
+    }
 }
