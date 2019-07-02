@@ -341,6 +341,11 @@ template {
   display: none;
 }
 
+.hidden {
+  -webkit-filter: blur(0.5);
+          filter: blur(0.5);
+}
+
 footer {
   background-color: black;
   padding-top: 100px;
