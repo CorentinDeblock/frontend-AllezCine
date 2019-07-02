@@ -220,7 +220,7 @@ header .navbar-light .navbar-toggler-icon {
 header .d-block {
   min-height: 500px;
   -o-object-fit: cover;
-     object-fit: cover;
+    object-fit: cover;
   background-size: cover;
 }
 
@@ -301,7 +301,13 @@ header nav .dropdown .dropdown-menu .dropdown-item {
   padding: 0px 10px;
 }
 
-header nav .dropdown .dropdown-menu .dropdown-item a {
+header nav .dropdown .dropdown-menu .dropdown-item ul {
+  list-style-type: none;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+header nav .dropdown .dropdown-menu .dropdown-item ul a {
   color: black;
 }
 
