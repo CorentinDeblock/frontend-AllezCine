@@ -66,15 +66,11 @@ a:hover {
   margin-bottom: -80px;
 }
 
-.contactus h3 {
-  z-index: -2;
-}
-
 .formulaire {
   background-color: white;
   z-index: 1;
   width: 80%;
-  margin-top: -25px;
+  margin-top: 5px;
   margin-left: auto;
   margin-right: auto;
   border: 2px solid white;
@@ -765,10 +761,10 @@ footer .spanm {
   margin: 5%;
 }
 
-<<<<<<< HEAD
-footer img {
-  height: 30px;
-  width: 30px;
+footer i {
+  color: white;
+}
+
 footer .border {
   padding: 3px;
   margin: 5px;
@@ -787,10 +783,10 @@ footer .border:hover {
 .bou img {
   height: 50px;
   width: 50px;
->>>>>>> 40232db443de44ccc4ad1bedac66de0da0b5242b
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+/* Document
    ========================================================================== */
 /**
  * 1. Correct the line height in all browsers.
