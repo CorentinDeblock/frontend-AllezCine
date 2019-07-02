@@ -12,78 +12,114 @@
 </head>
 
 <body>
-
-    <header id="haut">
+    <div id="cookie-popup" class="cookie-request">
+        <div class="d-flex justify-content-between">
+            <h5>Contrat d'utilisation des cookies</h5>
+            <button class="btn btn-default text-danger p-0 mt-0" id="close-popup">&times;</button>
+        </div>
+        <p>En poursuivant votre navigation sur ce site, vous acceptez le stockage et l’utilisation de vos données par AllezCine, pour notamment a des fins publicitaire ou pour vous proposez du contenu pertinent basé sur vos recherches.</p>
+        <a href="#cookies-modal" data-toggle="modal">Pour en savoir plus et paramétrer les traceurs</a>
+        <div class="mt-4">
+            <button id="cookie-refuse" class="btn btn-dark">Non</button>
+            <button id="cookie-accept"class="btn btn-light">Oui</button>
+        </div>
+    </div>
+    <div id="cookies-modal" tabindex="-1" class="modal fade" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Paramètres des cookies</h5>
+                    <button class="btn btn-default" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <p>Paramètrer les cookies pour que AllezCine bénéficie des informations que vous avez décidé.</p>
+                    <form action="">
+                        <div class="d-flex">
+                            <input type="checkbox" class="mr-2 my-auto">
+                            <label for="cookie-one">AllezCine receuillera des informations sur vos recherche a bien
+                                de spécifié des recherches et du contenu plus appoprié pour vous</label>
+                        </div>
+                        <div class="d-flex mt-4">
+                            <input type="checkbox" class="mr-2 my-auto">
+                            <label for="cookie-two">AllezCine receuillera des informations sur vos recherche a bien
+                                de partagé avec des régies plubicitaire</label>
+                        </div>
+                        <div class="d-flex mt-4">
+                            <input type="checkbox" class="mr-2 my-auto">
+                            <label for="cookie-three">AllezCine receuillera des informations sur vos recherche a bien
+                                de vous proposé le contenu le plus pertinent a vos demandes</label>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <header>
         <nav class="navbar navbar-expand-lg navbar-light">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03"
-                aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+            
+            <h1 class="title"><span class="title-red">Allez</span>Cine!</h1>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-
-            <h1 class="title"><span class="title-red">Allez</span>Cine!</h1>
-
-            <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
-                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-                    <li class="nav-item active">
+            
+            <div class="collapse navbar-collapse navbar-decal" id="navbarTogglerDemo03">
+                <ul class="navbar-nav ml-5 mr-auto mt-2 mt-lg-0">
+                    <li class="nav-item nav-block active">
+                        <a class="adjust-padding btn text-danger mr-3">HOME</a>
+                    </li>
+                    <li class="nav-item nav-block">
                         <div class="dropdown">
-                            <button class="btn" id="genre" data-toggle="dropdown">Film</button>
+                            <button class="btn" id="genre" data-toggle="dropdown">Genre<i class="fas fa-caret-down"></i></button>
                             <div class="dropdown-menu">
                                 <div class="dropdown-item">
-                                    <ul>
-                                        <li><a href="#">Action</a></li>
-                                        <li><a href="#">Comedy</a></li>
-                                        <li><a href="#">Western</a></li>
-                                        <li><a href="#">Fiction</a></li>
-                                    </ul>
+                                    <a href="#">Action</a>
+                                    <a href="#">Aventure</a>
+                                    <a href="#">Horreur</a>
+                                    <a href="#">Comédie</a>
                                 </div>
                             </div>
                         </div>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item nav-block">
                         <div class="dropdown">
-                            <button class="btn" id="genre" data-toggle="dropdown">Série TV</button>
+                            <button class="btn" id="movies" data-toggle="dropdown">Films<i class="fas fa-caret-down"></i></button>
                             <div class="dropdown-menu">
                                 <div class="dropdown-item">
-                                    <ul>
-                                        <li><a href="#">Drame</a></li>
-                                        <li><a href="#">Horreur</a></li>
-                                        <li><a href="#">Fiction</a></li>
-                                        <li><a href="#">Médical</a></li>
-                                    </ul>
+                                    <a href="#">Récents</a>
+                                    <a href="#">Ancient</a>
+                                    <a href="#">En tête d'affiche</a>
+                                    <a href="#">Box office</a>
                                 </div>
                             </div>
                         </div>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item nav-block">
                         <div class="dropdown">
-                            <button class="btn" id="genre" data-toggle="dropdown">Shop Movies</button>
+                            <button class="btn" id="genre" data-toggle="dropdown">Série<i class="fas fa-caret-down"></i></button>
                             <div class="dropdown-menu">
                                 <div class="dropdown-item">
-                                    <ul>
-                                        <li><a href="#">Animation</a></li>
-                                        <li><a href="#">Comedy</a></li>
-                                        <li><a href="#">Fiction</a></li>
-                                        <li><a href="#">Horreur</a></li>
-                                        
-                                    </ul>
+                                    <a href="#">Les plus récentes</a>
+                                    <a href="#">Les plus regardée</a>
+                                    <a href="#">Les plus aimé</a>
+                                    <a href="#">Les plus populaire</a>
                                 </div>
                             </div>
                         </div>
                     </li>
                     <li>
-                        <a class="nav-link col-8" href="#">CONTACT</a>
+                        <a class="nav-link nav-contact adjust-padding" href="#">CONTACT</a>
                     </li>
                 </ul>
 
-                <form class="form-inline my-2 my-lg-0">
-                    <input class="form-control mr-sm-2 bout-search" type="search" placeholder="Search"
-                        aria-label="Search">
-                    <button class="btn i-search my-2 my-sm-0" type="submit"><i class="fas fa-search"></i></button>
-
+                <form class="form-inline input-group col-3">
+                    <input class="form-control i-search round-left space-left" type="search" placeholder="Search" aria-label="Search">
+                    <div class="input-group-append">
+                        <button class="btn i-search round-right" type="submit"><i class="fas fa-search"></i></button>
+                    </div>
                 </form>
             </div>
         </nav>
-
+        
 
         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicators">
@@ -94,31 +130,30 @@
 
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img class="d-block w-100 opa" src="assets/img/carousel1.jpg" alt="First slide">
+                <img class="d-block w-100 opa" src="assets/img/header/carousel1.jpg" alt="First slide">
                     <div class="carousel-caption d-md-block">
                         <h2>LASTEST <span class="title-red">ON</span>LINE <span class="title-red">MO</span>VIE</h2>
                         <p>In space no one can hear you scream</p>
-                        <button type="button" class="btn btn-plus">Watch trailer</button>
-
+                        <button type="button" class="btn btn-danger">Watch trailer</button>
+            
                     </div>
                 </div>
 
                 <div class="carousel-item">
-                    <img class="d-block w-100 opa" src="assets/img/carousel2.jpg" alt="Second slide">
+                <img class="d-block w-100 opa" src="assets/img/header/carousel2.jpg" alt="Second slide">
                     <div class="carousel-caption d-md-block">
-                        <h2>BEST <span class="title-red">MO</span>VIE <span class="title-red">OF</span> THE <span
-                                class="title-red">MO</span>MENT</h2>
+                        <h2>BEST <span class="title-red">MO</span>VIE <span class="title-red">OF</span> THE <span class="title-red">MO</span>MENT</h2>
                         <p>The end is part of the journey</p>
-                        <button type="button" class="btn btn-plus">Watch trailer</button>
+                        <button type="button" class="btn btn-danger">Watch trailer</button>
                     </div>
                 </div>
 
                 <div class="carousel-item">
-                    <img class="d-block w-100 opa" src="assets/img/carousel3.jpg" alt="Third slide">
+                <img class="d-block w-100 opa" src="assets/img/header/carousel3.jpg" alt="Third slide">
                     <div class="carousel-caption d-md-block">
                         <h2>LASTEST <span class="title-red">ON</span>LINE <span class="title-red">SE</span>RIE</h2>
                         <p>May the era of "matriarchy" begin</p>
-                        <button type="button" class="btn btn-plus">Watch trailer</button>
+                        <button type="button" class="btn btn-danger">Watch trailer</button>
                     </div>
                 </div>
             </div>
@@ -131,13 +166,74 @@
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="sr-only">Next</span>
             </a>
-        </div>
-        <div class="connect d-flex">
-            <p><i class="fas fa-phone-alt"></i>(+000) 009 455 4088</p>
-            <a class="btn btn-black">LOGIN</a>
-            <a class="btn btn-black">REGISTER</a>
-        </div>
-
+            <div class="connect d-flex">
+                <p class="stick-letter"><i class="fas fa-phone-alt"></i>(+000) 009 455 40 88</p>
+                <button type="button" data-target="#register" data-toggle="modal" class="btn btn-black text-white">LOGIN</button>
+                <div class="modal fade" id="register" role="dialog" tabindex="2" aria-labelledby="registerLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title text-dark">Connection</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <h4 class="text-center mt-3 mb-1 text-dark">Connectez vous sur votre compte</h4>
+                                <form class="form-group row mt-5 mx-5" action="">
+                                    <input class="col-12 form-control mt-2" type="text" placeholder="Identifiant">
+                                    <input class="col-12 form-control mt-2" type="password" id="password" placeholder="Password">
+                                    <input type="submit" class="mx-auto mt-4 btn btn-success" data-dismiss="modal" value="Ok">
+                                </form>
+                                <div class="text-center">
+                                    <div>
+                                        <input type="checkbox" name="stay-connected">
+                                        <label for="stay-connected" class="text-dark"> Rester connecter</label>
+                                    </div>
+                                    <div class="mt-2">
+                                        <a href="">Créer un compte</a>
+                                    </div>
+                                    <div class="mt-2">
+                                        <a href="">Mot de passe oublié</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button type="button" data-target="#login" data-toggle="modal" class="btn btn-black text-white">REGISTER</button>
+                <div class="modal fade" id="login" role="dialog" tabindex="3" aria-labelledby="loginLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title text-dark">Register</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <h4 class="text-center mt-3 mb-1 text-dark">Register to AllezCine</h4>
+                                <form class="form-group row m-5" action="">
+                                    <input class="col-12 form-control mt-2" type="text" placeholder="usnerame">
+                                    <input class="col-12 form-control mt-2" type="password" id="password" placeholder="Password">
+                                    <input class="col-12 form-control mt-2" type="password" id="confirm-password" placeholder="Confirm password">
+                                    <div class="ml-auto mt-4">
+                                        <button type="button" class="btn btn-primary" data-dismiss="modal">Select</button>
+                                        <button type="button" class="btn btn-success" data-dismiss="modal">Register</button>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>  
     </header>
 
     <main>
