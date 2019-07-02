@@ -225,7 +225,7 @@ header .i-search::placeholder {
 }
 
 header .nav-contact {
-  margin-left: 8vw;
+  margin-left: 8vw !important;
 }
 
 header .navbar {
@@ -334,7 +334,7 @@ header nav .adjust-padding {
 }
 
 header nav .dropdown button {
-  background-color: #c6c6c665;
+  background-color: #ffffff29;
   padding: 13px 9px 13px 6px;
   text-transform: uppercase;
   color: white;
@@ -464,7 +464,34 @@ header nav .dropdown .dropdown-menu .dropdown-item a {
   text-decoration: none;
 }
 
+@media screen and (max-width: 1300px) {
+  header .carousel-caption h2 {
+    font-size: 50px !important;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  header .nav-contact {
+    margin-left: 1vw !important;
+  }
+  header h2 {
+    font-size: 45px !important;
+  }
+}
+
+@media screen and (max-width: 1110px) {
+  header .carousel-caption h2 {
+    font-size: 35px !important;
+  }
+  header .carousel-caption p {
+    font-size: 10px;
+  }
+}
+
 @media screen and (max-width: 991px) {
+  header .title {
+    font-size: 35px;
+  }
   header .navbar {
     z-index: 200;
     background-color: #272324;
@@ -491,6 +518,9 @@ header nav .dropdown .dropdown-menu .dropdown-item a {
   header .contact-li {
     background-color: black;
     text-align: center;
+  }
+  header .carousel-caption h2 {
+    font-size: 30px !important;
   }
 }
 /*# sourceMappingURL=style.css.map */

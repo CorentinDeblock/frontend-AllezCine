@@ -1,5 +1,44 @@
-@media screen and (max-width:991px){
+$h2big: 50px;
+$less: 25px;
+$h2medium: 45px;
+$h2small:35px;
+
+@media screen and(max-width:1300px){
     header{
+        .carousel-caption{
+            h2{
+                font-size: $h2big !important;
+            }
+        }
+    }
+}
+@media screen and (max-width:1200px) {
+    header{
+        .nav-contact{
+            margin-left:1vw !important;
+        }
+        h2{
+            font-size: $h2medium !important;
+        }
+    }
+}
+@media screen and (max-width:1110px){
+    header{
+        .carousel-caption{
+            h2{
+                font-size: $h2small !important;
+            }
+            p{
+                font-size: $h2small - $less;
+            }
+        }
+    }
+}
+@media screen and (max-width:991px) {
+    header{
+        .title{
+            font-size:35px;
+        }
         .navbar{
             z-index:200;
             background-color:#272324;
@@ -28,6 +67,11 @@
         .contact-li{
             background-color:black;
             text-align: center;
+        }
+        .carousel-caption{
+            h2{
+                font-size: 30px !important;
+            }
         }
     }
 }
