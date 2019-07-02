@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .ligne {
   border-left: 4px solid #FE4240;
   padding-left: 12px;
@@ -35,6 +36,7 @@ h2 {
 
 h3 {
   font-size: 2em;
+  text-transform: uppercase;
 }
 
 h4 {
@@ -59,6 +61,35 @@ a:hover {
   color: #FE4240;
 }
 
+.contactus {
+  position: relative;
+  margin-bottom: -80px;
+}
+
+.contactus h3 {
+  z-index: -2;
+}
+
+.formulaire {
+  background-color: white;
+  z-index: 1;
+  width: 80%;
+  margin-top: -25px;
+  margin-left: auto;
+  margin-right: auto;
+  border: 2px solid white;
+}
+
+.boutonSend {
+  margin-left: 13px !important;
+  margin-bottom: 5px;
+  display: inline-block !important;
+}
+
+.form-control {
+  border: 2px solid lightgray;
+}
+
 .container__center {
   width: 85%;
   display: block;
@@ -68,6 +99,133 @@ a:hover {
 
 section {
   margin: 40px 0;
+}
+
+.display_none {
+  display: none;
+}
+
+#section_shop .card__prix {
+  color: red;
+}
+
+#section_shop p {
+  font-size: 0.8em;
+}
+
+#section_shop .carousel__boutons {
+  display: block;
+  float: right;
+  position: relative;
+  right: 3px;
+}
+
+#section_shop .carousel-control-prev {
+  float: left;
+}
+
+#section_shop .carousel-control-prev-icon {
+  background-image: url("https://image.noelshack.com/fichiers/2019/25/6/1561216354-prev.png");
+}
+
+#section_shop .carousel-control-next-icon {
+  background-image: url("https://image.noelshack.com/fichiers/2019/25/6/1561216354-next.png");
+}
+
+#section_shop .carousel-control-next, #section_shop .carousel-control-prev {
+  position: relative;
+  width: 22px;
+}
+
+#section_shop .carousel p {
+  text-transform: none;
+  letter-spacing: 0;
+  color: white;
+}
+
+#section_shop .card-body {
+  background-color: black;
+  width: 100%;
+}
+
+#section_shop .card-body p {
+  font-size: 0.8em;
+}
+
+#section_shop .video-card-shop {
+  background-color: black;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  height: 250px;
+}
+
+#section_shop .tar_test {
+  width: 100%;
+}
+
+#section_shop h4 {
+  color: red;
+  text-transform: uppercase;
+}
+
+#section_shop .title-shop {
+  color: red;
+  font-size: 1em;
+  -ms-grid-column: 1;
+  grid-column: 1;
+}
+
+#section_shop .grid-2 {
+  -ms-grid-column: 2;
+  grid-column: 2;
+}
+
+#section_shop .card-grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 30% 70%;
+      grid-template-columns: 30% 70%;
+}
+
+#section_shop .cardshop__contenu {
+  background-color: #DCDCDC;
+  padding: 6px;
+}
+
+#section_shop .cardshop__contenu .btn-hover {
+  background-color: #DCDCDC;
+  text-align: center;
+  width: 100%;
+}
+
+.movies__contenu {
+  padding: 6px;
+  font-size: 0.8em;
+}
+
+.movies__contenu .btn-hover {
+  text-align: center;
+  width: 100%;
+}
+
+.card-header {
+  background-color: white;
+  border-bottom: 0px;
+  text-align: center;
+}
+
+.collapsed:after {
+  content: "Moins de films";
+}
+
+.collapsed span {
+  display: none;
+}
+
+.row {
+  width: 100%;
 }
 
 .card-img-top {
@@ -110,6 +268,10 @@ section {
   }
 }
 
+.card__genre {
+  text-align: right;
+}
+
 .card {
   border: none;
   color: #4C5155;
@@ -134,6 +296,19 @@ section {
   background-color: white;
 }
 
+.card .btn-close {
+  background-color: #FE4240;
+}
+
+.card .btn-close:hover {
+  opacity: 0.7;
+}
+
+.card .modal-header {
+  background-color: #FE4240;
+  color: white;
+}
+
 .card .card__name {
   text-align: center;
 }
@@ -145,7 +320,7 @@ section {
       grid-template-columns: 50% 50%;
 }
 
-.card .card__genre {
+.card .card__prix {
   -ms-grid-column: 2;
   grid-column: 2;
   text-align: right;
@@ -184,12 +359,54 @@ section {
   text-transform: uppercase;
 }
 
+header .title {
+  font-size: 55px;
+  font-weight: 900;
+  -webkit-transform: scaleY(1.1);
+      -ms-transform: scaleY(1.1);
+          transform: scaleY(1.1);
+}
+
+header .nav-block a {
+  display: block;
+}
+
 header .carousel-caption {
-  padding-bottom: 100px;
+  top: 38%;
+  line-height: 40px;
+}
+
+header .carousel-caption p {
+  font-weight: 300;
+}
+
+header .carousel-caption h2 {
+  letter-spacing: 2px;
+  font-size: 58px;
+  font-weight: 700;
+  -webkit-transform: scaleX(1.1);
+      -ms-transform: scaleX(1.1);
+          transform: scaleX(1.1);
 }
 
 header .carousel-indicators {
-  padding-bottom: 40px;
+  top: 80%;
+}
+
+header .carousel-indicators li {
+  -webkit-transform: scale(1.1, 1.4);
+      -ms-transform: scale(1.1, 1.4);
+          transform: scale(1.1, 1.4);
+  margin-right: 20px;
+  opacity: 0.8;
+}
+
+header .carousel-indicators .active {
+  background-color: red;
+}
+
+header .carousel-item img {
+  height: 700px;
 }
 
 header .opa {
@@ -198,9 +415,29 @@ header .opa {
 }
 
 header .i-search {
-  position: absolute;
-  z-index: 3;
-  text-align: right;
+  background-color: #0007;
+  border: none;
+  color: white;
+}
+
+header .i-search::-webkit-input-placeholder {
+  color: white;
+}
+
+header .i-search:-ms-input-placeholder {
+  color: white;
+}
+
+header .i-search::-ms-input-placeholder {
+  color: white;
+}
+
+header .i-search::placeholder {
+  color: white;
+}
+
+header .nav-contact {
+  margin-left: 10px;
 }
 
 header .navbar {
@@ -209,11 +446,27 @@ header .navbar {
   position: absolute;
 }
 
-header .navbar-toggler {
+header .navbar .navbar-decal {
+  margin-bottom: 40px;
+}
+
+header .navbar .round-left {
+  border-radius: 25px 0px 0px 25px;
+}
+
+header .navbar .round-right {
+  border-radius: 0px 25px 25px 0px;
+}
+
+header .navbar .space-left {
+  padding-left: 35px;
+}
+
+header .navbar .navbar-toggler {
   border-color: white !important;
 }
 
-header .navbar-light .navbar-toggler-icon {
+header .navbar .navbar-light .navbar-toggler-icon {
   background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 }
 
@@ -247,6 +500,10 @@ header .navbar-light .navbar-nav .nav-link {
   color: white;
 }
 
+header .navbar-nav {
+  padding-left: 15px;
+}
+
 header .btn-black {
   background-color: black;
 }
@@ -264,6 +521,7 @@ header .connect p {
 }
 
 header .connect .btn {
+  z-index: 15;
   margin-right: 10px;
 }
 
@@ -271,19 +529,33 @@ header .connect .fa-phone-alt {
   margin-right: 10px;
 }
 
+header .stick-letter {
+  letter-spacing: 1px;
+}
+
 header nav {
   width: 100%;
   top: 0%;
-  padding: 2% 3%;
+  padding: 50px !important;
   z-index: 2;
   color: white;
 }
 
+header nav .adjust-padding {
+  padding-top: 13px;
+}
+
 header nav .dropdown button {
-  background-color: #0004;
+  background-color: #76767665;
+  text-transform: uppercase;
+  padding: 13px 9px 13px 6px;
   color: white;
   border-radius: 0;
-  margin-left: 10px;
+  margin-left: 5px;
+}
+
+header nav .dropdown button i {
+  margin-left: 4px;
 }
 
 header nav .dropdown button:hover {
@@ -311,9 +583,104 @@ header nav .dropdown .dropdown-menu .dropdown-item ul a {
   color: black;
 }
 
+.cookie-request {
+  position: fixed;
+  bottom: -100%;
+  right: 0%;
+  background-color: #f4f4f4;
+  /*
+    Fait en sorte a ce que le cookie sois tout au dessus 
+    de tout les autre élément visuellement et PHYSIQUEMENT
+    Le z-index va de : -infini a infini
+    Mais techniquement pour la limite d'un pc actuelle :
+    -9 223 372 036 854 775 807 a 9 223 372 036 854 775 807
+    Sois -(pow(2,63)-1) a (pow(2,63)-1)
+    Sois la capacité maximale d'un nombre négatif et positif
+    Sois un nombre appelé réel
+    Ce qui fait la capacité maximale d'un ordinateur de 64 bits
+    Pour plus d'information : 
+    Rubrique : Représentation des entiers signés
+    https://fr.wikibooks.org/wiki/Programmation_C/Types_de_base
+    */
+  z-index: 40;
+  padding: 20px;
+  width: 35%;
+  border-radius: 10px 0px 0px 0px;
+  border-top: 5px solid #c1c1c1;
+  border-left: 5px solid #c1c1c1;
+}
+
+.cookie-anim {
+  /*
+    J'ai essayé avec des transition mais quand on rafraichissait 
+    beaucoups ça fesait bugué la page
+    */
+  -webkit-animation: anim-up 1.2s ease-out;
+          animation: anim-up 1.2s ease-out;
+  bottom: 0%;
+}
+
+.cookie-anim-down {
+  /*
+    Appelle l'animation anim-down qui consiste a caché le cookie. 
+    On retire l'anim anim-up a l'appelle
+    */
+  -webkit-animation: anim-down 1.2s ease-out;
+          animation: anim-down 1.2s ease-out;
+}
+
+@-webkit-keyframes anim-up {
+  0% {
+    bottom: -100%;
+  }
+  100% {
+    bottom: 0%;
+  }
+}
+
+@keyframes anim-up {
+  0% {
+    bottom: -100%;
+  }
+  100% {
+    bottom: 0%;
+  }
+}
+
+@-webkit-keyframes anim-down {
+  0% {
+    bottom: 0%;
+  }
+  100% {
+    bottom: -100%;
+  }
+}
+
+@keyframes anim-down {
+  0% {
+    bottom: 0%;
+  }
+  100% {
+    bottom: -100%;
+  }
+}
+
+.no-underline {
+  text-decoration: none;
+}
+
+.no-underline:hover {
+  text-decoration: none;
+}
+
 footer {
   background-color: black;
   padding-top: 100px;
+  padding-bottom: 30px;
+}
+
+footer h4 {
+  border-bottom: 2px solid white;
 }
 
 footer .suscribe {
@@ -326,7 +693,7 @@ footer .inputsuscribe {
 }
 
 footer .tableau {
-  padding-bottom: 1%;
+  padding-bottom: 3%;
 }
 
 footer .cine1 {
@@ -339,15 +706,15 @@ footer .cine2 {
 
 footer h4 {
   font-family: "arial";
-  font-weight: bold;
   color: white;
 }
 
 footer .btag {
-  background-color: #242424;
+  background-color: dimgray;
   color: white;
   line-height: 30px;
-  padding: 3px 8px;
+  padding: 3px;
+  border-radius: 10%;
 }
 
 footer .btag:hover {
@@ -375,8 +742,8 @@ footer .movies:hover {
 }
 
 footer .img1 {
-  width: 100px;
-  height: 80px;
+  width: 80px;
+  height: 65px;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -387,8 +754,8 @@ footer .titlemov {
 }
 
 footer .img2 {
-  width: 130px;
-  height: 180px;
+  width: 75px;
+  height: 110px;
 }
 
 footer hr {
@@ -398,63 +765,39 @@ footer hr {
 }
 
 footer .hrespace {
-  padding: 30px;
+  padding: 2%;
 }
 
 footer .connectus {
   color: white;
-  margin-left: 30px;
-  margin-bottom: 15px;
-}
-
-footer .connectus a#cRetour {
-  border-radius: 3px;
-  padding: 10px;
-  font-size: 15px;
-  text-align: center;
-  color: #fff;
-  position: fixed;
-  right: 20px;
-  opacity: 1;
-  z-index: 99999;
-  -webkit-transition: all ease-in 0.2s;
-  -o-transition: all ease-in 0.2s;
-  transition: all ease-in 0.2s;
-  visibility: hidden;
-  text-decoration: none;
-}
-
-footer .connectus a#cRetour:hover {
-  -webkit-transition: all ease-in 0.2s;
-  -o-transition: all ease-in 0.2s;
-  transition: all ease-in 0.2s;
-}
-
-footer .connectus a#cRetour.cInvisible {
-  bottom: -35px;
-  opacity: 0;
-  -webkit-transition: all ease-in 0.5s;
-  -o-transition: all ease-in 0.5s;
-  transition: all ease-in 0.5s;
-}
-
-footer .connectus a#cRetour.cVisible {
-  bottom: 20px;
-  opacity: 1;
 }
 
 footer .spanm {
   margin: 5%;
 }
 
-footer img {
-  height: 30px;
-  width: 30px;
+footer i {
+  color: white;
 }
 
-footer .icon {
-  margin-left: 8px;
-  margin-right: 8px;
+footer .border {
+  padding: 3px;
+  margin: 5px;
+  width: 35px;
+}
+
+footer .border .fab {
+  position: relative;
+  left: 5px;
+}
+
+footer .border:hover {
+  background-color: #FE4240;
+}
+
+.bou img {
+  height: 50px;
+  width: 50px;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */

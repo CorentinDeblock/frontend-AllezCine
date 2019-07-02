@@ -1,68 +1,61 @@
 footer {
     background-color: black;
     padding-top: 100px;
-
+    padding-bottom: 30px;
+    h4{
+        border-bottom: 2px solid white;
+    }
     .suscribe {
         color: #FE4240;
         padding-bottom: 1%;
     }
-
     .inputsuscribe {
         padding-bottom: 1%;
     }
-
     .tableau {
-        padding-bottom: 1%;
+        padding-bottom: 3%;
     }
-
     .cine1 {
         color: white;
     }
-
     .cine2 {
         color: #FE4240;
     }
-
     h4 {
         font-family: "arial";
-        font-weight: bold;
         color: white;
     }
-
+    
     .btag {
-        background-color: #242424;
+        background-color: dimgray;
         color: white;
         line-height: 30px;
-        padding: 3px 8px;
-
-        &:hover {
-            background-color: #FE4240;
+        padding: 3px;
+        border-radius: 10%;
+        &:hover{
+            background-color: $rose;
             color: white;
             text-decoration: none;
         }
     }
-
     .releases {
         color: dimgray;
-
-        &:hover {
+        &:hover{
             color: white;
             text-decoration: none;
         }
     }
-
     .movies {
         color: dimgray;
-
-        &:hover {
+        &:hover{
             color: white;
             text-decoration: none;
         }
     }
 
     .img1 {
-        width: 100px;
-        height: 80px;
+        width: 80px;
+        height: 65px;
         object-fit: cover;
     }
 
@@ -72,67 +65,46 @@ footer {
     }
 
     .img2 {
-        width: 130px;
-        height: 180px;
+        width: 75px;
+        height: 110px;
     }
 
-    hr {
+    hr{
         border: 1px solid #4C5155;
         border-right: none;
         border-left: none;
     }
-
     .hrespace {
-        padding: 30px;
+        padding: 2%;
     }
-
     .connectus {
         color: white;
-        margin-left: 30px;
-        margin-bottom: 15px;
-
-        //bouton retour
-        a#cRetour {
-            border-radius: 3px;
-            padding: 10px;
-            font-size: 15px;
-            text-align: center;
-            color: #fff;
-            position: fixed;
-            right: 20px;
-            opacity: 1;
-            z-index: 99999;
-            transition: all ease-in 0.2s;
-            visibility: hidden;
-            text-decoration: none;
-        }
-
-        a#cRetour:hover {
-            transition: all ease-in 0.2s;
-        }
-
-        a#cRetour.cInvisible {
-            bottom: -35px;
-            opacity: 0;
-            transition: all ease-in 0.5s;
-        }
-
-        a#cRetour.cVisible {
-            bottom: 20px;
-            opacity: 1;
-        }
     }
 
     .spanm {
         margin: 5%;
     }
-
-    img {
-        height: 30px;
-        width: 30px;
+    i {
+        color: white;
     }
-    .icon {
-        margin-left: 8px;
-        margin-right: 8px;
+
+    .border{
+        padding: 3px;
+        margin: 5px;
+        width: 35px;
+        .fab{
+            position: relative;
+            left: 5px;
+        }
+        &:hover{
+            background-color: $rose;
+        }
+    }
+}   
+
+.bou {
+    img{
+        height: 50px;
+        width: 50px; 
     }
 }
