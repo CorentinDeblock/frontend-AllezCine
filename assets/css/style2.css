@@ -1,52 +1,68 @@
 .mySidenav a {
   position: absolute;
-  left: -80px;
-  /* Position them outside of the screen */
+  left: -85px;
   -webkit-transition: 0.3s;
   transition: 0.3s;
-  /* Add transition on hover */
-  padding: 15px;
-  /* 15px padding */
-  width: 100px;
-  /* Set a specific width */
-  text-decoration: none;
-  /* Remove underline */
-  font-size: 20px;
-  /* Increase font size */
-  color: white;
-  /* White text color */
-  border-radius: 0 5px 5px 0;
-  /* Rounded corners on the top right and bottom right side */
-  padding-right: 6%;
+  padding: 13px;
+  width: 140px;
+  border-radius: 0 25px 25px 0;
+}
+
+i {
+  background-color: white;
+  border-radius: 50%;
+  color: black;
+  height: 30px;
+  width: 30px;
+  padding: 6px 3px 0 3px;
+  text-align: center;
 }
 
 .mySidenav a:hover {
   left: 0;
   /* On mouse-over, make the elements appear as they should */
+  text-decoration: none;
+  color: white;
 }
 
 /* The about link: 20px from the top with a green background */
 .tw {
-  top: 20px;
-  background-color: #4CAF50;
-  text-align: left;
+  top: 5%;
+  background-color: #1C9DEE;
 }
 
 .fb {
-  top: 80px;
-  background-color: #2196F3;
-  /* Blue */
-  text-align: justify;
+  top: 13%;
+  background-color: #3E5F94;
 }
 
 .dbbb {
-  top: 140px;
-  background-color: #f44336;
-  /* Red */
+  top: 21%;
+  background-color: #EE518F;
 }
 
-.insta {
-  top: 200px;
-  background-color: #555;
+.google {
+  top: 29%;
+  background-color: #D84B44;
+}
+
+.reseaux1 {
+  color: white;
+  margin-right: 25%;
+}
+
+.reseaux2 {
+  color: white;
+  margin-right: 8%;
+}
+
+.reseaux3 {
+  color: white;
+  margin-right: 13%;
+}
+
+.reseaux4 {
+  color: white;
+  margin-right: 22%;
 }
 /*# sourceMappingURL=style2.css.map */
