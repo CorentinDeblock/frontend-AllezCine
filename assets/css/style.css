@@ -33,6 +33,7 @@ h1 {
 h2 {
   font-size: 2.5em;
   -webkit-transform: scaleX(1.1);
+      -ms-transform: scaleX(1.1);
           transform: scaleX(1.1);
   font-weight: 500;
 }
@@ -154,6 +155,7 @@ header .title {
   font-size: 55px;
   font-weight: 900;
   -webkit-transform: scaleY(1.1);
+      -ms-transform: scaleY(1.1);
           transform: scaleY(1.1);
 }
 
@@ -175,6 +177,7 @@ header .carousel-caption h2 {
   font-size: 58px;
   font-weight: 700;
   -webkit-transform: scaleX(1.1);
+      -ms-transform: scaleX(1.1);
           transform: scaleX(1.1);
 }
 
@@ -184,6 +187,7 @@ header .carousel-indicators {
 
 header .carousel-indicators li {
   -webkit-transform: scale(1.1, 1.4);
+      -ms-transform: scale(1.1, 1.4);
           transform: scale(1.1, 1.4);
   margin-right: 20px;
   opacity: 0.8;
@@ -463,4 +467,3 @@ header nav .dropdown .dropdown-menu .dropdown-item a {
 .no-underline:hover {
   text-decoration: none;
 }
-/*# sourceMappingURL=style.css.map */
