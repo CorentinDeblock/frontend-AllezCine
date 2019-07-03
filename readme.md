@@ -39,6 +39,44 @@ Github, trop de conflits, on s'est retrouvé avec 10 branches, c'était le borde
 **Solution:**
 Les derniers jours, on a créé une branche où on a mettait tout en commun dessus plusieurs fois par jour.
 
+## Travaux de chacun sur la One Page "AllezCine"
+**Lesly:**
+* vérification sur W3C, pour voir les erreurs dans le HTML,
+* surveille la branche où on mettait tout en commun pour vérifier les erreurs,
+* compléter le JSON,
+* dernière modification sur le header.
+
+
+**Christophe:**
+* compléter le JSON,
+* dernière modification sur le header,
+* bouton javascript de retour en haut, 
+* le menu de gauche fb, twitter etc, 
+* corriger le json series, 
+* fait quelques vérifications sur W3C.
+
+**Enzo:**
+* footer,
+* quand on arrive sur le site, choisir son âge,
+* compléter le JSON.
+
+
+**Cindy:**
+* compléter le JSON,
+* header,
+* mise en place du HTML/CSS de tout le main,
+* shop series: JavaScript,
+* features movies / séries : JavaScript,
+* README de la One Page
+
+
+**Corentin:**
+* compléter le JSON
+* faire l'API
+* header,
+* shop series: JavaScript,
+* features movies / séries : JavaScript
+
 # B. Newsletter (Bonus)
 
 [![Image](https://i.goopics.net/anAY0.jpg)](https://goopics.net/i/anAY0)
