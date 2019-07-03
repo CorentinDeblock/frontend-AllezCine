@@ -274,7 +274,7 @@
     "descrip": "Les enfants de Holt Farrier, ex-artiste de cirque chargé de s’occuper d’un éléphanteau dont les oreilles démesurées sont la risée du public, découvrent que ce dernier sait voler...",
     "realisateur": "Tim Burton",
     "prix": 16,
-    "genre": ["Aventure", "Famille", "Fantastique"],
+    "genre": ["aventure", "famille", "fantastique"],
     "acteurs": "Colin Farrell, Michael Keaton, Danny DeVito, Eva Green, Alan Arkin"
   },
   {
@@ -285,7 +285,7 @@
     "descrip": "Face à des assaillants sur-armés et bien supérieurs en nombre, six hommes ont eu le courage de tenter l’impossible. Leur combat a duré 13 heures. Ceci est une histoire vraie.",
     "realisateur": "Michael Bay",
     "prix": 9,
-    "genre": ["Guerre", "Drame", "Histoire", "Action"],
+    "genre": ["guerre", "drame", "histoire", "action"],
     "acteurs": "John Krasinski, James Badge Dale, Max Martini, Pablo Schreiber, David Denman, Dominic Fumusa, Toby Stephens, Alexia Barlier"
   },
   {
@@ -296,7 +296,7 @@
     "descrip": "Les extraterrestres ont envahi la Terre. Occupée, Chicago se divise maintenant entre les collaborateurs qui ont juré allégeance à l’envahisseur et les rebelles qui les combattent dans la clandestinité depuis dix ans.",
     "realisateur": "Rupert Wyatt",
     "prix": 8,
-    "genre": ["Science Fiction"],
+    "genre": ["science Fiction"],
     "acteurs": "John Goodman, Vera Farmiga"
   },
   {
