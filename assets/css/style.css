@@ -508,11 +508,9 @@ header .i-search::placeholder {
 }
 
 header .nav-contact {
-<<<<<<< HEAD
+  margin-left: 8vw;
   margin-left: 8vw !important;
-=======
   margin-left: 10px;
->>>>>>> 9cf1f8642d9124b965937d85560385774cdb3b61
 }
 
 header .navbar {
@@ -741,7 +739,6 @@ header nav .dropdown .dropdown-menu .dropdown-item a {
   text-decoration: none;
 }
 
-<<<<<<< HEAD
 @media screen and (max-width: 1300px) {
   header .carousel-caption h2 {
     font-size: 50px !important;
@@ -801,8 +798,7 @@ header nav .dropdown .dropdown-menu .dropdown-item a {
     font-size: 30px !important;
   }
 }
-/*# sourceMappingURL=style.css.map */
-=======
+
 footer {
   background-color: black;
   padding-top: 100px;
@@ -1304,4 +1300,3 @@ template {
 [hidden] {
   display: none;
 }
->>>>>>> 9cf1f8642d9124b965937d85560385774cdb3b61
