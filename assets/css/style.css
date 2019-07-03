@@ -29,7 +29,6 @@ h1 {
 h2 {
   font-size: 2.5em;
   -webkit-transform: scaleX(1.1);
-      -ms-transform: scaleX(1.1);
           transform: scaleX(1.1);
   font-weight: 500;
 }
@@ -379,7 +378,6 @@ section {
   position: relative;
   -webkit-transition: -webkit-transform .1s;
   transition: -webkit-transform .1s;
-  -o-transition: transform .1s;
   transition: transform .1s;
   transition: transform .1s, -webkit-transform .1s;
 }
@@ -394,7 +392,6 @@ section {
 
 .bp-res:hover {
   -webkit-transform: translateX(130px);
-      -ms-transform: translateX(130px);
           transform: translateX(130px);
 }
 
@@ -430,7 +427,6 @@ header .title {
   font-size: 55px;
   font-weight: 900;
   -webkit-transform: scaleY(1.1);
-      -ms-transform: scaleY(1.1);
           transform: scaleY(1.1);
 }
 
@@ -452,7 +448,6 @@ header .carousel-caption h2 {
   font-size: 58px;
   font-weight: 700;
   -webkit-transform: scaleX(1.1);
-      -ms-transform: scaleX(1.1);
           transform: scaleX(1.1);
 }
 
@@ -462,7 +457,6 @@ header .carousel-indicators {
 
 header .carousel-indicators li {
   -webkit-transform: scale(1.1, 1.4);
-      -ms-transform: scale(1.1, 1.4);
           transform: scale(1.1, 1.4);
   margin-right: 20px;
   opacity: 0.8;
@@ -504,11 +498,7 @@ header .i-search::placeholder {
 }
 
 header .nav-contact {
-<<<<<<< HEAD
   margin-left: 8vw !important;
-=======
-  margin-left: 10px;
->>>>>>> 9cf1f8642d9124b965937d85560385774cdb3b61
 }
 
 header .navbar {
@@ -737,69 +727,8 @@ header nav .dropdown .dropdown-menu .dropdown-item a {
   text-decoration: none;
 }
 
-<<<<<<< HEAD
-@media screen and (max-width: 1300px) {
-  header .carousel-caption h2 {
-    font-size: 50px !important;
-  }
-}
-
-@media screen and (max-width: 1200px) {
-  header .nav-contact {
-    margin-left: 1vw !important;
-  }
-  header h2 {
-    font-size: 45px !important;
-  }
-}
-
-@media screen and (max-width: 1110px) {
-  header .carousel-caption h2 {
-    font-size: 35px !important;
-  }
-  header .carousel-caption p {
-    font-size: 10px;
-  }
-}
-
-@media screen and (max-width: 991px) {
-  header .title {
-    font-size: 35px;
-  }
-  header .navbar {
-    z-index: 200;
-    background-color: #272324;
-    margin: 0px !important;
-    padding: 10px !important;
-  }
-  header .navbar-nav {
-    padding: 0px;
-  }
-  header .nav-item a {
-    margin-right: 0px !important;
-  }
-  header .nav-item button {
-    width: 100%;
-    margin-left: 0px !important;
-  }
-  header .navbar-collapse {
-    margin: 0px !important;
-  }
-  header .search-bar {
-    padding-top: 10px;
-    margin-right: 0px;
-  }
-  header .contact-li {
-    background-color: black;
-    text-align: center;
-  }
-  header .carousel-caption h2 {
-    font-size: 30px !important;
-  }
-}
-/*# sourceMappingURL=style.css.map */
-=======
 footer {
+  overflow-x: hidden;
   background-color: black;
   padding-top: 100px;
   padding-bottom: 30px;
@@ -932,7 +861,6 @@ a#cRetour {
   opacity: 1;
   z-index: 99999;
   -webkit-transition: all ease-in 0.2s;
-  -o-transition: all ease-in 0.2s;
   transition: all ease-in 0.2s;
   backface-visibility: hidden;
   -webkit-backface-visibility: hidden;
@@ -941,7 +869,6 @@ a#cRetour {
 
 a#cRetour:hover {
   -webkit-transition: all ease-in 0.2s;
-  -o-transition: all ease-in 0.2s;
   transition: all ease-in 0.2s;
 }
 
@@ -949,7 +876,6 @@ a#cRetour.cInvisible {
   bottom: -35px;
   opacity: 0;
   -webkit-transition: all ease-in 0.5s;
-  -o-transition: all ease-in 0.5s;
   transition: all ease-in 0.5s;
 }
 
@@ -1300,4 +1226,72 @@ template {
 [hidden] {
   display: none;
 }
->>>>>>> 9cf1f8642d9124b965937d85560385774cdb3b61
+
+@media screen and (max-width: 1300px) {
+  header .carousel-caption h2 {
+    font-size: 50px !important;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  header .nav-contact {
+    margin-left: 1vw !important;
+  }
+  header h2 {
+    font-size: 45px !important;
+  }
+}
+
+@media screen and (max-width: 1110px) {
+  header .carousel-caption h2 {
+    font-size: 35px !important;
+  }
+  header .carousel-caption p {
+    font-size: 10px;
+  }
+}
+
+@media screen and (max-width: 730px) {
+  .cookie-request {
+    width: 100%;
+    margin-top: 50px;
+    border: none;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  header .title {
+    font-size: 35px;
+  }
+  header .navbar {
+    z-index: 200;
+    background-color: #272324;
+    margin: 0px !important;
+    padding: 10px !important;
+  }
+  header .navbar-nav {
+    padding: 0px;
+  }
+  header .nav-item a {
+    margin-right: 0px !important;
+  }
+  header .nav-item button {
+    width: 100%;
+    margin-left: 0px !important;
+  }
+  header .navbar-collapse {
+    margin: 0px !important;
+  }
+  header .search-bar {
+    padding-top: 10px;
+    margin-right: 0px;
+  }
+  header .contact-li {
+    background-color: black;
+    text-align: center;
+  }
+  header .carousel-caption h2 {
+    font-size: 30px !important;
+  }
+}
+/*# sourceMappingURL=style.css.map */
