@@ -258,6 +258,10 @@ header .navbar .navbar-light .navbar-toggler-icon {
   background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 }
 
+header .nav-item * {
+  font-size: 15px !important;
+}
+
 header .d-block {
   min-height: 500px;
   -o-object-fit: cover;
@@ -289,7 +293,7 @@ header .navbar-light .navbar-nav .nav-link {
 }
 
 header .navbar-nav {
-  padding-left: 15px;
+  padding-left: 4vw;
 }
 
 header .btn-black {
@@ -324,7 +328,7 @@ header .stick-letter {
 header nav {
   width: 100%;
   top: 0%;
-  padding: 25px !important;
+  padding: 25px 3vw !important;
   z-index: 2;
   color: white;
 }
