@@ -102,13 +102,13 @@ fetch('assets/js/movies.json',{
         let test = a.querySelector(".video_modal");
 
         element2.onclick = function() {
-            var ifrm = document.createElement('iframe');
+            let ifrm = document.createElement('iframe');
             ifrm.id = "feature"+ i;
             ifrm.style.width = "100%";
             ifrm.style.height = "250px";
 
             // Placer dans le HTML
-            var el = document.querySelector(".video_modal");
+            let el = document.querySelector(".video_modal");
             el.parentNode.insertBefore(ifrm, el);
 
             // Mettre la src
