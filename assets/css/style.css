@@ -105,6 +105,12 @@ main .display_none {
   display: none;
 }
 
+main .accordion {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 main #section_shop .card__prix {
   color: red;
 }

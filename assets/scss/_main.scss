@@ -42,7 +42,11 @@ main{
     .display_none{
         display: none;
     }
-
+    .accordion{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
     #section_shop{
         .card__prix{
             color: red;

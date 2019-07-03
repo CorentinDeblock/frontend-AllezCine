@@ -35,10 +35,14 @@ let verif_ave = "";
 let y = 0;
 
 
-function templateCopy(tmp,data){
+function templateCopy(tmp,data,targetStr){
     let a = tmp.content.cloneNode(true);
     let imag = a.querySelector(".card-img-top");
     let h = a.querySelector(".card__name");
+    let link = a.querySelector("#title")
+    link.setAttribute("data-target",targetStr);
+
+
     let desc = a.querySelector(".descri");
     let year = a.querySelector(".card__years");
     let realis = a.querySelector(".reali");
@@ -78,6 +82,8 @@ function templateCopy(tmp,data){
     return a;
 }
 
+
+
 let header = new Headers();
 header.set("Content-type","application/json")
 
@@ -88,8 +94,9 @@ fetch('assets/js/movies.json',{
 }).then(value => {
     let mydata = value;
     for(let i = 0;i < mydata.length; i++){
-        let a = templateCopy(mov,mydata[i])
-        let b = templateCopy(mov2,mydata[i])
+        let filmStr = "#film" + i;
+        let a = templateCopy(mov,mydata[i],filmStr);
+        let b = templateCopy(mov2,mydata[i],filmStr);
     
         let bu = a.querySelector(".btn-hover");
         let element2 = a.querySelector(".btn-mod");
@@ -100,16 +107,35 @@ fetch('assets/js/movies.json',{
         let idd = a.querySelector(".fademovie");
 
         let bb = b.querySelector(".card__prix");
+        bb.innerHTML += mydata[i].prix + " euros";
         let element3 = b.querySelector("#toggleData2");
         
         let test = a.querySelector(".video_modal");
 
         // Ajouter le data-target et un id
-        bu.setAttribute("data-target", "#film"+i);
+        bu.setAttribute("data-target", filmStr);
         idd.id = "film"+i;
     
         el2.onclick = function(e) {
-            if(!e.target.isEnable){
+            let modal = document.querySelector(`${bu.getAttribute("data-target")} .video_modal`);
+            console.log(modal)
+            if(!modal.contains(document.getElementById("trailer"))){
+                let ifrm = document.createElement('iframe');
+                ifrm.style.width = "100%";
+                ifrm.style.height = "250px";
+                ifrm.style.border = "0";
+                ifrm.id = "trailer";
+
+                // Placer dans le HTML
+                el.prepend(ifrm)
+
+                // Mettre la src
+                ifrm.src = mydata[i].trailerYtb;
+                e.target.isEnable = true;    
+            }
+        };
+        a.querySelector("#title").addEventListener("click",function(e) {
+            if(!e.target.contains("iframe")){
                 let ifrm = document.createElement('iframe');
                 ifrm.style.width = "100%";
                 ifrm.style.height = "250px";
@@ -123,7 +149,7 @@ fetch('assets/js/movies.json',{
                 ifrm.src = mydata[i].trailerYtb;
                 e.target.isEnable = true;    
             }
-        };
+        })
 
         do{
             let len = verif.length;
@@ -146,10 +172,9 @@ fetch('assets/js/movies.json',{
             colla.appendChild(a);
         }
 
-        
+        bb.innerHTML = mydata[i].prix;
         // Ajouter sur shop movies
         if (i < 8){
-            bb.innerHTML += mydata[i].prix;
             targetshop.appendChild(templateCopy(mov2,mydata[i])); 
         }
         
@@ -182,8 +207,6 @@ fetch('assets/js/movies.json',{
         verif_com = verif.includes("comédie");
 
         if(verif_com){
-            let copy = a;
-            console.log(a);
             target5.appendChild(templateCopy(mov,mydata[i]));
         }
     }
@@ -191,6 +214,9 @@ fetch('assets/js/movies.json',{
 }).catch(error => {
     console.log(error)
 })
+
+
+// SERIES 
 
 let movserie = document.getElementById("templateMov2");
 
@@ -222,7 +248,9 @@ fetch('assets/js/series.json',{
 }).then(value => {
     let mydataserie = value;
     for(let i = 0;i < mydataserie.length; i++){
-        let a = templateCopy(movserie,mydataserie[i])
+        let serieString = "#serie" +i;
+
+        let a = templateCopy(movserie,mydataserie[i],serieString)
     
         let bu = a.querySelector(".btn-hover");
         let element2 = a.querySelector(".btn-mod");
@@ -235,7 +263,7 @@ fetch('assets/js/series.json',{
         let test = a.querySelector(".video_modal");
 
         // Ajouter le data-target et un id
-        bu.setAttribute("data-target", "#serie"+i);
+        bu.setAttribute("data-target",serieString);
         idd.id = "serie"+i;
     
         el2.onclick = function(e) {
