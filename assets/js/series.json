@@ -1,7 +1,7 @@
 [
   {
     "name": "The Fall",
-    "img": "https://raw.githubusercontent.com/CorentinDeblock/frontend-AllezCine/img-data/thefall-2006-dramatique.jpg",
+    "img": "assets/img/serie/thefall-2006-dramatique.jpg",
     "annee": 2006,
     "trailerYtb": "https://www.youtube.com/embed/dyFrBC1rAcg",
     "descrip": "Lorsque les investigations de la police nord irlandaise sur une série de meurtres n'avancent pas, la détective et commissaire de police, Stella Gibson, est envoyée à Belfast pour suivre l'affaire de plus près. En parallèle de l'enquête, le meurtrier, un père de famille qui semble irréprochable du nom de Paul Spector, continue ses crimes au nez et à la barbe des forces de l'ordre...",
@@ -12,18 +12,18 @@
   },
   {
     "name": "Chernobyl",
-    "img": "https://raw.githubusercontent.com/CorentinDeblock/frontend-AllezCine/img-data/serie/chernobyl.jpg",
+    "img": "assets/img/serie/chernobyl.jpg",
     "annee": 2019,
     "trailerYtb": "https://www.youtube.com/embed/skCiDK542aM",
     "descrip": "26 avril 1986, l'histoire vraie de la pire catastrophe causée par l'homme et de ceux qui ont sacrifié leur vie pour sauver l'Europe du drame. L'explosion d'un réacteur à la centrale nucléaire de Chernobyl, en Ukraine, a de terribles conséquences aussi bien sur le personnel de l'usine, que sur les équipes de secours, la population et l'environnement.",
     "realisateur": "Craig Mazin",
     "prix": 12,
-    "genre": ["Drame"],
+    "genre": ["drame"],
     "acteurs": "Jared Harris, Stellan Skarsgård, Paul Ritter"
   },
   {
     "name": "What We Do In The Shadows",
-    "img": "https://raw.githubusercontent.com/CorentinDeblock/frontend-AllezCine/img-data/WhatWeDoInTheShadows-2014-comedie.jpg",
+    "img": "assets/img/serie/Whatwe.jpg",
     "annee": 2014,
     "trailerYtb": "https://www.youtube.com/embed/IAZEWtyhpes",
     "descrip": "Ce faux documentaire suit le quotidien de Nandor, Laszlo, Nadja et Guillermo, trois vampires âgés de plusieurs siècles et un humain, vivant en coloc dans le New York d'aujourd'hui. Comment s'organise leur cohabitation ? Un humain peut-il aussi être un ami et pas un dîner ? La vie éternelle, est-ce vraiment si cool ?",
@@ -34,7 +34,7 @@
   },
   {
     "name": "Chicago Police Departement",
-    "img": "https://github.com/CorentinDeblock/frontend-AllezCine/blob/img-data/serie/ChicagoPD.jpg",
+    "img": "assets/img/serie/ChicagoPD.jpg",
     "annee": 2014,
     "trailerYtb": "http://www.allocine.fr/video/player_gen_cmedia=19541441&cserie=12091.html",
     "descrip": "Des officiers en uniforme qui patrouillent et combattent le crime dans la rue, aux membres de l'unité des renseignements affectés à des affaires majeures (crime organisé, trafic de drogue, homicides...), toutes les recrues du poste de police du district 21 de Chicago risquent quotidiennement leurs vies. Ces énormes responsabilités dépassent souvent le simple cadre professionnel et entâchent la sphère privée de ces hommes et de ces femmes d'exception.",
@@ -45,7 +45,7 @@
   },
   {
     "name": "Les enquetes de Murdoch",
-    "img": "https://github.com/CorentinDeblock/frontend-AllezCine/blob/img-data/serie/Murdoch.jpg",
+    "img": "assets/img/serie/Murdoch.jpg",
     "annee": 2008,
     "trailerYtb": "http://www.allocine.fr/video/player_gen_cmedia=18896525&cserie=3919.html",
     "descrip": "Toronto 1892. William Murdoch est un jeune et brillant inspecteur qui résout des enquêtes criminelles à l'aide de techniques scientifiques d'avant garde, de l'analyse des empreintes au premier détecteur de mensonges. Son approche originale suscite les moqueries de ses collègues policiers et le scepticisme de son supérieur, mais William Murdoch est souvent le seul à trouver la piste du criminel. Sa meilleure alliée est Julia Ogden, ravissante médecin pathologiste, à l'esprit vif, qui n'a de cesse de se battre contre les préjugés de la société.",
@@ -62,7 +62,7 @@
     "descrip": "Le vol Montego 828 à destination de New York disparaît des radars sans laisser de traces, avant de réapparaître cinq ans plus tard sans aucune explication. Pour les 191 passagers à bord, le temps ne s'est pas écoulé. Mais pour leurs proches, ces cinq années ont été éprouvantes... Que s'est-il réellement passé ? Comment les revenants vont-ils parvenir à s'adapter ? Sont-ils revenus changés ?",
     "realisateur": "Jeff Rake",
     "prix": 13,
-    "genre": ["Drame"],
+    "genre": ["drame"],
     "acteurs": "Melissa Roxburgh, Josh Dallas, Athena Karkanis"
   },
   {
@@ -73,7 +73,7 @@
     "descrip": "Des milliers d'années après l'extinction de la civilisation que nous connaissons, les Quatre Terres sont menacées par la mort imminente de l'Arbre protecteur Ellcrys qui renferme des forces terribles et obscures. A chaque feuille tombée, les démons se réveillent de l'au-delà. La princesse Amberle, le demi-elfe Wil et la solitaire Eretria commencent alors leur quête contre les forces du Mal. Ils sont guidés dans ce combat par le druide Allanon, lequel maîtrise la magie...",
     "realisateur": "Alfred Gough, Miles Millar",
     "prix": 10,
-    "genre": ["Aventure", "Fantastique"],
+    "genre": ["aventure", "fantastique"],
     "acteurs": "Austin Butler, Ivana Baquero, Manu Bennett"
   },
   {
@@ -84,7 +84,7 @@
     "descrip": "Après une apocalypse nucléaire causée par l'Homme lors d'une troisième Guerre Mondiale, les 318 survivants recensés se réfugient dans des stations spatiales et parviennent à y vivre et à se reproduire, atteignant le nombre de 4000. Mais 97 ans plus tard, le vaisseau mère, l'Arche, est en piteux état. Une centaine de jeunes délinquants emprisonnés au fil des années pour des crimes ou des trahisons sont choisis comme cobayes par les autorités pour redescendre sur Terre et tester les chances de survie. Dès leur arrivée, ils découvrent un nouveau monde dangereux mais fascinant...",
     "realisateur": "Jason Rothenberg",
     "prix": 18,
-    "genre": ["Aventure", "Drame", "Science fiction"],
+    "genre": ["aventure", "drame", "science fiction"],
     "acteurs": "Eliza Taylor, Paige Turco, Bob Morley"
   },
   {
@@ -139,7 +139,7 @@
     "descrip": "Sous ses airs de petite ville tranquille, Riverdale cache en réalité de sombres secrets. Alors qu'une nouvelle année scolaire débute, le jeune Archie Andrews et ses amis Betty, Jughead, et Kevin voient leur quotidien bouleversé par la mort mystérieuse de Jason Blossom, un de leurs camarades de lycée. Alors que les secrets des uns et des autres menacent de remonter à la surface, et que la belle Veronica, fraîchement débarquée de New York, fait une arrivée remarquée en ville, plus rien ne sera jamais comme avant à Riverdale...",
     "realisateur": "Roberto Aguirre-Sacasa",
     "prix": 12,
-    "genre": ["Drame", "Thriller"],
+    "genre": ["Drame", "thriller"],
     "acteurs": "K.J. Apa, Lili Reinhart, Camila Mendes"
   },
   {
@@ -161,7 +161,7 @@
     "descrip": "Extraterrestre de plus de 900 ans, le Docteur voyage à travers le temps et l'espace à l'aide de son vaisseau, le TARDIS. Seigneur du Temps originaire de la planète Gallifrey, il intervient lorsque la situation l'exige. En cas de menace \"inexpliquée\", le Docteur est celui qu'il vous faut !",
     "realisateur": "Russell T. Davies, Steven Moffat, Chris Chibnall",
     "prix": 8,
-    "genre": ["Aventure", "Science fiction"],
+    "genre": ["aventure", "science fiction"],
     "acteurs": "David Tennant, Peter Capaldi, Jodie Whittaker"
   },
   {
@@ -172,7 +172,7 @@
     "descrip": "Un hôpital public en périphérie d’une grande ville. Suite à des mesures sanitaires, les médecins titulaires du service de médecine interne se retrouvent confinés chez eux pour 48h. Trois internes inexpérimentés et un médecin légiste, qui ne se connaissent pas encore, vont devoir faire bloc pour gérer seuls le service et les malades. Mais la quarantaine se prolonge…",
     "realisateur": "Thomas Lilti",
     "prix": 9,
-    "genre": ["Drame", "Médical"],
+    "genre": ["drame", "médical"],
     "acteurs": "Louise Bourgoin, Alice Belaïdi, Karim Leklou"
   },
   {
@@ -183,7 +183,7 @@
     "descrip": "Temperance Brennan est une anthropologue hautement qualifiée qui travaille à l'Institut Jeffersonian. En examinant les squelettes de personnes décédées, elle est capable d'en reconstituer la vie et les circonstances de la mort.",
     "realisateur": "Hart Hanson, Stephen Nathan",
     "prix": 9,
-    "genre": ["Drame", "Policier"],
+    "genre": ["d", "policier"],
     "acteurs": "Emily Deschanel, David Boreanaz, T.J. Thyne"
   },
   {
@@ -194,7 +194,7 @@
     "descrip": "Après une apocalypse ayant transformé la quasi-totalité de la population en zombies, un groupe d'hommes et de femmes mené par l'officier Rick Grimes tente de survivre... Ensemble, ils vont devoir tant bien que mal faire face à ce nouveau monde devenu méconnaissable, à travers leur périple dans le Sud profond des États-Unis.",
     "realisateur": "Glen Mazzara, Frank Darabont, Scott M. Gimple",
     "prix": 11,
-    "genre": ["Drame", "Epouvante-Horreur"],
+    "genre": ["drame", "horreur"],
     "acteurs": "Andrew Lincoln, Norman Reedus, Jon Bernthal"
   },
   {
@@ -205,7 +205,7 @@
     "descrip": "Après avoir passé plusieurs mois en Arctique pour une mission top secrète, l'équipage de l'USS Nathan James, un destroyer de la NAVY, découvre avec horreur qu'une épidémie a décimé une majeure partie de la population terrestre. La Chine et l'Europe sont en guerre, tandis que le Gouvernement Américain n'est plus. Protégés par les océans, le commandant et les 200 âmes sous ses ordres font partie des derniers survivants de la planète. Une scientifique présente à bord doit absolument trouver un vaccin avant l'extinction totale de l'espèce...",
     "realisateur": "Hank Steinberg, Steven Kane",
     "prix": 8,
-    "genre": ["Drame", "Science fiction", "Action"],
+    "genre": ["drame", "science fiction", "action"],
     "acteurs": "Eric Dane, Adam Baldwin, Charles Parnell"
   },
   {
@@ -216,7 +216,7 @@
     "descrip": "Après un siècle de silence, les klingons refont surface. Déterminés à réunifier leur empire, ils déclarent la guerre à la Fédération des planètes unies. Officier en disgrâce de la Starfleet, Michael Burnham se retrouve au centre du conflit.",
     "realisateur": "Alex Kurtzman, Bryan Fuller, Alex Kurtzman",
     "prix": 12,
-    "genre": ["Aventure", "Science fiction"],
+    "genre": ["aventure", "science fiction"],
     "acteurs": "Sonequa Martin-Green, Doug Jones, Shazad Latif"
   },
   {
@@ -227,7 +227,7 @@
     "descrip": "Meredith Grey, fille d'un chirurgien très réputé, commence son internat de première année en médecine chirurgicale dans un hôpital de Seattle. La jeune femme s'efforce de maintenir de bonnes relations avec ses camarades internes, mais dans ce métier difficile la compétition fait rage...",
     "realisateur": "Betsy Beers, Shonda Rhimes, Krista Vernoff",
     "prix": 10,
-    "genre": ["Drame", "Médical"],
+    "genre": ["drame", "médical"],
     "acteurs": "Ellen Pompeo, Justin Chambers, Patrick Dempsey"
   },
   {
@@ -238,7 +238,7 @@
     "descrip": "Au premier coup d'oeil, le révérend Jesse Custer n'a rien de spécial. Après tout il n'est qu'un homme d'église d'une petite ville, perdant peu à peu ses fidèles et laissant s'éteindre sa foi. Mais il va bientôt avoir la preuve que Dieu existe bel et bien. Et qu'\"IL\" est un sacré fils de... Avec sa petite-amie Tulip et un vampire nommé Cassidy, le voilà parti sur les routes américaines pour le trouver...",
     "realisateur": "Sam Catlin, Sam Catlin, Seth Rogen",
     "prix": 7,
-    "genre": ["Drame", "Epouvante-horreur", "Fantastique"],
+    "genre": ["drame", "horreur", "fantastique"],
     "acteurs": "Dominic Cooper, Joseph Gilgun, Ruth Negga"
   },
   {
@@ -249,7 +249,7 @@
     "descrip": "Ayant trouvé un substitut pour se nourrir sans tuer (du sang synthétique), les vampires vivent désormais parmi les humains. Sookie, une serveuse capable de lire dans les esprits, tombe sous le charme de Bill, un mystérieux vampire. Une rencontre qui bouleverse la vie de la jeune femme...",
     "realisateur": "Brian Buckner, Alan Ball, Mark Hudis",
     "prix": 10,
-    "genre": ["Drame", "Fantastique", "Romance"],
+    "genre": ["drame", "fantastique", "romance"],
     "acteurs": "Anna Paquin, Stephen Moyer, Sam Trammell"
   },
   {
@@ -260,7 +260,7 @@
     "descrip": "Dans le Londres de l'époque Victorienne, Vanessa Ives, une jeune femme puissante aux pouvoirs hypnotiques, allie ses forces à celles d'Ethan, un garçon rebelle et violent aux allures de cowboy, et de Sir Malcolm, un vieil homme riche aux ressources inépuisables. Ensemble, ils combattent un ennemi inconnu, presque invisible, qui ne semble pas humain et qui massacre la population...\n\n3",
     "realisateur": "John Logan",
     "prix": 8,
-    "genre": ["Drame", "Epouvante-horreur", "Policier"],
+    "genre": ["drame", "horreur", "policier"],
     "acteurs": "Eva Green, Josh Hartnett, Timothy Dalton"
   },
   {
@@ -271,7 +271,7 @@
     "descrip": "Le criminel le plus recherché du monde se rend mystérieusement à la police et offre ses services en dénonçant tous ceux avec qui il a collaboré sur ses crimes par le passé. Sa seule contrepartie : travailler avec une agent du FBI débutante avec qui il n'a semble-t-il aucune connexion...",
     "realisateur": "John Eisendrath, Jon Bokenkamp",
     "prix": 10,
-    "genre": ["Drame", "Policier", "Thriller"],
+    "genre": ["drame", "policier", "thriller"],
     "acteurs": "James Spader, Megan Boone, Diego Klattenhoff"
   },
   {
@@ -282,7 +282,7 @@
     "descrip": "Ce faux documentaire suit le quotidien de Nandor, Laszlo, Nadja et Guillermo, trois vampires âgés de plusieurs siècles et un humain, vivant en coloc dans le New York d'aujourd'hui. Comment s'organise leur cohabitation ? Un humain peut-il aussi être un ami et pas un dîner ? La vie éternelle, est-ce vraiment si cool ?",
     "realisateur": "Jemaine Clement",
     "prix": 12,
-    "genre": ["Comédie", "Epouvante-horreur"],
+    "genre": ["comedie", "horreur"],
     "acteurs": "Kayvan Novak, Matt Berry, Natasia Demetriou"
   },
   {
@@ -293,7 +293,7 @@
     "descrip": "Trois lycéennes que tout oppose : Elodie, la marginale, Moe, la délinquante et Tabitha, la populaire se rencontrent lors d'une séance des \"Voleurs à l'étalage Anonymes\". Contre toute attente, elles se lient d'amitié.",
     "realisateur": "Amy Andelson, Emily Meyer, Kirsten Smith",
     "prix": 8,
-    "genre": ["Comédie"],
+    "genre": ["comédie"],
     "acteurs": "Brianna Hildebrand, Kiana Madeira, Quintessa Swindell"
   },
   {
@@ -315,7 +315,7 @@
     "descrip": "A Hawkins, en 1983 dans l'Indiana. Lorsque Will Byers disparaît de son domicile, ses amis se lancent dans une recherche semée d’embûches pour le retrouver. Dans leur quête de réponses, les garçons rencontrent une étrange jeune fille en fuite. Les garçons se lient d'amitié avec la demoiselle tatouée du chiffre \"11\" sur son poignet et au crâne rasé et découvrent petit à petit les détails sur son inquiétante situation. Elle est peut-être la clé de tous les mystères qui se cachent dans cette petite ville en apparence tranquille…",
     "realisateur": "Matt Duffer, Ross Duffer",
     "prix": 12,
-    "genre": ["Drame", "Fantastique", "Thriller"],
+    "genre": ["drame", "fantastique", "thriller"],
     "acteurs": "Winona Ryder, David Harbour, Finn Wolfhard"
   },
   {
@@ -326,7 +326,7 @@
     "descrip": "A la poursuite de terroristes extrémistes, une flic venue tout droit du futur se retrouve coincée dans le Vancouver de nos jours. Loin de son époux et de son fils, Kiera Cameron concentre dès lors ses efforts sur la traque de ces fugitifs, avant qu'ils ne commettent d'autres méfaits à notre époque. Elle trouve une aide inattendue en la personne d'Alec Sadler, un jeune génie de la science. Et enrôlée dans les forces policières locales, elle forme une alliance avec son nouveau partenaire, le détective Carlos Fonnegra.",
     "realisateur": "Simon Barry",
     "prix": 10,
-    "genre": ["Policier", "Science fiction"],
+    "genre": ["policier", "science fiction"],
     "acteurs": "Rachel Nichols, Victor Webster, Stephen Lobo"
   },
   {
@@ -337,7 +337,7 @@
     "descrip": "Les expériences quotidiennes savoureuses et parfois surréalistes d'une Afro-Américaine à l'aube de la trentaine et de sa meilleure amie délurée...",
     "realisateur": "Prentice Penny, Larry Wilmore, Issa Rae",
     "prix": 12,
-    "genre": ["Comédie"],
+    "genre": ["comédie"],
     "acteurs": "Issa Rae, Jay Ellis, Yvonne Orji"
   },
   {
@@ -348,7 +348,7 @@
     "descrip": "Ex-flic devenu tueur à gages et alcoolique, Nick Sax croit perdre la tête quand une licorne animée qu'il est le seul à voir le pousse à sauver une fillette enlevée par le père Noël.",
     "realisateur": "Brian Taylor, Grant Morrison",
     "prix": 8,
-    "genre": ["Comédie", "Fantastique", "Policier"],
+    "genre": ["comédie", "fantastique", "policier"],
     "acteurs": "Christopher Meloni, Patton Oswalt, Ritchie Coster"
   },
   {
@@ -359,7 +359,7 @@
     "descrip": "La vie de la jeunesse dorée des élèves de deux écoles privées new-yorkaises, vue à travers les yeux ironiques d'une mystérieuse \"bloggeuse\" surnommée Gossip Girl. Entre amour et amitié, chacun tente de tirer son épingle du jeu, mais rien n'est jamais simple derrière des apparences parfaites...",
     "realisateur": "Sara Goodman, Joshua Safran, Josh Schwartz",
     "prix": 7,
-    "genre": ["Drame"],
+    "genre": ["drame"],
     "acteurs": "Leighton Meester, Blake Lively, Penn Badgley"
   },
   {
@@ -370,7 +370,7 @@
     "descrip": "Paris, dans un futur proche. La technologie a repoussé les frontières de l'imaginable en déchiffrant le code du véritable amour. Grâce aux données de ses utilisateurs obtenues via des micro-robots implantés dans leurs cerveaux, la nouvelle application \"OSMOSIS\" garantit avec certitude de trouver le partenaire idéal, et transforme le rêve ultime de trouver l'âme soeur en réalité. Mais y a-t-il un prix à payer lorsqu'on laisse un algorithme choisir l'homme ou la femme de notre vie ? Quand en échange de cet amour éternel, la technologie peut accéder aux recoins les plus intimes de notre esprit, et à nos souvenirs les plus secrets...",
     "realisateur": "Audrey Fouché",
     "prix": 12,
-    "genre": ["Drame", "Science fiction", "Romance"],
+    "genre": ["drame", "science fiction", "romance"],
     "acteurs": "Hugo Becker, Agathe Bonitzer, Gaël Kamilindi"
   },
   {
@@ -381,7 +381,7 @@
     "descrip": "Après la mort de leur mère, les trois soeurs Mel, Maggie et Macy découvrent qu'elles sont les descendantes d'une lignée de sorcières. Entre les démons à massacrer, le patriarcat à combattre et les liens familiaux à maintenir intacts, le boulot d'une sorcière n'est jamais terminé...",
     "realisateur": "Jessica O'Toole, Amy Rardin",
     "prix": 10,
-    "genre": ["Drame", "Fantastique"],
+    "genre": ["drame", "fantastique"],
     "acteurs": "Melonie Diaz, Madeleine Mantock, Sarah Jeffery"
   },
   {
@@ -392,7 +392,7 @@
     "descrip": "Un duo improbable, un Ange exigeant et un Démon qui vit en liberté, ont pris goût à la vie sur Terre et sont obligés de former une alliance pour arrêter Armageddon. Mais ils ont perdu l'Antéchrist, un garçon de 11 ans qui ignorait qu'il était censé provoquer la fin des temps, les forçant à se lancer dans une aventure pour le retrouver et sauver le monde avant qu'il ne soit trop tard.",
     "realisateur": "Neil Gaiman",
     "prix": 10,
-    "genre": ["Comédie", "Drame", "Fantastique"],
+    "genre": ["comédie", "drame", "fantastique"],
     "acteurs": "Michael Sheen, David Tennant, Sam Taylor Buck"
   },
   {
@@ -403,7 +403,7 @@
     "descrip": "À la fin des années 1980, Marcus Lopez, un jeune orphelin SDF, est admis au sein d'une mystérieuse école privée qui accueille la progéniture des criminels les plus dangereux de la planète. Dans cet établissement, les adolescents se voient enseigner l'art du meurtre, du combat ou toutes autres pratiques indispensables pour devenir le parfait criminel.",
     "realisateur": "Miles Orion Feldsott, Rick Remender",
     "prix": 12,
-    "genre": ["Drame", "Thriller", "Action"],
+    "genre": ["drame", "thriller", "action"],
     "acteurs": "Benedict Wong, Benjamin Wadsworth, Lana Condor"
   },
   {
@@ -414,7 +414,7 @@
     "descrip": "La rebelle Maeve entraîne Otis, un ado vierge mais doté d'une mère sexologue, dans la création d'une cellule de thérapie sexuelle clandestine au sein de leur lycée...",
     "realisateur": "Laurie Nunn",
     "prix": 11,
-    "genre": ["Comédie", "Drame"],
+    "genre": ["comédie", "drame"],
     "acteurs": "Asa Butterfield, Emma Mackey, Ncuti Gatwa"
   },
   {
@@ -425,7 +425,7 @@
     "descrip": "Aveugle depuis l’enfance, mais doté de sens incroyablement développés, Matt combat l’injustice le jour en tant qu’avocat et la nuit en surveillant les rue de Hell’s Kitchen, à New York, dans le costume du super-héros Daredevil.",
     "realisateur": "Steven S. DeKnight, Drew Goddard",
     "prix": 11,
-    "genre": ["Drame", "Fantastique", "Action"],
+    "genre": ["drame", "fantastique", "action"],
     "acteurs": "Charlie Cox, Deborah Ann Woll, Elden Henson"
   },
   {
@@ -436,7 +436,7 @@
     "descrip": "Les aventures de Sherlock Holmes et de son acolyte de toujours, le docteur Watson, sont transposées au XXIème siècle...",
     "realisateur": "Steven Moffat, Mark Gatiss",
     "prix": 13,
-    "genre": ["Aventure", "Drame", "Policier"],
+    "genre": ["aventure", "drame", "policier"],
     "acteurs": "Benedict Cumberbatch, Martin Freeman, Amanda Abbington"
   },
   {

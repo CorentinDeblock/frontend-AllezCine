@@ -95,7 +95,7 @@ fetch('assets/js/movies.json',{
         let element2 = a.querySelector(".btn-mod");
         element2.className = "movi"+i;
         let el2 = a.querySelector(".movi"+i);
-        console.log(el2);
+
         let genr = a.querySelector(".card__genre");
         let idd = a.querySelector(".fademovie");
 
@@ -140,7 +140,7 @@ fetch('assets/js/movies.json',{
         y = 0;
 
         // Ajouter sur featured movies les films
-        if( i < 6){
+        if( i < 12){
             target.appendChild(a);
         } else{
             colla.appendChild(a);
@@ -191,6 +191,128 @@ fetch('assets/js/movies.json',{
 }).catch(error => {
     console.log(error)
 })
+
+let movserie = document.getElementById("templateMov2");
+
+// All
+let targets = document.getElementById("target-s");
+let collas = document.getElementById("target_ol-s");
+
+// Aventure
+let target2s = document.getElementById("target2-s");
+let colla2s = document.getElementById("target2_ol-s");
+
+// Thriller
+let target3s = document.getElementById("target3-s");
+let colla3s = document.getElementById("target3_ol-s");
+
+// Action
+let target4s = document.getElementById("target4-s");
+let colla4s = document.getElementById("target4_ol-s");
+
+// Comédie
+let target5s = document.getElementById("target5-s");
+let colla5s = document.getElementById("target5_ol-s");
+
+// SERIES
+fetch('assets/js/series.json',{
+    headers:header
+}).then(blob => {
+    return blob.json();
+}).then(value => {
+    let mydataserie = value;
+    for(let i = 0;i < mydataserie.length; i++){
+        let a = templateCopy(movserie,mydataserie[i])
+    
+        let bu = a.querySelector(".btn-hover");
+        let element2 = a.querySelector(".btn-mod");
+        element2.className = "movi"+i;
+        let el2 = a.querySelector(".movi"+i);
+
+        let genr = a.querySelector(".card__genre");
+        let idd = a.querySelector(".fademovie");
+        
+        let test = a.querySelector(".video_modal");
+
+        // Ajouter le data-target et un id
+        bu.setAttribute("data-target", "#serie"+i);
+        idd.id = "serie"+i;
+    
+        el2.onclick = function(e) {
+            if(!e.target.isEnable){
+                let ifrm = document.createElement('iframe');
+                ifrm.style.width = "100%";
+                ifrm.style.height = "250px";
+                ifrm.style.border = "0";
+
+                // Placer dans le HTML
+                let el = document.querySelector(`${bu.getAttribute("data-target")} .video_modal`);
+                el.prepend(ifrm)
+
+                // Mettre la src
+                ifrm.src = mydataserie[i].trailerYtb;
+                e.target.isEnable = true;    
+            }
+        };
+
+        do{
+            let len = verif.length;
+            let moins = len - 1;
+            if (y < moins){
+                genr.innerHTML += mydataserie[i].genre[y] + ", ";
+            } else {
+                genr.innerHTML += mydataserie[i].genre[y];
+            }
+            
+            y++;
+        } while (y < verif.length);
+        
+        y = 0;
+
+        // Ajouter sur featured movies les films
+        if( i < 12){
+            targets.appendChild(a);
+        } else{
+            collas.appendChild(a);
+        }
+
+
+        // Vérifier le tableau genre
+        verif = mydataserie[i].genre;
+        
+        // Si il y a "aventure"
+        verif_ave = verif.includes("aventure");
+        
+        if(verif_ave){
+            target2s.appendChild(templateCopy(movserie,mydataserie[i]));
+        }
+
+        // Si il y a "thriller"
+        verif_thr = verif.includes("thriller");
+
+        if(verif_thr){
+            target3s.appendChild(templateCopy(movserie,mydataserie[i]));
+        }
+
+        // Si il y a "action"
+        verif_act = verif.includes("action");
+
+        if(verif_act){
+            target4s.appendChild(templateCopy(movserie,mydataserie[i]));
+        }
+
+        // Si il y a "comedie"
+        verif_com = verif.includes("comédie");
+
+        if(verif_com){
+            target5s.appendChild(templateCopy(movserie,mydataserie[i]));
+        }
+    }
+
+}).catch(error => {
+    console.log(error)
+})
+
 
 
 /*

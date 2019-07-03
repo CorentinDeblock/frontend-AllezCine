@@ -21,7 +21,7 @@
         <a href="#cookies-modal" data-toggle="modal">Pour en savoir plus et paramétrer les traceurs</a>
         <div class="mt-4">
             <button id="cookie-refuse" class="btn btn-dark">Non</button>
-            <button id="cookie-accept"class="btn btn-light">Oui</button>
+            <button id="cookie-accept" class="btn btn-light">Oui</button>
         </div>
     </div>
     <div id="cookies-modal" tabindex="-1" class="modal fade" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -33,7 +33,7 @@
                 </div>
                 <div class="modal-body">
                     <p>Paramètrer les cookies pour que AllezCine bénéficie des informations que vous avez décidé.</p>
-                    <form action="">
+                    <form>
                         <div class="d-flex">
                             <input type="checkbox" class="mr-2 my-auto">
                             <label for="cookie-one">AllezCine receuillera des informations sur vos recherche a bien
@@ -69,7 +69,7 @@
                     </li>
                     <li class="nav-item nav-block">
                         <div class="dropdown">
-                            <button class="btn" id="genre" data-toggle="dropdown">Genre<i class="fas fa-caret-down"></i></button>
+                            <button class="btn" id="genre1" data-toggle="dropdown">Genre<i class="fas fa-caret-down"></i></button>
                             <div class="dropdown-menu">
                                 <div class="dropdown-item">
                                     <a href="#">Action</a>
@@ -95,7 +95,7 @@
                     </li>
                     <li class="nav-item nav-block">
                         <div class="dropdown">
-                            <button class="btn" id="genre" data-toggle="dropdown">Série<i class="fas fa-caret-down"></i></button>
+                            <button class="btn" id="genre2" data-toggle="dropdown">Série<i class="fas fa-caret-down"></i></button>
                             <div class="dropdown-menu">
                                 <div class="dropdown-item">
                                     <a href="#">Les plus récentes</a>
@@ -494,7 +494,7 @@
             </div>
         </section>
 
-
+        <!-- MOVIES -->
         <section class="container second" id="data">
             <template id="templateMov" class="card">
                 <li class="card col-6 col-sm-6 col-md-4 col-lg-2 col-xl-2 mov">
@@ -683,6 +683,194 @@
             </div>          
         </section>
 
+        <!-- SERIES -->
+        <section class="container second" id="data">
+            <template id="templateMov2" class="card">
+                <li class="card col-6 col-sm-6 col-md-4 col-lg-2 col-xl-2 mov">
+                    <a id="toggleData2" type="button" class="btn-mod btn btn-primary btn-hover" data-toggle="modal" data-target="#exampleModal-s">
+                        <img id="imgMov-s" class="card-img-top" src="oidhqsi">
+                    </a>
+                    <div class="movies__contenu">
+                        <a type="button" class="btn btn-primary btn-hover btn-mod" data-toggle="modal" data-target="#exampleModal-s">
+                            <p class="card__name title"></p>
+                        </a>
+                            
+                            <div class="grid">
+                                <p class="card__years"></p>
+                                <p class="card__genre"></p>
+                            </div>    
+                    </div>
+                        
+                            
+                        
+                        <div class="modal fade fademovie" tabindex="-1" role="dialog" aria-labelledby="exampleModal-sLabel1" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                <div class="modal-header">
+                                    <h3 class="modal-title title" id="exampleModal-sLabel1"></h3>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="video_modal"></div>
+                                    <p class="descri"></p>
+                                    <p><span class="gras">Réalisateur: </span><span class="reali"></span></p>
+                                    <p><span class="gras">Acteurs: </span><span class="acteurs"></span></p>
+                                    <p><span class="gras">Année: </span><span class="annee"></span></p>
+                                    <p><span class="gras">Genres: </span><span class="genre"></span></p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary btn-close" data-dismiss="modal">Close</button>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    
+                    
+            </template>
+
+            <h3 class="ligne title">Featured Series</h3>
+                <div class="container__center">
+                    <ul class="nav nav-tabs" id="myTab-s" role="tablist">
+                        <li class="nav-item">
+                        <a class="nav-link active" id="all-tab-s" data-toggle="tab" href="#all-s" role="tab" aria-controls="all" aria-selected="true">All</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" id="avent-tab-s" data-toggle="tab" href="#aventure-s" role="tab" aria-controls="aventure" aria-selected="false">Aventure</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" id="thri-tab-s" data-toggle="tab" href="#contact-s" role="tab" aria-controls="contact" aria-selected="false">Thriller</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" id="acti-tab-s" data-toggle="tab" href="#action-s" role="tab" aria-controls="action" aria-selected="false">Action</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" id="come-tab-s" data-toggle="tab" href="#comedie-s" role="tab" aria-controls="comedie" aria-selected="false">Comédie</a>
+                        </li>
+                    </ul>
+
+                    <div class="tab-content" id="myTabContent2-s">
+                        <!-- 1e : ALL -->
+                        <div class="tab-pane fade show active" id="all-s" role="tabpanel" aria-labelledby="all-tab-s">
+                            <div class="fea row">
+
+                                <ol id="target-s" class="row"></ol>
+
+                                <div id="collapseOne-s" class="collapse row" aria-labelledby="headingOne-s" data-parent="#accordionExample1-s">
+                                    <div class="card-body">
+                                        <ol id="target_ol-s" class="row tar_test"></ol>
+                                    </div>
+                                </div>
+                                <div class="accordion" id="accordionExample1-s">
+                                    <div class="card">
+                                        <div class="card-header" id="headingOne-s">
+                                              <button id="btn-collap-s" type="button" class="btn btn-plus" data-toggle="collapse" data-target="#collapseOne-s" aria-expanded="true" aria-controls="collapseOne"><span>Plus de films</span></button>
+                                        
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>    
+                        </div>
+
+                        <!-- 2e : AVENTURE -->
+                        <div class="tab-pane fade" id="aventure-s" role="tabpanel" aria-labelledby="avent-tab-s">
+                            <div class="fea row">
+
+                                <ol id="target2-s" class="row"></ol>
+    
+                                <div class="accordion" id="accordionExample2-s">
+                                    <div class="card">
+                                        <div class="card-header" id="headingTwo-s">
+                                            <button id="btn-collap2-s" type="button" class="btn btn-plus" data-toggle="collapse" data-target="#collapseTwo-s" aria-expanded="true" aria-controls="collapseTwo"><span>Plus de films</span></button>
+                                        
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="collapseTwo-s" class="collapse" aria-labelledby="headingTwo-s" data-parent="#accordionExample2-s">
+                                    <div class="card-body">
+                                        <ol id="target2_ol-s" class="row"></ol>
+                                    </div>
+                                </div>
+    
+                            </div>  
+                        </div>
+                        
+                        <!-- 3e : THRILLER -->
+                        <div class="tab-pane fade" id="contact-s" role="tabpanel" aria-labelledby="thri-tab-s">
+                                <div class="fea row">
+
+                                        <ol id="target3-s" class="row"></ol>
+        
+                                        <div class="accordion" id="accordionExample3-s">
+                                            <div class="card">
+                                                <div class="card-header" id="headingThree-s">
+                                                    <button id="btn-collap3-s" type="button" class="btn btn-plus" data-toggle="collapse" data-target="#collapseThree-s" aria-expanded="true" aria-controls="collapseThree"><span>Plus de films</span></button>
+                                                
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div id="collapseThree-s" class="collapse" aria-labelledby="headingThree-s" data-parent="#accordionExample3-s">
+                                            <div class="card-body">
+                                                <ol id="target3_ol-s" class="row"></ol>
+                                            </div>
+                                        </div>
+        
+                                    </div>  
+                        </div>
+
+                    <!-- 4e : ACTION -->
+                    <div class="tab-pane fade" id="action-s" role="tabpanel" aria-labelledby="acti-tab-s">
+                        <div class="fea row">
+
+                                <ol id="target4-s" class="row"></ol>
+
+                                <div class="accordion" id="accordionExample4-s">
+                                    <div class="card">
+                                        <div class="card-header" id="headingFour-s">
+                                            <button id="btn-collap4" type="button" class="btn btn-plus" data-toggle="collapse" data-target="#collapseFour-s" aria-expanded="true" aria-controls="collapseFour"><span>Plus de films</span></button>
+                                        
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="collapseFour-s" class="collapse" aria-labelledby="headingFour-s" data-parent="#accordionExample4-s">
+                                    <div class="card-body">
+                                        <ol id="target4_ol-s" class="row"></ol>
+                                    </div>
+                                </div>
+
+                            </div>  
+                    </div>
+
+
+                    <!-- 5e : COMEDIE -->
+                    <div class="tab-pane fade" id="comedie-s" role="tabpanel" aria-labelledby="come-tab-s">
+                        <div class="fea row">
+
+                                <ol id="target5-s" class="row"></ol>
+
+                                <div class="accordion" id="accordionExample5-s">
+                                    <div class="card">
+                                        <div class="card-header" id="headingFive-s">
+                                            <button id="btn-collap5-s" type="button" class="btn btn-plus" data-toggle="collapse" data-target="#collapseFive-s" aria-expanded="true" aria-controls="collapseFive"><span>Plus de films</span></button>
+                                        
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="collapseFive-s" class="collapse" aria-labelledby="headingFive-s" data-parent="#accordionExample5-s">
+                                    <div class="card-body">
+                                        <ol id="target5_ol-s" class="row"></ol>
+                                    </div>
+                                </div>
+
+                            </div>  
+                    </div>
+
+            </div>
+            </div>          
+        </section>
 
        
 
@@ -706,11 +894,11 @@
                         
                             
                         
-                    <div class="modal fade fademovie" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel1" aria-hidden="true">
+                    <div class="modal fade fademovie" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel11" aria-hidden="true">
                         <div class="modal-dialog" role="document">
                             <div class="modal-content">
                             <div class="modal-header">
-                                <h3 class="modal-title title" id="exampleModalLabel1"></h3>
+                                <h3 class="modal-title title" id="exampleModalLabel11"></h3>
                                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                 <span aria-hidden="true">&times;</span>
                                 </button>
@@ -790,7 +978,7 @@
             <h3 class="ligne title">Contact US</h3>
 
     <form class="formulaire">
-        <div>
+        
         <div class="form-row container-fluid">
             <div class="form-group col-md-6 ">
                 <label for="firstname"></label>
