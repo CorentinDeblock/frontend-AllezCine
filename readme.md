@@ -53,6 +53,7 @@ Les derniers jours, on a créé une branche où on a mettait tout en commun dess
 * bouton javascript de retour en haut, 
 * le menu de gauche fb, twitter etc, 
 * corriger le json series, 
+* Contact US,
 * fait quelques vérifications sur W3C.
 
 **Enzo:**
@@ -67,13 +68,15 @@ Les derniers jours, on a créé une branche où on a mettait tout en commun dess
 * mise en place du HTML/CSS de tout le main,
 * shop series: JavaScript,
 * features movies / séries : JavaScript,
-* README de la One Page
+* README de AllezCine
 
 
 **Corentin:**
 * compléter le JSON
 * faire l'API
 * header,
+* cookies,
+* connexion / inscription,
 * shop series: JavaScript,
 * features movies / séries : JavaScript
 
