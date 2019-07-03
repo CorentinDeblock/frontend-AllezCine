@@ -93,6 +93,9 @@ fetch('assets/js/movies.json',{
     
         let bu = a.querySelector(".btn-hover");
         let element2 = a.querySelector(".btn-mod");
+        element2.className = "movi"+i;
+        let el2 = a.querySelector(".movi"+i);
+        console.log(el2);
         let genr = a.querySelector(".card__genre");
         let idd = a.querySelector(".fademovie");
 
@@ -101,19 +104,25 @@ fetch('assets/js/movies.json',{
         
         let test = a.querySelector(".video_modal");
 
-        element2.onclick = function() {
-            let ifrm = document.createElement('iframe');
-            ifrm.id = "feature"+ i;
-            ifrm.style.width = "100%";
-            ifrm.style.height = "250px";
+        // Ajouter le data-target et un id
+        bu.setAttribute("data-target", "#film"+i);
+        idd.id = "film"+i;
+    
+        el2.onclick = function(e) {
+            if(!e.target.isEnable){
+                let ifrm = document.createElement('iframe');
+                ifrm.style.width = "100%";
+                ifrm.style.height = "250px";
+                ifrm.style.border = "0";
 
-            // Placer dans le HTML
-            let el = document.querySelector(".video_modal");
-            el.parentNode.insertBefore(ifrm, el);
+                // Placer dans le HTML
+                let el = document.querySelector(`${bu.getAttribute("data-target")} .video_modal`);
+                el.prepend(ifrm)
 
-            // Mettre la src
-            ifrm.src = mydata[i].trailerYtb;
-            
+                // Mettre la src
+                ifrm.src = mydata[i].trailerYtb;
+                e.target.isEnable = true;    
+            }
         };
 
         do{
@@ -129,10 +138,6 @@ fetch('assets/js/movies.json',{
         } while (y < verif.length);
         
         y = 0;
-        
-        // Ajouter le data-target et un id
-        bu.setAttribute("data-target", "#film"+i);
-        idd.id = "film"+i;
 
         // Ajouter sur featured movies les films
         if( i < 6){
