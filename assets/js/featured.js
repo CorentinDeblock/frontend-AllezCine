@@ -23,7 +23,9 @@ let colla4 = document.getElementById("target4_ol");
 let target5 = document.getElementById("target5");
 let colla5 = document.getElementById("target5_ol");
 
-// All
+// SHOP MOVIES
+let mov2 = document.getElementById("shop-gauche");
+
 let targetshop = document.getElementById("target_shop");
 
 
@@ -35,7 +37,7 @@ let y = 0;
 
 function templateCopy(tmp,data){
     let a = tmp.content.cloneNode(true);
-    let imag = a.getElementById("imgMov");
+    let imag = a.querySelector(".card-img-top");
     let h = a.querySelector(".card__name");
     let desc = a.querySelector(".descri");
     let year = a.querySelector(".card__years");
@@ -87,18 +89,31 @@ fetch('assets/js/movies.json',{
     let mydata = value;
     for(let i = 0;i < mydata.length; i++){
         let a = templateCopy(mov,mydata[i])
-
+        let b = templateCopy(mov2,mydata[i])
+    
         let bu = a.querySelector(".btn-hover");
-        let element2 = a.getElementById("toggleData");
+        let element2 = a.querySelector(".btn-mod");
         let genr = a.querySelector(".card__genre");
         let idd = a.querySelector(".fademovie");
 
+        let bb = b.querySelector(".card__prix");
+        let element3 = b.querySelector("#toggleData2");
+        
+        let test = a.querySelector(".video_modal");
+
         element2.onclick = function() {
-            let test = a.querySelector(".modal-body");
-            let ifra = "<iframe class='card__video' width='460' height='270' frameborder='0' allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>";
-            test.innerHTML += ifra;
-            let vid = a.querySelector(".card__video");
-            vid.src = mydata[i].trailerYtb;
+            let ifrm = document.createElement('iframe');
+            ifrm.id = "feature"+ i;
+            ifrm.style.width = "100%";
+            ifrm.style.height = "250px";
+
+            // Placer dans le HTML
+            let el = document.querySelector(".video_modal");
+            el.parentNode.insertBefore(ifrm, el);
+
+            // Mettre la src
+            ifrm.src = mydata[i].trailerYtb;
+            
         };
 
         do{
@@ -129,8 +144,8 @@ fetch('assets/js/movies.json',{
         
         // Ajouter sur shop movies
         if (i < 8){
-            let cloneshop = a.cloneNode(true);
-            targetshop.appendChild(templateCopy(mov,mydata[i])); 
+            bb.innerHTML += mydata[i].prix;
+            targetshop.appendChild(templateCopy(mov2,mydata[i])); 
         }
         
 
