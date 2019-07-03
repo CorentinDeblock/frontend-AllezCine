@@ -188,15 +188,16 @@ fetch('assets/js/movies.json',{
 })
 
 
-/*
-    var x = document.getElementsByClassName("collapsed"); 
+
+    let x = document.getElementsByClassName("collapsed"); 
     if (x != null) {
         document.getElementById("btn-collap").innerHTML= "Plus de films";
-    } else {
+    } 
+    
+    else {
         document.getElementById("btn-collap").innerHTML = "Moins de films";
     }
-
-	
+/* 
 function test(idselect){
     if(document.getElementsByClassName(idselect)){
         document.getElementsByClassName(idselect).innerHTML= "Plus de films";

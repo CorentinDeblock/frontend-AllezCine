@@ -108,8 +108,6 @@ footer {
         width: 50px; 
     }
 }
-<<<<<<< HEAD
-=======
 // Bouton retour en haut
 
 a#cRetour{
@@ -127,24 +125,19 @@ a#cRetour{
     backface-visibility: hidden;
     -webkit-backface-visibility: hidden;
     text-decoration: none;
-  }
+    }
   //a#cRetour:before{ content: "\25b2"; }
-  a#cRetour:hover{
+    a#cRetour:hover{
    // background:rgba(0, 0, 0, 1);
     transition:all ease-in 0.2s;
-  }
-  a#cRetour.cInvisible{
+    }
+    a#cRetour.cInvisible{
     bottom:-35px;
     opacity:0;
     transition:all ease-in 0.5s;
-  }
-  
-  a#cRetour.cVisible{
+    }
+    a#cRetour.cVisible{
     bottom:20px;
     opacity:1;
-<<<<<<< HEAD
-  }
->>>>>>> 0b9f533a854e9caf558ebc8d04522d47c953b9e5
-=======
-  }
->>>>>>> 9cf1f8642d9124b965937d85560385774cdb3b61
+
+    }

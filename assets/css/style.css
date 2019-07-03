@@ -70,11 +70,7 @@ a:hover {
   background-color: white;
   z-index: 1;
   width: 80%;
-<<<<<<< HEAD
-  margin-top: 5px;
-=======
   margin-top: -2px;
->>>>>>> 0b9f533a854e9caf558ebc8d04522d47c953b9e5
   margin-left: auto;
   margin-right: auto;
   border: 2px solid white;
@@ -909,6 +905,7 @@ html {
    */
 body {
   margin: 0;
+  overflow-x: hidden;
 }
 
 /**
