@@ -55,7 +55,11 @@ header{
         }
     }
     .nav-contact{
+<<<<<<< HEAD
         margin-left:8vw;
+=======
+        margin-left:8vw !important;
+>>>>>>> corentin
     }
     .navbar {
         .navbar-decal{
@@ -80,6 +84,11 @@ header{
             background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
         }
     }
+    .nav-item{
+        *{
+            font-size:15px !important;  
+        }     
+    }
     .d-block{
         min-height: 500px;
         object-fit: cover;
@@ -103,7 +112,7 @@ header{
         color: white;
     }
     .navbar-nav{
-        padding-left:15px;
+        padding-left:4vw;
     }
     .btn-black{
         background-color:black;
@@ -135,7 +144,11 @@ header{
         }
         .dropdown{
             button{
+<<<<<<< HEAD
                 background-color:#76767665;
+=======
+                background-color:#ffffff29;
+>>>>>>> corentin
                 padding:$header-nav-padding-top $header-nav-padding-left * 1.5 $header-nav-padding-top $header-nav-padding-left;
                 text-transform: uppercase;
                 color:white;
@@ -160,10 +173,13 @@ header{
         
         width:100%;
         top:0%;
+<<<<<<< HEAD
         padding:25px !important;
+=======
+        padding:25px 3vw !important;
+>>>>>>> corentin
         z-index: 2;
         
         color:white;
     }
-    
 }
