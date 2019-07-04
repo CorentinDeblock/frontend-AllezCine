@@ -418,6 +418,10 @@ main .bp-res:hover {
           transform: translateX(130px);
 }
 
+main .modal p {
+  font-size: 1em;
+}
+
 main .cercle {
   background-color: white;
   padding: 5px;

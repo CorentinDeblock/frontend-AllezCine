@@ -203,8 +203,8 @@ main{
             height: 200px;
         }
         
-      }
-    
+    }
+
     .card__genre{
         text-align: right;
     }
@@ -239,12 +239,12 @@ main{
         .card__name{
             text-align: center;
         }
-    
+
         .grid{
             display: grid;
             grid-template-columns: 50% 50%;
         }
-    
+
         .card__prix{
             grid-column: 2;
             text-align: right;
@@ -252,12 +252,12 @@ main{
         .card__years{
             grid-column: 1;
         }
-    
+
         .gras{
             font-weight: bold;
         }
     }
-    
+
     // NAVIGATION POUR LES FILMS
     .nav{
         .nav-link{
@@ -271,7 +271,7 @@ main{
             color: white;
         }   
     }
-    
+
     // Bouton plus de 
     .btn-plus{
         background-color: $rose;
@@ -285,7 +285,7 @@ main{
         text-transform: uppercase;
     }
     // Boutons réseaux sociaux
-    
+
     .bp-reseaux {
         z-index: 2000;
         position: fixed;
@@ -296,7 +296,7 @@ main{
             text-decoration: none;
         }
     }
-    
+
     .bp-res {
         border-radius: 0px 25px 25px 0;
         height: 45px;
@@ -304,7 +304,7 @@ main{
         margin-bottom: 10px;
         position: relative;
         transition: transform .1s;
-    
+
         p {
             margin-left: 10px;
             line-height: 3em;
@@ -312,12 +312,17 @@ main{
             width: 120px;
             text-align: center;
         }
-    
+
         &:hover {
             transform: translateX(130px);
         }
     }
-    
+    .modal {
+        p{
+            font-size: 1em;
+        }
+    }
+
     .cercle {
         background-color: white;
         padding: 5px;
@@ -329,21 +334,20 @@ main{
         right: 7px;
         top: 6px;
     }
-    
+
     .twitter {
         background-color: #0EA4FC;
     }
-    
+
     .facebook {
         background-color: #3E5F94;
     }
-    
+
     .drible {
         background-color: #F04888;
     }
-    
+
     .googleplus {
         background-color: #DD4831;
     }
-
 }
