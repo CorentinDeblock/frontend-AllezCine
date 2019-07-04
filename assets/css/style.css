@@ -381,43 +381,6 @@ main .btn-plus {
   text-transform: uppercase;
 }
 
-main .bp-reseaux {
-  z-index: 2000;
-  position: fixed;
-  bottom: 15vh;
-  left: -130px;
-}
-
-main .bp-reseaux a {
-  color: unset;
-  text-decoration: none;
-}
-
-main .bp-res {
-  border-radius: 0px 25px 25px 0;
-  height: 45px;
-  width: 175px;
-  margin-bottom: 10px;
-  position: relative;
-  -webkit-transition: -webkit-transform .1s;
-  transition: -webkit-transform .1s;
-  transition: transform .1s;
-  transition: transform .1s, -webkit-transform .1s;
-}
-
-main .bp-res p {
-  margin-left: 10px;
-  line-height: 3em;
-  color: white;
-  width: 120px;
-  text-align: center;
-}
-
-main .bp-res:hover {
-  -webkit-transform: translateX(130px);
-          transform: translateX(130px);
-}
-
 main .modal p {
   font-size: 1em;
 }
@@ -448,6 +411,44 @@ main .drible {
 
 main .googleplus {
   background-color: #DD4831;
+}
+
+.bp-reseaux {
+  z-index: 2000;
+  position: fixed;
+  bottom: 15vh;
+  left: -130px;
+}
+
+.bp-reseaux a {
+  color: unset;
+  text-decoration: none;
+}
+
+.bp-res {
+  background-color: blue;
+  border-radius: 0px 25px 25px 0;
+  height: 45px;
+  width: 175px;
+  margin-bottom: 10px;
+  position: relative;
+  -webkit-transition: -webkit-transform .1s;
+  transition: -webkit-transform .1s;
+  transition: transform .1s;
+  transition: transform .1s, -webkit-transform .1s;
+}
+
+.bp-res p {
+  margin-left: 10px;
+  line-height: 3em;
+  color: white;
+  width: 120px;
+  text-align: center;
+}
+
+.bp-res:hover {
+  -webkit-transform: translateX(130px);
+          transform: translateX(130px);
 }
 
 header .title {

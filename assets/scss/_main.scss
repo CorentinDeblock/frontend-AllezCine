@@ -286,37 +286,6 @@ main{
     }
     // Boutons réseaux sociaux
 
-    .bp-reseaux {
-        z-index: 2000;
-        position: fixed;
-        bottom: 15vh;
-        left: -130px;
-        a {
-            color: unset;
-            text-decoration: none;
-        }
-    }
-
-    .bp-res {
-        border-radius: 0px 25px 25px 0;
-        height: 45px;
-        width: 175px;
-        margin-bottom: 10px;
-        position: relative;
-        transition: transform .1s;
-
-        p {
-            margin-left: 10px;
-            line-height: 3em;
-            color: white;
-            width: 120px;
-            text-align: center;
-        }
-
-        &:hover {
-            transform: translateX(130px);
-        }
-    }
     .modal {
         p{
             font-size: 1em;
@@ -349,5 +318,37 @@ main{
 
     .googleplus {
         background-color: #DD4831;
+    }
+}
+.bp-reseaux {
+    z-index: 2000;
+    position: fixed;
+    bottom: 15vh;
+    left: -130px;
+    a {
+        color: unset;
+        text-decoration: none;
+    }
+}
+
+.bp-res {
+    background-color: blue;
+    border-radius: 0px 25px 25px 0;
+    height: 45px;
+    width: 175px;
+    margin-bottom: 10px;
+    position: relative;
+    transition: transform .1s;
+
+    p {
+        margin-left: 10px;
+        line-height: 3em;
+        color: white;
+        width: 120px;
+        text-align: center;
+    }
+
+    &:hover {
+        transform: translateX(130px);
     }
 }
