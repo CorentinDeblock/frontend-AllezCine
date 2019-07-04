@@ -1,0 +1,548 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Allezcine</title>
+    <style>
+        @media only screen {
+            html {
+                min-height: 100%;
+                background: #f3f3f3;
+            }
+
+            p,
+            ul,
+            li {
+                font-size: 16px;
+            }
+        }
+
+        @media only screen and (max-width: 596px) {
+            .hide-for-large {
+                display: block !important;
+                width: auto !important;
+                overflow: visible !important;
+                max-height: none !important;
+                font-size: inherit !important;
+                line-height: inherit !important;
+            }
+
+            .small-float-center {
+                margin: 0 auto !important;
+                float: none !important;
+                text-align: center !important;
+            }
+
+            .small-text-center {
+                text-align: center !important;
+            }
+
+            .small-text-left {
+                text-align: left !important;
+            }
+
+            .small-text-right {
+                text-align: right !important;
+            }
+
+            table.body table.container .hide-for-large,
+            table.body table.container .row.hide-for-large {
+                display: table !important;
+                width: 100% !important;
+            }
+
+            table.body table.container .callout-inner.hide-for-large {
+                display: table-cell !important;
+                width: 100% !important;
+            }
+
+            table.body table.container .show-for-large {
+                display: none !important;
+                width: 0;
+
+                overflow: hidden;
+            }
+
+            table.body img {
+                width: auto;
+                height: auto;
+            }
+
+            table.body center {
+                min-width: 0 !important;
+            }
+
+            table.body .container {
+                width: 95% !important;
+            }
+
+            table.body .columns,
+            table.body .column {
+                height: auto !important;
+                -moz-box-sizing: border-box;
+                -webkit-box-sizing: border-box;
+                box-sizing: border-box;
+                padding-left: 16px !important;
+                padding-right: 16px !important;
+            }
+
+            table.body .columns .column,
+            table.body .columns .columns,
+            table.body .column .column,
+            table.body .column .columns {
+                padding-left: 0 !important;
+                padding-right: 0 !important;
+            }
+
+            table.body .collapse .columns,
+            table.body .collapse .column {
+                padding-left: 0 !important;
+                padding-right: 0 !important;
+            }
+
+            td.small-1,
+            th.small-1 {
+                display: inline-block !important;
+                width: 8.33333% !important;
+            }
+
+            td.small-2,
+            th.small-2 {
+                display: inline-block !important;
+                width: 16.66667% !important;
+            }
+
+            td.small-3,
+            th.small-3 {
+                display: inline-block !important;
+                width: 25% !important;
+            }
+
+            td.small-4,
+            th.small-4 {
+                display: inline-block !important;
+                width: 33.33333% !important;
+            }
+
+            td.small-5,
+            th.small-5 {
+                display: inline-block !important;
+                width: 41.66667% !important;
+            }
+
+            td.small-6,
+            th.small-6 {
+                display: inline-block !important;
+                width: 50% !important;
+            }
+
+            td.small-7,
+            th.small-7 {
+                display: inline-block !important;
+                width: 58.33333% !important;
+            }
+
+            td.small-8,
+            th.small-8 {
+                display: inline-block !important;
+                width: 66.66667% !important;
+            }
+
+            td.small-9,
+            th.small-9 {
+                display: inline-block !important;
+                width: 75% !important;
+            }
+
+            td.small-10,
+            th.small-10 {
+                display: inline-block !important;
+                width: 83.33333% !important;
+            }
+
+            td.small-11,
+            th.small-11 {
+                display: inline-block !important;
+                width: 91.66667% !important;
+            }
+
+            td.small-12,
+            th.small-12 {
+                display: inline-block !important;
+                width: 100% !important;
+            }
+
+            .columns td.small-12,
+            .column td.small-12,
+            .columns th.small-12,
+            .column th.small-12 {
+                display: block !important;
+                width: 100% !important;
+            }
+
+            table.body td.small-offset-1,
+            table.body th.small-offset-1 {
+                margin-left: 8.33333% !important;
+                Margin-left: 8.33333% !important;
+            }
+
+            table.body td.small-offset-2,
+            table.body th.small-offset-2 {
+                margin-left: 16.66667% !important;
+                Margin-left: 16.66667% !important;
+            }
+
+            table.body td.small-offset-3,
+            table.body th.small-offset-3 {
+                margin-left: 25% !important;
+                Margin-left: 25% !important;
+            }
+
+            table.body td.small-offset-4,
+            table.body th.small-offset-4 {
+                margin-left: 33.33333% !important;
+                Margin-left: 33.33333% !important;
+            }
+
+            table.body td.small-offset-5,
+            table.body th.small-offset-5 {
+                margin-left: 41.66667% !important;
+                Margin-left: 41.66667% !important;
+            }
+
+            table.body td.small-offset-6,
+            table.body th.small-offset-6 {
+                margin-left: 50% !important;
+                Margin-left: 50% !important;
+            }
+
+            table.body td.small-offset-7,
+            table.body th.small-offset-7 {
+                margin-left: 58.33333% !important;
+                Margin-left: 58.33333% !important;
+            }
+
+            table.body td.small-offset-8,
+            table.body th.small-offset-8 {
+                margin-left: 66.66667% !important;
+                Margin-left: 66.66667% !important;
+            }
+
+            table.body td.small-offset-9,
+            table.body th.small-offset-9 {
+                margin-left: 75% !important;
+                Margin-left: 75% !important;
+            }
+
+            table.body td.small-offset-10,
+            table.body th.small-offset-10 {
+                margin-left: 83.33333% !important;
+                Margin-left: 83.33333% !important;
+            }
+
+            table.body td.small-offset-11,
+            table.body th.small-offset-11 {
+                margin-left: 91.66667% !important;
+                Margin-left: 91.66667% !important;
+            }
+
+            table.body table.columns td.expander,
+            table.body table.columns th.expander {
+                display: none !important;
+            }
+
+            table.body .right-text-pad,
+            table.body .text-pad-right {
+                padding-left: 10px !important;
+            }
+
+            table.body .left-text-pad,
+            table.body .text-pad-left {
+                padding-right: 10px !important;
+            }
+
+            table.menu {
+                width: 100% !important;
+            }
+
+            table.menu td,
+            table.menu th {
+                width: auto !important;
+                display: inline-block !important;
+            }
+
+            table.menu.vertical td,
+            table.menu.vertical th,
+            table.menu.small-vertical td,
+            table.menu.small-vertical th {
+                display: block !important;
+            }
+
+            table.menu[align="center"] {
+                width: auto !important;
+            }
+
+            table.button.small-expand,
+            table.button.small-expanded {
+                width: 100% !important;
+            }
+
+            table.button.small-expand table,
+            table.button.small-expanded table {
+                width: 100%;
+            }
+
+            table.button.small-expand table a,
+            table.button.small-expanded table a {
+                text-align: center !important;
+                width: 100% !important;
+                padding-left: 0 !important;
+                padding-right: 0 !important;
+            }
+
+            table.button.small-expand center,
+            table.button.small-expanded center {
+                min-width: 0;
+            }
+
+            p,
+            ul,
+            li {
+                font-size: 18px;
+            }
+        }
+    </style>
+</head>
+
+<body style="width:600px; margin:auto;">
+    <table>
+        <!--entête-->
+        <tr><a href="#">
+                <h1
+                    style="background-image:url(https://i.goopics.net/anAY0.jpg); font-family:Arial; width:600px; height:100px; padding-top: 2%; margin-bottom: 5px;">
+                </h1>
+        </tr></a>
+        <!--section films-->
+        <tr>
+            <h2
+                style="background-image:url(https://i.goopics.net/WbOow.jpg);background-size: cover; font-family:Arial; width:600px; height:50px; margin:auto; padding-top: 2%; text-align:center; font-size: 2em;letter-spacing: 2px; color: red;"></h2>
+
+        </tr>
+        <tr>
+            <td><a href="#"><img src="https://i.goopics.net/WD0ee.jpg"
+                        style=" margin-top: 0px; margin-bottom: 0px; padding-top: 2px; width:145px; height:220px; text-align:center; color:white;" /></a>
+
+                <a href="#"><img src="https://i.goopics.net/nQDbJ.jpg"
+                        style=" margin-top: 0px; margin-bottom: 0px; width:145px; height:220px; text-align:center;" /></a>
+
+                <a href="#"><img src="https://i.goopics.net/Gxae7.jpg"
+                        style=" margin-top: 0px; margin-bottom: 0px; width:145px; height:220px; text-align:center;" /></a>
+
+                <a href="#"><img src="https://i.goopics.net/eX1bW.jpg"
+                        style=" margin-top: 0px; margin-bottom: 0px; width:147px; height:220px; text-align:center;" /></a>
+            </td>
+
+        </tr>
+    </table>
+    <table style="width: 100%;">
+        <tbody>
+            <tr>
+                <td style="text-align: center;">
+
+                    <p style="color:#737373; font-weight: bolder;"> <strong>Nouveauté exclus 2018</strong></p>
+
+                </td>
+                <td style="text-align: center;">
+
+                    <p style="color:#737373; font-weight: bolder;"> <strong>Nouveauté exclus 2017</strong></p>
+
+                </td>
+                <td style="text-align: center;">
+
+                    <p style="color:#737373; font-weight: bolder;"> <strong>Nouveauté exclus 2018</strong></p>
+
+                </td>
+                <td style="text-align: center;">
+
+                    <p style="color:#737373; font-weight: bolder;"> <strong>Nouveauté exclus 2019</strong></p>
+
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!--section séries-->
+    <table style="width: 100%;">
+        <tbody>
+            <tr>
+                <td>
+                    <h2
+                        style="background-image:url(https://i.goopics.net/yOEWV.jpg); background-size: cover; font-family:Arial; width:600px; height:50px; margin:auto; padding-top: 2%; text-align:center;"></h2>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="#"> <img src="https://i.goopics.net/7oAjN.jpg"
+                            style="font-family:Arial; width:145px; height:220px; text-align:center; color:white;" />
+                    </a>
+                    <a href="#"> <img src="https://i.goopics.net/AqELw.jpg"
+                            style="font-family:Arial; width:145px; height:220px; text-align:center; color:white;" />
+                    </a>
+                    <a href="#"> <img src="https://i.goopics.net/b9Lv0.jpg"
+                            style="font-family:Arial; width:145px; height:220px; text-align:center; color:white;" />
+                    </a>
+                    <a href="#"> <img src="https://i.goopics.net/nQDyJ.jpg"
+                            style="font-family:Arial; width:150px; height:220px; text-align:center; color:white;" />
+                    </a>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table>
+        <tbody>
+            <tr>
+                <td style="text-align: center; padding-left: 20px; "> 
+                    <p style="color:#737373;"> <strong>Episode 16 - </br> Saison 9</strong></p>
+                </td>
+                <td style="text-align: center; padding-left: 20px; padding-right: 10px">
+                    <p style="color:#737373;"> <strong>Episode 12 - </br> Saison 16</strong></p>
+                </td>
+                <td style="text-align: center; padding-left: 20px; padding-right: 10px">
+                    <p style="color:#737373;"> <strong>Episode 15 - </br> Saison 3</strong></p>
+                </td>
+                <td style="text-align: center; padding-left: 20px; padding-right: 10px">
+                    <p style="color:#737373;"> <strong>Episode 25 - </br> Saison 15</strong></p>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <!--section horreur-->
+    <table>
+        <tr>
+        <tr>
+            <td
+                style="background-image: url(https://i.goopics.net/rY41D.jpg); background-size: cover; font-family:Arial; width:600px; height:326px; margin:auto; text-align:center; color:white;">
+                <a href="#" style="text-decoration: none; color:white;">
+                    <p style="font-size: 1.7em;">Tous les vendredis 3 films d'horreur à la suite !!!</p>
+                </a>
+            </td>
+
+        </tr>
+        </tr>
+    </table>
+    <!--Les promo du passé-->
+    <table style="width: 100%;">
+        <tr>
+        <tr>
+            <h2
+            style="background-image:url(https://i.goopics.net/Yv0O2.jpg); background-size: cover; font-family:Arial; width:600px; height:50px; margin:auto; padding-top: 2%; text-align:center;"></h2>
+        </tr>
+        </tr>
+        <tr>
+            <td>
+                <a href="#"> <img src="https://i.goopics.net/nQ9W1.jpg"
+                        style="font-family:Arial; width:145px; height:220px; text-align:center; color:white;" /> </a>
+                <a href="#"> <img src="https://i.goopics.net/92A43.jpg"
+                        style="font-family:Arial; width:145px; height:220px; text-align:center; color:white;" /> </a>
+                <a href="#"> <img src="https://i.goopics.net/Xjngp.jpg"
+                        style="font-family:Arial; width:145px; height:220px; text-align:center; color:white;" /> </a>
+                <a href="#"> <img src="https://i.goopics.net/deAkL.jpg"
+                        style="font-family:Arial; width:145px; height:220px; text-align:center; color:white;" /> </a>
+            </td>
+        </tr>
+    </table>
+    <!--Footer-->
+    <table style="background-color: black; width:100%;">
+        <tbody>
+            <tr>
+                <td style="padding-top:10px; padding-bottom:5px; text-align:center;">
+                    <span style="font-family: Arial; font-size: 15px; letter-spacing: 1; color: white; ">
+                        Rejoignez-nous sur : </span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <table style="width:100%;">
+                        <tbody>
+                            <tr>
+                                <td style="width: 100%; text-align: center;">
+                                    <p> <img class="facebook" src="https://i.goopics.net/WDaQr.jpg"
+                                            style="width: 30px; height: 30px;border-radius:20px;">
+                                        <img class="twitter" src="https://i.goopics.net/QljmV.jpg"
+                                            style="width: 30px; height: 30px; border-radius:20px;">
+                                        <img class="youtube" src="https://i.goopics.net/1oPXo.jpg"
+                                            style="width: 30px; height: 30px; border-radius:20px;">
+                                        <img class="linkedin" src="https://i.goopics.net/loVmp.jpg"
+                                            style="width: 30px; height: 30px; border-radius:20px;">
+                                        <img class="google+" src="https://i.goopics.net/b9pgK.jpg"
+                                            style="width: 30px; height: 30px; border-radius:20px;">
+                                    </p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table style="width:100%;">
+                        <tbody>
+                            <tr>
+                                <td style="padding-top:5px; text-align:center;">
+                                    <span
+                                        style="font-family: Arial; font-size: 20px; letter-spacing: 1; color: #ff4140;">Une
+                                        question ? </span>
+                                    <span
+                                        style="font-family: Arial; font-size: 15px; letter-spacing: 1; color: white;">Remplissez
+                                        notre formulaire de contact sur notre site.</span>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table style="width: 100%;">
+                        <tbody>
+                            <tr>
+                                <td style="padding-right: 0px; padding-left: 0px; width: 100%;
+                                    text-align: center;">
+                                    <p> <a href="#" style="color:#0d76bd; text-decoration: none;">
+                                            Mention légal</a>
+                                        <a href="#" style="color:#0d76bd; margin-left:50px; text-decoration: none;">
+                                            Sécurité </a> </p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table style="width: 100%;">
+                        <tbody>
+                            <tr>
+                                <td style="padding-bottom: 5px; padding-right: 0px; padding-left: 0px; width: 100%;
+                                    text-align: center;">
+                                    <a href="#" style="color:cyan; text-decoration: none;"> Se
+                                        désabonner de la Newsletter </a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td style="padding-right: 0px; width: 100%; text-align: center;">
+                                    <p style="font-family: Arial; font-size: 13px; letter-spacing: 1; color: #ada9a9;"> Conformément à la loi du 8 décembre 1992 relative à la protection de la vie privée à l'égard du traitement de données à caractère personnel, vous disposez du droit d'accès, de rectification et de suppression des données vous concernant. </p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td style="padding-right: 0px; width: 100%; text-align: center;">
+                                    <p style="font-family: Arial; font-size: 13px; letter-spacing: 1; color: #ada9a9;">Par notre intermédiaire, vous pouvez être amené(e) à recevoir des propositions commerciales en provenance de tiers. Si vous ne le souhaitez pas, il vous suffit de nous écrire à l'aide de notre formulaire en ligne dans la rubrique "Contact" ou par courrier à en précisant vos nom, prénom, adresse complète et numéro de client à : BeCode - Quai Arthur Rimbaud 10 - 6000 Charleroi</p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+
+</html>

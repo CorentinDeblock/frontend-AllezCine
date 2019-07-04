@@ -1,0 +1,187 @@
+ <section class="container second" id="data">
+            <template id="card">
+                <li class="card col-6 col-sm-6 col-md-4 col-lg-2 col-xl-2" id="mov">
+                    <a type="button" class="btn btn-primary btn-hover" data-toggle="modal" data-target="#exampleModal">
+                        <img class="card-img-top" >
+                    </a>
+                    <div class="movies__contenu">
+                        <a type="button" class="btn btn-primary btn-hover" data-toggle="modal" data-target="#exampleModal">
+                            <p class="card__name title"></p>
+                        </a>
+                            
+                            <div class="grid">
+                                <p class="card__years"></p>
+                                <p class="card__genre"></p>
+                            </div>    
+                    </div>
+                        
+                            
+                        
+                        <div class="modal fade fademovie" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel1" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                <div class="modal-header">
+                                    <h3 class="modal-title title" id="exampleModalLabel1"></h3>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                        <iframe class="card__video" width="460" height="270" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                    <p class="descri"></p>
+                                    <p><span class="gras">Réalisateur: </span><span class="reali"></span></p>
+                                    <p><span class="gras">Acteurs: </span><span class="acteurs"></span></p>
+                                    <p><span class="gras">Année: </span><span class="annee"></span></p>
+                                    <p><span class="gras">Genres: </span><span class="genre"></span></p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary btn-close" data-dismiss="modal">Close</button>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    
+                    
+            </template>
+
+            <h3 class="ligne title">Featured Movies</h3>
+                <div class="container__center">
+                    <ul class="nav nav-tabs" id="myTab" role="tablist">
+                        <li class="nav-item">
+                        <a class="nav-link active" id="all-tab" data-toggle="tab" href="#all" role="tab" aria-controls="all" aria-selected="true">All</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" id="avent-tab" data-toggle="tab" href="#aventure" role="tab" aria-controls="aventure" aria-selected="false">Aventure</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" id="thri-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Thriller</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" id="acti-tab" data-toggle="tab" href="#action" role="tab" aria-controls="action" aria-selected="false">Action</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" id="come-tab" data-toggle="tab" href="#comedie" role="tab" aria-controls="comedie" aria-selected="false">Comédie</a>
+                        </li>
+                    </ul>
+
+                    <div class="tab-content" id="myTabContent2">
+                        <!-- 1e : ALL -->
+                        <div class="tab-pane fade show active" id="all" role="tabpanel" aria-labelledby="all-tab">
+                            <div class="fea row">
+
+                                <ol id="target" class="row"></ol>
+
+                                <div id="collapseOne" class="collapse row" aria-labelledby="headingOne" data-parent="#accordionExample1">
+                                    <div class="card-body">
+                                        <ol id="target_ol" class="row tar_test"></ol>
+                                    </div>
+                                </div>
+                                <div class="accordion" id="accordionExample1">
+                                    <div class="card">
+                                        <div class="card-header" id="headingOne">
+                                              <button id="btn-collap" type="button" class="btn btn-plus" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne"><span>Plus de films</span></button>
+                                        
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>    
+                        </div>
+
+                        <!-- 2e : AVENTURE -->
+                        <div class="tab-pane fade" id="aventure" role="tabpanel" aria-labelledby="avent-tab">
+                            <div class="fea row">
+
+                                <ol id="target2" class="row"></ol>
+    
+                                <div class="accordion" id="accordionExample2">
+                                    <div class="card">
+                                        <div class="card-header" id="headingTwo">
+                                            <button id="btn-collap2" type="button" class="btn btn-plus" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo"><span>Plus de films</span></button>
+                                        
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample2">
+                                    <div class="card-body">
+                                        <ol id="target2_ol" class="row"></ol>
+                                    </div>
+                                </div>
+    
+                            </div>  
+                        </div>
+                        
+                        <!-- 3e : THRILLER -->
+                        <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="thri-tab">
+                                <div class="fea row">
+
+                                        <ol id="target3" class="row"></ol>
+        
+                                        <div class="accordion" id="accordionExample3">
+                                            <div class="card">
+                                                <div class="card-header" id="headingThree">
+                                                    <button id="btn-collap3" type="button" class="btn btn-plus" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree"><span>Plus de films</span></button>
+                                                
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample3">
+                                            <div class="card-body">
+                                                <ol id="target3_ol" class="row"></ol>
+                                            </div>
+                                        </div>
+        
+                                    </div>  
+                        </div>
+
+                    <!-- 4e : ACTION -->
+                    <div class="tab-pane fade" id="action" role="tabpanel" aria-labelledby="acti-tab">
+                        <div class="fea row">
+
+                                <ol id="target4" class="row"></ol>
+
+                                <div class="accordion" id="accordionExample4">
+                                    <div class="card">
+                                        <div class="card-header" id="headingFour">
+                                            <button id="btn-collap4" type="button" class="btn btn-plus" data-toggle="collapse" data-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour"><span>Plus de films</span></button>
+                                        
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample4">
+                                    <div class="card-body">
+                                        <ol id="target4_ol" class="row"></ol>
+                                    </div>
+                                </div>
+
+                            </div>  
+                    </div>
+
+
+                    <!-- 5e : COMEDIE -->
+                    <div class="tab-pane fade" id="comedie" role="tabpanel" aria-labelledby="come-tab">
+                        <div class="fea row">
+
+                                <ol id="target5" class="row"></ol>
+
+                                <div class="accordion" id="accordionExample5">
+                                    <div class="card">
+                                        <div class="card-header" id="headingFive">
+                                            <button id="btn-collap5" type="button" class="btn btn-plus" data-toggle="collapse" data-target="#collapseFive" aria-expanded="true" aria-controls="collapseFive"><span>Plus de films</span></button>
+                                        
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample5">
+                                    <div class="card-body">
+                                        <ol id="target5_ol" class="row"></ol>
+                                    </div>
+                                </div>
+
+                            </div>  
+                    </div>
+
+            </div>
+            </div>          
+        </section>
